@@ -10,9 +10,9 @@ var addressPoints = [
     -0.1277653
   ],
   [
-    "LINC Seminar<br />CNIL; Paris, France",
-    48.8588897,
-    2.320041
+    "LINC Seminar (CNIL)<br />CNIL; Paris, France",
+    48.8534951,
+    2.3483915
   ],
   [
     "AIM - Association Information et Management<br />AIM; Neuchatel, Switzerland",
@@ -20,7 +20,7 @@ var addressPoints = [
     6.9292641
   ],
   [
-    "The Economics of Data-Sharing<br />International Conference on Information Systems; Nashville, USA",
+    "International Conference on Information Systems (ICIS)<br />International Conference on Information Systems; Nashville, USA",
     36.1622767,
     -86.7742984
   ],
@@ -31,7 +31,7 @@ var addressPoints = [
   ],
   [
     "ARCEP Internal Academic Seminar<br />ARCEP; Paris, France",
-    48.8588897,
-    2.320041
+    48.8534951,
+    2.3483915
   ]
 ];
