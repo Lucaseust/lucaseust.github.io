@@ -1,0 +1,78 @@
+hero:
+  eyebrow: "PhD Student in Management and Information Systems"
+  title: "Data governance, digital regulation, and data-sharing ecosystems."
+  text: "I study how data-sharing intermediaries create value, coordinate participants, and build sustainable governance arrangements."
+  buttons:
+    - label: "Download CV"
+      url: "/files/cv.pdf"
+      style: "primary"
+    - label: "Email"
+      url: "mailto:lucas.eustache@dauphine.eu"
+      style: "inverse"
+    - label: "LinkedIn"
+      url: "https://www.linkedin.com/in/lucas-eustache-611a9a223"
+      style: "inverse"
+    - label: "GitHub"
+      url: "https://github.com/Lucaseust"
+      style: "inverse"
+
+quick_facts:
+  - label: "PhD research"
+    value: "Business models of data-sharing intermediaries"
+  - label: "Appointment"
+    value: "ATER, University Paris-Dauphine - PSL"
+  - label: "Methods"
+    value: "Interviews, case studies, econometrics, NLP"
+  - label: "Location"
+    value: "Paris, France"
+
+research:
+  kicker: "Research"
+  title: "Understanding how data-sharing ecosystems become economically viable."
+  text: "My dissertation, supervised by Eric Brousseau, examines the business models of data-sharing intermediaries and the economics of data-sharing ecosystems. I work at the intersection of information systems, governance, regulation, and digital economy research."
+  focus:
+    - title: "Data Governance and Intermediation"
+      text: "Data-sharing intermediaries, data spaces, ecosystem orchestration, governance design, and value creation."
+    - title: "Digital Regulation"
+      text: "Personal data regulation, institutional design, and comparative regulatory models across Europe, the United States, and China."
+    - title: "Platforms and Digital Economy"
+      text: "Markets for data, vertical AI, and sectoral or sovereign data infrastructures."
+
+selected_publication:
+  kicker: "Selected Publication"
+  title: "The Economics of Data-Sharing"
+  text: "**The Economics of Data-Sharing: An Empirical Investigation of Data Sharing Ecosystems**, with Eric Brousseau and Joelle Toledano, appears in the *ICIS 2025 Proceedings*. The paper identifies economic and governance conditions that support data-sharing ecosystems over time, including investment, use-case innovation, integration complexity, risk, and incentive alignment."
+  link_label: "View the ICIS record"
+  link_url: "https://aisel.aisnet.org/icis2025/sharing_econ/sharing_econ/6"
+
+working_papers:
+  kicker: "Working Papers"
+  title: "Current research projects"
+  items:
+    - title: "Interpretable Digital Traces: Mobile Wikipedia Usage and City-Level Tourism"
+      byline: "with Paul Favier"
+      text: "Links daily hotel room-nights to mobile and desktop Wikipedia pageviews for 704 French communes from 2018 to 2025 to build interpretable, high-frequency indicators of local tourism activity."
+    - title: "Intrinsic Data Liquidity and the Emergence of Market Governance for Data Sharing"
+      byline: "Solo"
+      text: "Introduces intrinsic data liquidity to explain why some data products can be exchanged through scalable markets while others require bespoke governance."
+    - title: "Models of Personal Data Regulation"
+      byline: "with Rami Benabdelkrim and Surjasama Lahiri"
+      text: "Studies how countries converge toward European, Chinese, or American models of personal data regulation using a comparative dataset of legal provisions across jurisdictions."
+    - title: "Emergence of Data Sharing Ecosystems in Disaster Management"
+      byline: "with Anouk Adrot and Salome Ritouret"
+      text: "Investigates how formal norms and bottom-up practices interact in disaster risk reduction ecosystems through interviews, NLP-assisted mapping, observation, and archival material."
+
+methods:
+  kicker: "Methods and Tools"
+  items:
+    - "semi-structured interviews"
+    - "case studies"
+    - "field observations"
+    - "panel data models"
+    - "causal inference"
+    - "NLP"
+    - "topic modeling"
+    - "web scraping"
+    - "Python"
+    - "R"
+    - "SQL"

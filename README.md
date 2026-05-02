@@ -1,24 +1,16 @@
 # Lucas Eustache Academic Website
 
-This repository powers the personal academic website at https://lucaseust.github.io.
+This repository powers https://lucaseust.github.io.
 
-The site is built with Jekyll and GitHub Pages. It presents Lucas Eustache's research, publications, presentations, teaching, and CV.
+## Quick Edits
 
-## Main Content
-
-- `_pages/about.md`: homepage.
+- `_data/home.yml`: homepage text, buttons, quick facts, working papers, methods.
+- `_config.yml`: site title, sidebar profile, email, GitHub, LinkedIn, SEO metadata.
+- `_data/navigation.yml`: top navigation.
 - `_pages/cv.md`: web CV.
-- `_publications/`: publications and media entries.
-- `_talks/`: selected presentations.
+- `_publications/`: publication and media entries.
+- `_talks/`: presentations. Use `title` for the conference and `presentation_title` for the paper/presentation.
 - `_teaching/`: teaching entries.
 - `files/cv.pdf`: downloadable CV.
-- `images/lucas-eustache-portrait.jpg`: optimized portrait image.
-
-## Local Preview
-
-```bash
-bundle install
-bundle exec jekyll serve
-```
-
-Then open `http://localhost:4000`.
+- `assets/css/site.css`: visual customizations.
+- `images/site-background.jpg`: site background image.
