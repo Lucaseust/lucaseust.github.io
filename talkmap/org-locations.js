@@ -1,22 +1,37 @@
 var addressPoints = [
   [
-    "Talk 2 on Relevant Topic in Your Field<br />London School of Testing; London, UK",
+    "KU Leuven CiTiP Research Seminar<br />KU Leuven CiTiP; Leuven, Belgium",
+    50.879202,
+    4.7011675
+  ],
+  [
+    "3rd UK Workshop on Digital Economics<br />CCP; London, United Kingdom",
     51.5074456,
     -0.1277653
   ],
   [
-    "Talk 1 on Relevant Topic in Your Field<br />UC San Francisco, Department of Testing; San Francisco, CA, USA",
-    37.7879363,
-    -122.4075201
+    "LINC Seminar<br />CNIL; Paris, France",
+    48.8588897,
+    2.320041
   ],
   [
-    "Tutorial 1 on Relevant Topic in Your Field<br />UC-Berkeley Institute for Testing Science; Berkeley, CA, USA",
-    37.8708393,
-    -122.272863
+    "AIM - Association Information et Management<br />AIM; Neuchatel, Switzerland",
+    46.9895828,
+    6.9292641
   ],
   [
-    "Conference Proceeding talk 3 on Relevant Topic in Your Field<br />Testing Institute of America 2014 Annual Conference; Los Angeles, CA, USA",
-    34.0536909,
-    -118.242766
+    "The Economics of Data-Sharing<br />International Conference on Information Systems; Nashville, USA",
+    36.1622767,
+    -86.7742984
+  ],
+  [
+    "EGOS Colloquium<br />European Group for Organizational Studies; Athens, Greece",
+    37.9755648,
+    23.7348324
+  ],
+  [
+    "ARCEP Internal Academic Seminar<br />ARCEP; Paris, France",
+    48.8588897,
+    2.320041
   ]
 ];
