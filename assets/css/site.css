@@ -15,7 +15,8 @@ html {
 
 body {
   color: var(--ink);
-  background: #f7f9fa;
+  background:
+    linear-gradient(180deg, rgba(236, 243, 241, 0.9) 0, rgba(247, 249, 250, 0.95) 25rem, #f7f9fa 25rem);
 }
 
 .masthead {
@@ -60,13 +61,38 @@ body {
   box-shadow: 0 10px 30px rgba(24, 32, 36, 0.12);
 }
 
+.home-page {
+  padding-bottom: 1rem;
+}
+
 .home-hero {
+  position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 1.25fr) minmax(240px, 0.75fr);
-  gap: 2rem;
+  grid-template-columns: minmax(0, 1.15fr) minmax(220px, 0.55fr);
+  gap: clamp(1.25rem, 4vw, 3rem);
   align-items: center;
-  padding: 0.25rem 0 2rem;
+  min-height: 24rem;
+  margin: -0.4rem 0 2rem;
+  padding: clamp(1.5rem, 4vw, 3rem);
   border-bottom: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #edf4f1;
+  background-image:
+    linear-gradient(90deg, rgba(14, 107, 97, 0.08) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(31, 77, 122, 0.06) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+.home-hero::before {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background: linear-gradient(90deg, rgba(237, 244, 241, 0.98), rgba(237, 244, 241, 0.8) 58%, rgba(244, 247, 248, 0.58));
+}
+
+.home-hero > * {
+  position: relative;
 }
 
 .home-hero__copy h2,
@@ -77,12 +103,12 @@ body {
 }
 
 .home-hero__copy h2 {
-  max-width: 13em;
-  font-size: 1.95em;
+  max-width: 11em;
+  font-size: 2.25em;
 }
 
 .lede {
-  max-width: 38rem;
+  max-width: 30rem;
   color: var(--muted);
   font-size: 1.05em;
   line-height: 1.65;
@@ -115,8 +141,8 @@ body {
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 8px;
-  border: 1px solid var(--line);
-  box-shadow: 0 18px 44px rgba(24, 32, 36, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 16px 36px rgba(24, 32, 36, 0.12);
 }
 
 .quick-facts,
@@ -128,21 +154,21 @@ body {
 
 .quick-facts {
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  margin: 1.5rem 0 2.5rem;
+  margin: 1.75rem 0 2.75rem;
+  padding: 0 0 1.5rem;
+  border-bottom: 1px solid var(--line);
 }
 
 .quick-facts div,
 .focus-grid article,
 .paper-list article {
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
-  box-shadow: 0 8px 22px rgba(24, 32, 36, 0.05);
+  border-top: 1px solid var(--line);
+  background: transparent;
 }
 
 .quick-facts div {
-  min-height: 7rem;
-  padding: 1rem;
+  min-height: 0;
+  padding: 0.85rem 0 0;
 }
 
 .quick-facts strong,
@@ -161,7 +187,7 @@ body {
 }
 
 .section-block {
-  margin: 2.5rem 0;
+  margin: 2.75rem 0;
   padding-top: 0.25rem;
 }
 
@@ -176,7 +202,7 @@ body {
 
 .focus-grid article,
 .paper-list article {
-  padding: 1.1rem;
+  padding: 1rem 0 0;
 }
 
 .focus-grid h3,
@@ -203,6 +229,13 @@ body {
   font-size: 0.92em;
 }
 
+.talk-paper-title {
+  margin: 0.15rem 0 0.65rem;
+  color: var(--muted);
+  font-size: 0.98em;
+  line-height: 1.45;
+}
+
 .compact {
   margin-bottom: 1rem;
 }
@@ -220,13 +253,14 @@ body {
   padding: 0.35rem 0.7rem;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: var(--surface-soft);
+  background: rgba(255, 255, 255, 0.55);
   color: var(--ink);
   font-size: 0.9em;
 }
 
 [data-theme="dark"] body {
-  background: #11171a;
+  background:
+    linear-gradient(180deg, rgba(19, 34, 35, 0.95) 0, rgba(17, 23, 26, 0.95) 25rem, #11171a 25rem);
 }
 
 [data-theme="dark"] .masthead {
@@ -237,7 +271,18 @@ body {
 [data-theme="dark"] .focus-grid article,
 [data-theme="dark"] .paper-list article,
 [data-theme="dark"] .tag-cloud span {
-  background: #182125;
+  background: transparent;
+}
+
+[data-theme="dark"] .home-hero {
+  background-color: #132223;
+  background-image:
+    linear-gradient(90deg, rgba(118, 193, 177, 0.08) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(106, 156, 205, 0.06) 1px, transparent 1px);
+}
+
+[data-theme="dark"] .home-hero::before {
+  background: linear-gradient(90deg, rgba(19, 34, 35, 0.98), rgba(19, 34, 35, 0.82) 58%, rgba(17, 23, 26, 0.58));
 }
 
 @media (max-width: 900px) {
@@ -250,10 +295,15 @@ body {
 
   .home-hero__copy h2 {
     max-width: 100%;
-    font-size: 1.55em;
+    font-size: 1.8em;
   }
 
-  .quick-facts div {
+  .home-hero {
     min-height: 0;
+    padding: 1.25rem;
+  }
+
+  .home-hero__image {
+    max-width: 18rem;
   }
 }

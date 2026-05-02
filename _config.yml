@@ -66,7 +66,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         :
+  linkedin         : "lucas-eustache-611a9a223"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
@@ -154,6 +154,7 @@ social:
   name                   : "Lucas Eustache" # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
     - "https://github.com/Lucaseust"
+    - "https://www.linkedin.com/in/lucas-eustache-611a9a223"
     - "https://www.drm.dauphine.fr/en/mr/members/detail-cv/profile/lucas-eustache.html"
 
 

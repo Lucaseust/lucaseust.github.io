@@ -35,8 +35,11 @@ layout: default
         {% elsif page.date %}
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>Date:</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
         {% endif %}
+        {% if page.presentation_title %}
+          <p class="talk-paper-title">{{ page.presentation_title }}</p>
+        {% endif %}
         {% if page.type or page.venue %}
-          <p>{{ page.type }}{% if page.venue %} at <i>{{ page.venue }}</i>{% endif %}{% if page.location %}, {{ page.location }}{% endif %}</p>
+          <p>{{ page.type }}{% if page.date %}, {{ page.date | date: "%B %Y" }}{% endif %}{% if page.location %}, {{ page.location }}{% endif %}</p>
         {% endif %}
 
         </header>
