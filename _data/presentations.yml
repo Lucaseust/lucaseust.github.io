@@ -1,0 +1,45 @@
+# Academic presentations are stored as individual files in `_talks/`.
+# Policy and industry engagements are listed here for faster editing.
+
+engagements:
+  - title: "Gaia-X Summit"
+    date: 2025-11-20
+    location: "Porto, Portugal"
+    link: "https://gaia-x.eu/summit-2025/"
+    description: "Policy and industry engagement on the sustainability and scaling of data-sharing ecosystems."
+
+  - title: "Sustainable Development of Data-Sharing Ecosystems: Challenges and Turning Points"
+    date: 2025-09-25
+    location: "Paris, France"
+    link: "https://www.fondation-dauphine.fr/agenda/2025/08/sustainable-development-data-sharing-ecosystems-challenges-and-turning-points"
+    description: "Conference co-organized with the Gaia-X Institute on the economic and governance conditions for sustainable data-sharing ecosystems."
+
+  - title: "Gaia-X Hub France Plenary Session"
+    date: 2025-03-24
+    location: "Paris, France"
+    link: "https://www.gaia-x-hub.fr/retour-sur-la-7e-pleniere-du-hub-france-24-mars-2025-a-bercy/"
+    description: "Presentation on the economics of data ecosystems during the Gaia-X Hub France plenary session."
+
+  - title: "Gaia-X General Assembly and Summit"
+    date: 2024-11-14
+    location: "Helsinki, Finland"
+    link: "https://gaia-x.eu/summit-2024/"
+    description: "Industry engagement on the economics of data-sharing ecosystems."
+
+  - title: "Data-Sharing in Europe: The Implementation Challenge"
+    date: 2024-09-12
+    location: "Paris, France"
+    link: "https://chairgovreg.fondation-dauphine.fr/en/publication/1809/synthesis-data-sharing-europe-implementation-challenge"
+    description: "Conference on the implementation of European data regulation and the development of data ecosystems."
+
+  - title: "DSSC Data Spaces Symposium"
+    date: 2024-03-12
+    location: "Darmstadt, Germany"
+    link: "https://www.data-spaces-symposium.eu/program-2024"
+    description: "Presentation on the economics of data-sharing at the Data Spaces Symposium."
+
+  - title: "Data Sharing in Europe: DGA and DA, from Legal Consensus to Implementation"
+    date: 2023-09-19
+    location: "Paris, France"
+    link: "https://chairgovreg.fondation-dauphine.fr/en/publication/1655/synthese-data-sharing-europe-dga-and-da-legal-consensus-achievement-implementation"
+    description: "Conference on the Data Governance Act and Data Act, organized with the Gaia-X Institute and the Governance and Regulation Chair."

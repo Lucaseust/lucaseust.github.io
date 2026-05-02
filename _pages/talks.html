@@ -5,6 +5,8 @@ permalink: /talks/
 author_profile: true
 ---
 
+{% assign presentations = site.data.presentations %}
+
 <p>Academic presentations, research seminars, and policy or industry engagements.</p>
 
 {% if site.talkmap_link == true %}
@@ -13,16 +15,16 @@ author_profile: true
 
 {% endif %}
 
-## Academic Presentations
+<h2>Academic Presentations</h2>
 
 {% for post in site.talks reversed %}
   {% include archive-single-talk.html %}
 {% endfor %}
 
-## Policy and Industry Engagement
+<h2>Policy and Industry Engagement</h2>
 
 <div class="engagement-list">
-  {% assign engagements = site.data.engagements | sort: "date" | reverse %}
+  {% assign engagements = presentations.engagements | sort: "date" | reverse %}
   {% for item in engagements %}
     <article class="engagement-item">
       <h3>
