@@ -1,7 +1,7 @@
 ---
 permalink: /
 title: "Lucas Eustache"
-author_profile: false
+author_profile: true
 hide_title: true
 redirect_from:
   - /about/
@@ -12,8 +12,8 @@ redirect_from:
   <section class="home-hero" aria-label="Introduction">
     <div class="home-hero__copy">
       <p class="eyebrow">PhD Student in Management and Information Systems</p>
-      <h2>Lucas Eustache</h2>
-      <p class="lede">I study data governance, digital regulation, and the economics of data-sharing ecosystems.</p>
+      <h2>Data governance, digital regulation, and data-sharing ecosystems.</h2>
+      <p class="lede">I study how data-sharing intermediaries create value, coordinate participants, and build sustainable governance arrangements.</p>
       <div class="cta-row">
         <a class="btn btn--primary" href="/files/cv.pdf">Download CV</a>
         <a class="btn btn--inverse" href="mailto:lucas.eustache@dauphine.eu">Email</a>
@@ -21,9 +21,6 @@ redirect_from:
         <a class="btn btn--inverse" href="https://github.com/Lucaseust">GitHub</a>
       </div>
     </div>
-    <figure class="home-hero__image">
-      <img src="/images/lucas-eustache-portrait.jpg" alt="Portrait of Lucas Eustache" width="1280" height="1280" fetchpriority="high">
-    </figure>
   </section>
 
   <section class="quick-facts" aria-label="Profile highlights">

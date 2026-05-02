@@ -67,11 +67,7 @@ body {
 
 .home-hero {
   position: relative;
-  display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(220px, 0.55fr);
-  gap: clamp(1.25rem, 4vw, 3rem);
-  align-items: center;
-  min-height: 24rem;
+  min-height: 21rem;
   margin: -0.4rem 0 2rem;
   padding: clamp(1.5rem, 4vw, 3rem);
   border-bottom: 1px solid var(--line);
@@ -79,16 +75,19 @@ body {
   overflow: hidden;
   background-color: #edf4f1;
   background-image:
-    linear-gradient(90deg, rgba(14, 107, 97, 0.08) 1px, transparent 1px),
-    linear-gradient(0deg, rgba(31, 77, 122, 0.06) 1px, transparent 1px);
-  background-size: 44px 44px;
+    linear-gradient(90deg, rgba(237, 244, 241, 0.96), rgba(237, 244, 241, 0.7) 62%, rgba(244, 247, 248, 0.5)),
+    url("/images/site-background.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .home-hero::before {
   position: absolute;
   inset: 0;
   content: "";
-  background: linear-gradient(90deg, rgba(237, 244, 241, 0.98), rgba(237, 244, 241, 0.8) 58%, rgba(244, 247, 248, 0.58));
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: inherit;
+  pointer-events: none;
 }
 
 .home-hero > * {
@@ -103,8 +102,8 @@ body {
 }
 
 .home-hero__copy h2 {
-  max-width: 11em;
-  font-size: 2.25em;
+  max-width: 13em;
+  font-size: 1.95em;
 }
 
 .lede {
@@ -129,20 +128,6 @@ body {
   flex-wrap: wrap;
   gap: 0.65rem;
   margin-top: 1.25rem;
-}
-
-.home-hero__image {
-  margin: 0;
-}
-
-.home-hero__image img {
-  display: block;
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.8);
-  box-shadow: 0 16px 36px rgba(24, 32, 36, 0.12);
 }
 
 .quick-facts,
@@ -277,16 +262,11 @@ body {
 [data-theme="dark"] .home-hero {
   background-color: #132223;
   background-image:
-    linear-gradient(90deg, rgba(118, 193, 177, 0.08) 1px, transparent 1px),
-    linear-gradient(0deg, rgba(106, 156, 205, 0.06) 1px, transparent 1px);
-}
-
-[data-theme="dark"] .home-hero::before {
-  background: linear-gradient(90deg, rgba(19, 34, 35, 0.98), rgba(19, 34, 35, 0.82) 58%, rgba(17, 23, 26, 0.58));
+    linear-gradient(90deg, rgba(19, 34, 35, 0.98), rgba(19, 34, 35, 0.82) 62%, rgba(17, 23, 26, 0.62)),
+    url("/images/site-background.jpg");
 }
 
 @media (max-width: 900px) {
-  .home-hero,
   .focus-grid,
   .paper-list,
   .quick-facts {
@@ -301,9 +281,5 @@ body {
   .home-hero {
     min-height: 0;
     padding: 1.25rem;
-  }
-
-  .home-hero__image {
-    max-width: 18rem;
   }
 }

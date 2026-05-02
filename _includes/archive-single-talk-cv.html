@@ -33,8 +33,11 @@
         <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
       {% endif %}
     </h3>
+    {% if post.presentation_title %}
+      <p class="talk-paper-title">{{ post.presentation_title }}</p>
+    {% endif %}
     {% if post.date %}<p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {{ post.date | date: '%B %d, %Y' }}</p>{% endif %}
-    {% if post.venue%}<p class="archive__item-excerpt" itemprop="description">{{post.type}} at {{ post.venue }},  {{post.location}}</p>{% endif %}
+    {% if post.type %}<p class="archive__item-excerpt" itemprop="description">{{ post.type }}{% if post.location %}, {{ post.location }}{% endif %}</p>{% endif %}
     </li>
   </article>
 </div>
