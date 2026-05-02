@@ -1,0 +1,259 @@
+:root {
+  --surface: #ffffff;
+  --surface-soft: #f4f7f8;
+  --ink: #182024;
+  --muted: #5a6870;
+  --line: #d8e0e3;
+  --accent: #0e6b61;
+  --accent-strong: #1f4d7a;
+  --warm: #8a4f2a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--ink);
+  background: #f7f9fa;
+}
+
+.masthead {
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(10px);
+}
+
+.greedy-nav {
+  background: transparent;
+}
+
+.masthead__menu-item--lg a {
+  font-weight: 700;
+}
+
+.page__title {
+  margin-bottom: 0.65em;
+}
+
+.page__content a,
+.archive a,
+.author__urls a {
+  color: var(--accent-strong);
+}
+
+.btn {
+  border-radius: 8px;
+}
+
+.btn--primary {
+  background-color: var(--accent);
+}
+
+.btn--inverse {
+  border-color: var(--line);
+  color: var(--ink);
+}
+
+.author__avatar img {
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(24, 32, 36, 0.12);
+}
+
+.home-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(240px, 0.75fr);
+  gap: 2rem;
+  align-items: center;
+  padding: 0.25rem 0 2rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.home-hero__copy h2,
+.section-block h2 {
+  margin: 0 0 0.65rem;
+  color: var(--ink);
+  line-height: 1.15;
+}
+
+.home-hero__copy h2 {
+  max-width: 13em;
+  font-size: 1.95em;
+}
+
+.lede {
+  max-width: 38rem;
+  color: var(--muted);
+  font-size: 1.05em;
+  line-height: 1.65;
+}
+
+.eyebrow,
+.section-kicker {
+  margin: 0 0 0.65rem;
+  color: var(--warm);
+  font-size: 0.82em;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1.25rem;
+}
+
+.home-hero__image {
+  margin: 0;
+}
+
+.home-hero__image img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  box-shadow: 0 18px 44px rgba(24, 32, 36, 0.16);
+}
+
+.quick-facts,
+.focus-grid,
+.paper-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.quick-facts {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 1.5rem 0 2.5rem;
+}
+
+.quick-facts div,
+.focus-grid article,
+.paper-list article {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: 0 8px 22px rgba(24, 32, 36, 0.05);
+}
+
+.quick-facts div {
+  min-height: 7rem;
+  padding: 1rem;
+}
+
+.quick-facts strong,
+.quick-facts span {
+  display: block;
+}
+
+.quick-facts strong {
+  margin-bottom: 0.4rem;
+  color: var(--accent);
+}
+
+.quick-facts span,
+.paper-list .byline {
+  color: var(--muted);
+}
+
+.section-block {
+  margin: 2.5rem 0;
+  padding-top: 0.25rem;
+}
+
+.section-block > p:not(.section-kicker) {
+  max-width: 46rem;
+}
+
+.focus-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 1.25rem;
+}
+
+.focus-grid article,
+.paper-list article {
+  padding: 1.1rem;
+}
+
+.focus-grid h3,
+.paper-list h3 {
+  margin-top: 0;
+  margin-bottom: 0.45rem;
+  color: var(--ink);
+  font-size: 1.05em;
+  line-height: 1.25;
+}
+
+.focus-grid p,
+.paper-list p {
+  margin-bottom: 0;
+}
+
+.paper-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 1.25rem;
+}
+
+.paper-list .byline {
+  margin: 0 0 0.65rem;
+  font-size: 0.92em;
+}
+
+.compact {
+  margin-bottom: 1rem;
+}
+
+.tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.tag-cloud span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.15rem;
+  padding: 0.35rem 0.7rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface-soft);
+  color: var(--ink);
+  font-size: 0.9em;
+}
+
+[data-theme="dark"] body {
+  background: #11171a;
+}
+
+[data-theme="dark"] .masthead {
+  background: rgba(18, 24, 27, 0.94);
+}
+
+[data-theme="dark"] .quick-facts div,
+[data-theme="dark"] .focus-grid article,
+[data-theme="dark"] .paper-list article,
+[data-theme="dark"] .tag-cloud span {
+  background: #182125;
+}
+
+@media (max-width: 900px) {
+  .home-hero,
+  .focus-grid,
+  .paper-list,
+  .quick-facts {
+    grid-template-columns: 1fr;
+  }
+
+  .home-hero__copy h2 {
+    max-width: 100%;
+    font-size: 1.55em;
+  }
+
+  .quick-facts div {
+    min-height: 0;
+  }
+}

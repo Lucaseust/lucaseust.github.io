@@ -1,0 +1,9 @@
+The Economics of Data-Sharing: An Empirical Investigation of Data Sharing Ecosystems
+Lucas Eustache, Eric Brousseau, and Joelle Toledano
+ICIS 2025 Proceedings, 2025
+https://aisel.aisnet.org/icis2025/sharing_econ/sharing_econ/6
+
+Media:
+Partage des donnees agricoles : du tracteur au serveur, comprendre l'experience d'Agdatahub
+Lucas Eustache
+The Conversation, 2025

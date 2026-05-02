@@ -21,3 +21,7 @@ package-lock.json
 
 # Ignore files created by MacOS
 .DS_Store
+
+# Local source copies used to build optimized public assets
+/photo.png
+/cv.pdf
