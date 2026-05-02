@@ -30,11 +30,6 @@ var addressPoints = [
     8.59422
   ],
   [
-    "Governance and Regulation Chair Internal Seminar<br />Governance and Regulation Chair; Paris, France",
-    48.8534951,
-    2.3483915
-  ],
-  [
     "IOEA 22nd Session<br />Institutional and Organizational Economics Academy; Cargese, France",
     42.13436,
     8.59422
