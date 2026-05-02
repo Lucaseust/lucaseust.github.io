@@ -11,16 +11,14 @@ redirect_from:
 {% assign home = site.data.home %}
 
 <div class="home-page">
-  <section class="home-hero" aria-label="Introduction">
-    <div class="home-hero__copy">
-      <p class="eyebrow">{{ home.hero.eyebrow }}</p>
-      <h2>{{ home.hero.title }}</h2>
-      <p class="lede">{{ home.hero.text }}</p>
-      <div class="cta-row">
-        {% for button in home.hero.buttons %}
-          <a class="btn btn--{{ button.style | default: 'inverse' }}" href="{{ button.url }}">{{ button.label }}</a>
-        {% endfor %}
-      </div>
+  <section class="bio-intro" aria-label="Bio">
+    {% for paragraph in home.bio.paragraphs %}
+      <p{% if forloop.first %} class="bio-lede"{% endif %}>{{ paragraph }}</p>
+    {% endfor %}
+    <div class="profile-links" aria-label="Profile links">
+      {% for link in home.bio.links %}
+        <a href="{{ link.url }}">{{ link.label }}</a>
+      {% endfor %}
     </div>
   </section>
 

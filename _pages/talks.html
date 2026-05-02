@@ -5,7 +5,7 @@ permalink: /talks/
 author_profile: true
 ---
 
-<p>Selected conference presentations, seminars, and workshops.</p>
+<p>Academic presentations, research seminars, and policy or industry engagements.</p>
 
 {% if site.talkmap_link == true %}
 
@@ -13,6 +13,29 @@ author_profile: true
 
 {% endif %}
 
+## Academic Presentations
+
 {% for post in site.talks reversed %}
   {% include archive-single-talk.html %}
 {% endfor %}
+
+## Policy and Industry Engagement
+
+<div class="engagement-list">
+  {% assign engagements = site.data.engagements | sort: "date" | reverse %}
+  {% for item in engagements %}
+    <article class="engagement-item">
+      <h3>
+        {% if item.link %}
+          <a href="{{ item.link }}">{{ item.title }}</a>
+        {% else %}
+          {{ item.title }}
+        {% endif %}
+      </h3>
+      <p class="engagement-meta">{{ item.date | date: "%B %Y" }}{% if item.location %}, {{ item.location }}{% endif %}</p>
+      {% if item.description %}
+        <p>{{ item.description }}</p>
+      {% endif %}
+    </article>
+  {% endfor %}
+</div>

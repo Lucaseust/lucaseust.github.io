@@ -17,7 +17,7 @@ Lucas Eustache is a PhD student in Management and Information Systems at Univers
 
 - Data governance and intermediation: data-sharing intermediaries, data spaces, ecosystem governance, and value creation.
 - Digital regulation: personal data regulation, institutional design, and comparative regulatory models.
-- Platform and digital economy: markets for data, vertical AI, and sectoral or sovereign data infrastructures.
+- Platform and digital economy: markets for data, digital platforms, and sectoral or sovereign data infrastructures.
 
 ## Academic Appointments
 

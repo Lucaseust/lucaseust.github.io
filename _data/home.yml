@@ -1,20 +1,17 @@
-hero:
-  eyebrow: "PhD Student in Management and Information Systems"
-  title: "Data governance, digital regulation, and data-sharing ecosystems."
-  text: "I study how data-sharing intermediaries create value, coordinate participants, and build sustainable governance arrangements."
-  buttons:
+bio:
+  paragraphs:
+    - "I am a PhD student in management and information systems at University Paris-Dauphine - PSL, where I study the governance and economics of data sharing. My work starts from a practical question: when organizations say they want to share data, what has to be built around the data for trust, incentives, and value to last?"
+    - "My dissertation, supervised by Eric Brousseau, focuses on data-sharing intermediaries, data spaces, and sectoral digital infrastructures. I am especially interested in the point where strategy, regulation, and information systems meet: the governance choices that turn a data-sharing initiative into something people can actually use."
+    - "I combine fieldwork and quantitative methods, including interviews, case studies, econometrics, and text analysis. Alongside my research, I teach at University Paris-Dauphine - PSL as an ATER."
+  links:
     - label: "Download CV"
       url: "/files/cv.pdf"
-      style: "primary"
     - label: "Email"
       url: "mailto:lucas.eustache@dauphine.eu"
-      style: "inverse"
     - label: "LinkedIn"
       url: "https://www.linkedin.com/in/lucas-eustache-611a9a223"
-      style: "inverse"
     - label: "GitHub"
       url: "https://github.com/Lucaseust"
-      style: "inverse"
 
 quick_facts:
   - label: "PhD research"
@@ -36,7 +33,7 @@ research:
     - title: "Digital Regulation"
       text: "Personal data regulation, institutional design, and comparative regulatory models across Europe, the United States, and China."
     - title: "Platforms and Digital Economy"
-      text: "Markets for data, vertical AI, and sectoral or sovereign data infrastructures."
+      text: "Markets for data, digital platforms, and sectoral or sovereign data infrastructures."
 
 selected_publication:
   kicker: "Selected Publication"
