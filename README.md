@@ -8,10 +8,10 @@ Most day-to-day edits live in `content/`:
 
 - `content/pages/about.md`: homepage content and layout.
 - `content/pages/cv.md`: web CV page.
-- `content/pages/publications.html`: publications listing page intro.
-- `content/pages/talks.html`: presentations listing page intro.
-- `content/pages/teaching.html`: teaching listing page intro.
-- `content/data/home.yml`: homepage text, buttons, quick facts, working papers, and methods.
+- `content/pages/publications.html`: publications listing page.
+- `content/pages/talks.html`: presentations listing page.
+- `content/pages/teaching.html`: teaching listing page.
+- `content/data/home.yml`: homepage biography, research text, selected publication, and working papers.
 - `content/data/navigation.yml`: top navigation.
 - `content/data/presentations.yml`: policy and industry presentation entries.
 - `content/_publications/`: one Markdown file per publication or media item.
@@ -53,7 +53,6 @@ GitHub Pages also rebuilds the public website after the changes are pushed.
 - `_config.yml`: site title, sidebar profile, email, GitHub, LinkedIn, SEO metadata, and Jekyll settings.
 - `files/cv.pdf`: downloadable CV.
 - `assets/css/site.css`: visual customizations.
-- `images/site-background.jpg`: site background image.
 - `scripts/dev.ps1`: local preview with live reload.
 - `scripts/build.ps1`: static site build.
 - `scripts/update_cv_json.ps1`: optional helper for regenerating `content/data/cv.json` from the Markdown CV.

@@ -3,28 +3,8 @@ bio:
     - "I am a PhD student in management and information systems at University Paris-Dauphine - PSL. I study how organizations share data, and how the circulation of data is governed."
     - "My dissertation, supervised by Eric Brousseau, focuses on data-sharing intermediaries, data spaces, and the commodification of data. I also have research interests in personal data regulation, political economy and local government, and emergency and disaster management."
     - "I combine fieldwork and quantitative methods, including interviews, case studies, econometrics, and text analysis."
-  links:
-    - label: "Download CV"
-      url: "/files/cv.pdf"
-    - label: "Email"
-      url: "mailto:lucas.eustache@dauphine.eu"
-    - label: "LinkedIn"
-      url: "https://www.linkedin.com/in/lucas-eustache-611a9a223"
-    - label: "GitHub"
-      url: "https://github.com/Lucaseust"
-
-quick_facts:
-  - label: "PhD research"
-    value: "Business models of data-sharing intermediaries"
-  - label: "Appointment"
-    value: "ATER, University Paris-Dauphine - PSL"
-  - label: "Methods"
-    value: "Interviews, case studies, econometrics, NLP"
-  - label: "Location"
-    value: "Paris, France"
 
 research:
-  kicker: "Research"
   title: "Data sharing, governance, and regulation"
   text: "My dissertation examines the business models of data-sharing intermediaries and the economics of data-sharing ecosystems. I also work on data governance, digital regulation, and the institutional arrangements that shape exchanges of data between organizations."
   focus:
@@ -36,14 +16,12 @@ research:
       text: "Markets for data, digital platforms, and sectoral data infrastructures."
 
 selected_publication:
-  kicker: "Publication"
   title: "The Economics of Data-Sharing"
   text: "**The Economics of Data-Sharing: An Empirical Investigation of Data Sharing Ecosystems**, with Eric Brousseau and Joelle Toledano, appears in the *ICIS 2025 Proceedings*. The paper studies economic and governance conditions associated with the development of data-sharing ecosystems."
   link_label: "View the ICIS record"
   link_url: "https://aisel.aisnet.org/icis2025/sharing_econ/sharing_econ/6"
 
 working_papers:
-  kicker: "Working Papers"
   title: "Working papers"
   items:
     - title: "Interpretable Digital Traces: Mobile Wikipedia Usage and City-Level Tourism"
@@ -58,17 +36,3 @@ working_papers:
     - title: "Emergence of Data Sharing Ecosystems in Disaster Management"
       byline: "with Anouk Adrot and Salome Ritouret"
       text: "Investigates how formal norms and bottom-up practices interact in disaster risk reduction ecosystems through interviews, NLP-assisted mapping, observation, and archival material."
-
-methods:
-  kicker: "Methods"
-  items:
-    - "semi-structured interviews"
-    - "case studies"
-    - "field observations"
-    - "panel data models"
-    - "causal inference"
-    - "NLP"
-    - "topic modeling"
-    - "web scraping"
-    - "Python"
-    - "R"
