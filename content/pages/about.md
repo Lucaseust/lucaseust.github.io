@@ -22,15 +22,6 @@ redirect_from:
     </div>
   </section>
 
-  <section class="quick-facts" aria-label="Profile highlights">
-    {% for fact in home.quick_facts %}
-      <div>
-        <strong>{{ fact.label }}</strong>
-        <span>{{ fact.value }}</span>
-      </div>
-    {% endfor %}
-  </section>
-
   <section id="research" class="section-block">
     <p class="section-kicker">{{ home.research.kicker }}</p>
     <h2>{{ home.research.title }}</h2>

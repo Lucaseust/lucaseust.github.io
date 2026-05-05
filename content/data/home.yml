@@ -1,6 +1,6 @@
 bio:
   paragraphs:
-    - "I am a PhD student in management and information systems at University Paris-Dauphine - PSL, where I study the governance and economics of data sharing. My work starts from a practical question: how do organizations share data, and how is its circulation governed?"
+    - "I am a PhD student in management and information systems at University Paris-Dauphine - PSL. I study how organizations share data, and how the circulation of data is governed."
     - "My dissertation, supervised by Eric Brousseau, focuses on data-sharing intermediaries, data spaces, and the commodification of data. I also have research interests in personal data regulation, political economy and local government, and emergency and disaster management."
     - "I combine fieldwork and quantitative methods, including interviews, case studies, econometrics, and text analysis."
   links:
@@ -25,26 +25,26 @@ quick_facts:
 
 research:
   kicker: "Research"
-  title: "Understanding how data-sharing ecosystems become economically viable."
-  text: "My dissertation, supervised by Eric Brousseau, examines the business models of data-sharing intermediaries and the economics of data-sharing ecosystems. I work at the intersection of information systems, governance, regulation, and digital economy research."
+  title: "Data sharing, governance, and regulation"
+  text: "My dissertation examines the business models of data-sharing intermediaries and the economics of data-sharing ecosystems. I also work on data governance, digital regulation, and the institutional arrangements that shape exchanges of data between organizations."
   focus:
     - title: "Data Governance and Intermediation"
-      text: "Data-sharing intermediaries, data spaces, ecosystem orchestration, governance design, and value creation."
+      text: "Data-sharing intermediaries, data spaces, governance design, and value creation."
     - title: "Digital Regulation"
-      text: "Personal data regulation, institutional design, and comparative regulatory models across Europe, the United States, and China."
+      text: "Personal data regulation, institutional design, and comparative regulatory models."
     - title: "Platforms and Digital Economy"
-      text: "Markets for data, digital platforms, and sectoral or sovereign data infrastructures."
+      text: "Markets for data, digital platforms, and sectoral data infrastructures."
 
 selected_publication:
-  kicker: "Selected Publication"
+  kicker: "Publication"
   title: "The Economics of Data-Sharing"
-  text: "**The Economics of Data-Sharing: An Empirical Investigation of Data Sharing Ecosystems**, with Eric Brousseau and Joelle Toledano, appears in the *ICIS 2025 Proceedings*. The paper identifies economic and governance conditions that support data-sharing ecosystems over time, including investment, use-case innovation, integration complexity, risk, and incentive alignment."
+  text: "**The Economics of Data-Sharing: An Empirical Investigation of Data Sharing Ecosystems**, with Eric Brousseau and Joelle Toledano, appears in the *ICIS 2025 Proceedings*. The paper studies economic and governance conditions associated with the development of data-sharing ecosystems."
   link_label: "View the ICIS record"
   link_url: "https://aisel.aisnet.org/icis2025/sharing_econ/sharing_econ/6"
 
 working_papers:
   kicker: "Working Papers"
-  title: "Current research projects"
+  title: "Working papers"
   items:
     - title: "Interpretable Digital Traces: Mobile Wikipedia Usage and City-Level Tourism"
       byline: "with Paul Favier"
@@ -60,7 +60,7 @@ working_papers:
       text: "Investigates how formal norms and bottom-up practices interact in disaster risk reduction ecosystems through interviews, NLP-assisted mapping, observation, and archival material."
 
 methods:
-  kicker: "Methods and Tools"
+  kicker: "Methods"
   items:
     - "semi-structured interviews"
     - "case studies"
