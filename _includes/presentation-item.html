@@ -1,0 +1,31 @@
+{% include base_path %}
+{% assign item = include.item %}
+{% assign title = item.title %}
+{% assign description = item.description | default: item.excerpt %}
+
+<article class="presentation-item" itemscope itemtype="http://schema.org/Event">
+  <h3 class="presentation-title" itemprop="name">
+    {% if item.link %}
+      <a href="{{ item.link }}">{{ title }}</a>
+    {% elsif item.url %}
+      <a href="{{ base_path }}{{ item.url }}">{{ title }}</a>
+    {% else %}
+      {{ title }}
+    {% endif %}
+  </h3>
+
+  {% if item.presentation_title %}
+    <p class="presentation-paper">{{ item.presentation_title }}</p>
+  {% endif %}
+
+  <p class="presentation-meta">
+    {% if item.type %}{{ item.type }}{% endif %}
+    {% if item.type and item.date %}, {% endif %}
+    {% if item.date %}{{ item.date | date: "%B %Y" }}{% endif %}
+    {% if item.location %}, {{ item.location }}{% endif %}
+  </p>
+
+  {% if description %}
+    <div class="presentation-description">{{ description | markdownify }}</div>
+  {% endif %}
+</article>
