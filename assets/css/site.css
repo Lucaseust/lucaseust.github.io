@@ -6,7 +6,7 @@
   --line: #e4e1dc;
   --accent: #2f5d50;
   --accent-strong: #244f73;
-  --warm: #6f5844;
+  --warm: #616a6d;
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
@@ -196,7 +196,7 @@ h6,
 .eyebrow,
 .section-kicker {
   margin: 0 0 0.55rem;
-  color: var(--warm);
+  color: var(--muted);
   font-size: 0.78em;
   font-weight: 600;
   letter-spacing: 0;
