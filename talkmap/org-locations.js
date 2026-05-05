@@ -11,8 +11,8 @@ var addressPoints = [
   ],
   [
     "LINC Seminar (CNIL)<br />CNIL; Paris, France",
-    48.8534951,
-    2.3483915
+    48.8588897,
+    2.320041
   ],
   [
     "AIM - Association Information et Management<br />AIM; Neuchatel, Switzerland",
@@ -41,8 +41,8 @@ var addressPoints = [
   ],
   [
     "AFREN Digital Economics Conference #11<br />Association Francaise d'Economie du Numerique; Paris, France",
-    48.8534951,
-    2.3483915
+    48.8588897,
+    2.320041
   ],
   [
     "EGOS Colloquium<br />European Group for Organizational Studies; Athens, Greece",
@@ -51,7 +51,7 @@ var addressPoints = [
   ],
   [
     "ARCEP Internal Academic Seminar<br />ARCEP; Paris, France",
-    48.8534951,
-    2.3483915
+    48.8588897,
+    2.320041
   ]
 ];
