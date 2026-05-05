@@ -1,7 +1,7 @@
 {
   "name": "academic-pages",
   "version": "0.8.1.1",
-  "description": "Academic Pages Mistakes Jekyll theme npm build scripts",
+  "description": "Lucas Eustache academic website",
   "repository": {
     "type": "git",
     "url": "https://github.com/academicpages/academicpages.github.io"
@@ -34,6 +34,9 @@
     "uglify-js": "^3.17.4"
   },
   "scripts": {
+    "dev": "powershell -ExecutionPolicy Bypass -File scripts/dev.ps1",
+    "build": "powershell -ExecutionPolicy Bypass -File scripts/build.ps1",
+    "content:cv": "powershell -ExecutionPolicy Bypass -File scripts/update_cv_json.ps1",
     "uglify": "uglifyjs node_modules/jquery/dist/jquery.min.js node_modules/fitvids/dist/fitvids.min.js node_modules/jquery-smooth-scroll/jquery.smooth-scroll.min.js node_modules/plotly.js-dist-min/plotly.min.js assets/js/plugins/jquery.greedy-navigation.js assets/js/_main.js -c -m -o assets/js/main.min.js",
     "watch:js": "onchange \"assets/js/**/*.js\" -e \"assets/js/main.min.js\" -- npm run build:js",
     "build:js": "npm run uglify"

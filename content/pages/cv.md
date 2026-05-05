@@ -52,7 +52,7 @@ Lucas Eustache is a PhD student in Management and Information Systems at Univers
 - Qualitative: semi-structured interviews, case studies, field observations.
 - Quantitative: panel data models, OLS, logit/probit, causal inference.
 - Computational: NLP, topic modeling, BERTopic, zero-shot classification, web scraping.
-- Programming: Python, R, SQL, LaTeX.
+- Programming: Python, R, LaTeX.
 
 ## Teaching
 

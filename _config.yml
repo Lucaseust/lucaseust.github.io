@@ -117,7 +117,7 @@ staticman:
   filename               : comment-{@timestamp}
   format                 : "yml"
   moderation             : true
-  path                   : "_data/comments/{options.slug}"
+  path                   : "content/data/comments/{options.slug}"
   requiredFields         : ['name', 'email', 'message']
   transforms:
     email                : "md5"
@@ -166,9 +166,10 @@ analytics:
 
 
 # Reading Files
+collections_dir: content
+data_dir: content/data
 include:
   - .htaccess
-  - _pages
   - files
 exclude:
   - "*.sublime-project"
@@ -200,6 +201,7 @@ exclude:
   - README
   - README.md
   - scripts
+  - content/README.md
   - talkmap
   - talkmap.py
   - talkmap.ipynb
@@ -259,14 +261,14 @@ defaults:
       comments: true
       share: true
       related: true
-  # _pages
+  # content/pages
   - scope:
       path: ""
       type: pages
     values:
       layout: single
       author_profile: true
-  # _teaching
+  # content/_teaching
   - scope:
       path: ""
       type: teaching
@@ -275,7 +277,7 @@ defaults:
       author_profile: true
       share: false
       comments: false
-  # _publications
+  # content/_publications
   - scope:
       path: ""
       type: publications
@@ -284,7 +286,7 @@ defaults:
       author_profile: true
       share: false
       comments: false
-  # _talks
+  # content/_talks
   - scope:
       path: ""
       type: talks

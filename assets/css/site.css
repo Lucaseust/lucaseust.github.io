@@ -7,6 +7,7 @@
   --accent: #0e6b61;
   --accent-strong: #1f4d7a;
   --warm: #8a4f2a;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 html {
@@ -23,6 +24,37 @@ body {
   background-attachment: fixed;
   background-position: center top;
   background-size: cover;
+  font-family: var(--font-sans);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+body,
+button,
+input,
+select,
+textarea,
+.masthead,
+.archive,
+.page__content,
+.sidebar,
+.author__content,
+.author__urls,
+.page__footer {
+  font-family: var(--font-sans);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.archive__item-title {
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-weight: 700;
+  letter-spacing: 0;
 }
 
 .masthead {
@@ -92,6 +124,24 @@ body {
 
 .page__title {
   margin-bottom: 0.65em;
+}
+
+.archive__item {
+  padding: 1rem 0 1.2rem;
+  border-top: 1px solid var(--line);
+}
+
+.archive__item-title {
+  margin-top: 0;
+  line-height: 1.25;
+}
+
+.archive__item p,
+.archive__item-excerpt,
+.page__meta,
+.page__date {
+  color: var(--muted);
+  line-height: 1.55;
 }
 
 .page__content a,

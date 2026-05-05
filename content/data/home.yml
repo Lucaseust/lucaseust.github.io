@@ -1,8 +1,8 @@
 bio:
   paragraphs:
-    - "I am a PhD student in management and information systems at University Paris-Dauphine - PSL, where I study the governance and economics of data sharing. My work starts from a practical question: when organizations say they want to share data, what has to be built around the data for trust, incentives, and value to last?"
-    - "My dissertation, supervised by Eric Brousseau, focuses on data-sharing intermediaries, data spaces, and sectoral digital infrastructures. I am especially interested in the point where strategy, regulation, and information systems meet: the governance choices that turn a data-sharing initiative into something people can actually use."
-    - "I combine fieldwork and quantitative methods, including interviews, case studies, econometrics, and text analysis. Alongside my research, I teach at University Paris-Dauphine - PSL as an ATER."
+    - "I am a PhD student in management and information systems at University Paris-Dauphine - PSL, where I study the governance and economics of data sharing. My work starts from a practical question: how do organizations share data, and how is its circulation governed?"
+    - "My dissertation, supervised by Eric Brousseau, focuses on data-sharing intermediaries, data spaces, and the commodification of data. I also have research interests in personal data regulation, political economy and local government, and emergency and disaster management."
+    - "I combine fieldwork and quantitative methods, including interviews, case studies, econometrics, and text analysis."
   links:
     - label: "Download CV"
       url: "/files/cv.pdf"
@@ -50,7 +50,7 @@ working_papers:
       byline: "with Paul Favier"
       text: "Links daily hotel room-nights to mobile and desktop Wikipedia pageviews for 704 French communes from 2018 to 2025 to build interpretable, high-frequency indicators of local tourism activity."
     - title: "Intrinsic Data Liquidity and the Emergence of Market Governance for Data Sharing"
-      byline: "Solo"
+      byline: "Single-authored"
       text: "Introduces intrinsic data liquidity to explain why some data products can be exchanged through scalable markets while others require bespoke governance."
     - title: "Models of Personal Data Regulation"
       byline: "with Rami Benabdelkrim and Surjasama Lahiri"
@@ -72,4 +72,3 @@ methods:
     - "web scraping"
     - "Python"
     - "R"
-    - "SQL"

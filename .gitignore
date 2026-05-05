@@ -25,3 +25,4 @@ package-lock.json
 # Local source copies used to build optimized public assets
 /photo.png
 /cv.pdf
+/CV/

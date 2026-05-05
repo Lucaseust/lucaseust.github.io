@@ -249,7 +249,7 @@ def parse_skills(skills_text):
     return skills_entries
 
 def parse_publications(pub_dir):
-    """Parse publications from the _publications directory."""
+    """Parse publications from the content/_publications directory."""
     publications = []
     
     if not os.path.exists(pub_dir):
@@ -278,7 +278,7 @@ def parse_publications(pub_dir):
     return publications
 
 def parse_talks(talks_dir):
-    """Parse talks from the _talks directory."""
+    """Parse talks from the content/_talks directory."""
     talks = []
     
     if not os.path.exists(talks_dir):
@@ -307,7 +307,7 @@ def parse_talks(talks_dir):
     return talks
 
 def parse_teaching(teaching_dir):
-    """Parse teaching from the _teaching directory."""
+    """Parse teaching from the content/_teaching directory."""
     teaching = []
     
     if not os.path.exists(teaching_dir):
@@ -386,17 +386,19 @@ def create_cv_json(md_file, config_file, repo_root, output_file):
         "references": []
     }
     
+    content_root = os.path.join(repo_root, "content")
+
     # Add publications
-    cv_json["publications"] = parse_publications(os.path.join(repo_root, "_publications"))
+    cv_json["publications"] = parse_publications(os.path.join(content_root, "_publications"))
     
     # Add talks
-    cv_json["presentations"] = parse_talks(os.path.join(repo_root, "_talks"))
+    cv_json["presentations"] = parse_talks(os.path.join(content_root, "_talks"))
     
     # Add teaching
-    cv_json["teaching"] = parse_teaching(os.path.join(repo_root, "_teaching"))
+    cv_json["teaching"] = parse_teaching(os.path.join(content_root, "_teaching"))
     
     # Add portfolio
-    cv_json["portfolio"] = parse_portfolio(os.path.join(repo_root, "_portfolio"))
+    cv_json["portfolio"] = parse_portfolio(os.path.join(content_root, "_portfolio"))
     
     # Extract languages and interests from config if available
     if 'languages' in config:
@@ -420,8 +422,8 @@ def main():
     
     args = parser.parse_args()
     
-    # Get repository root (parent directory of the input file's directory)
-    repo_root = str(Path(args.input).parent.parent)
+    # Use the config location as the repository root when available.
+    repo_root = str(Path(args.config).resolve().parent) if args.config else str(Path.cwd())
     
     create_cv_json(args.input, args.config, repo_root, args.output)
 

@@ -1,7 +1,13 @@
-# Academic presentations are stored as individual files in `_talks/`.
+# Academic presentations are stored as individual files in `content/_talks/`.
 # Policy and industry engagements are listed here for faster editing.
 
 engagements:
+  - title: "OECD: From scraping to ethical sharing"
+    date: 2026-05-12
+    location: "Online"
+    link: "https://oecd.ai/en/wonk/documents/from-scraping-to-ethical-sharing-initial-considerations-for-virtuous-innovative-approaches-and-data-use-collaboration-in-ai-training-viaduct"
+    description: "Roundtable on the economics of data sharing and the development of virtuous data use collaboration models for AI training."
+
   - title: "Gaia-X Summit"
     date: 2025-11-20
     location: "Porto, Portugal"

@@ -7,8 +7,8 @@
 BASE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
 # Define file paths
-CV_MARKDOWN="$BASE_DIR/_pages/cv.md"
-CV_JSON="$BASE_DIR/_data/cv.json"
+CV_MARKDOWN="$BASE_DIR/content/pages/cv.md"
+CV_JSON="$BASE_DIR/content/data/cv.json"
 CONFIG_FILE="$BASE_DIR/_config.yml"
 
 # Check if the Python script exists
