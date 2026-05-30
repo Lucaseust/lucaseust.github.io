@@ -1,8 +1,18 @@
 bio:
   paragraphs:
-    - "I am a PhD student in management and information systems at University Paris-Dauphine - PSL. I study how organizations share data, and how the circulation of data is governed."
-    - "My dissertation, supervised by Eric Brousseau, focuses on data-sharing intermediaries, data spaces, and the commodification of data. I also have research interests in personal data regulation, political economy and local government, and emergency and disaster management."
-    - "I combine fieldwork and quantitative methods, including interviews, case studies, econometrics, and text analysis."
+    - "I am a doctoral researcher in management and information systems at University Paris-Dauphine - PSL. My work examines how organizations share, govern, and valorize data."
+    - "My dissertation, supervised by Eric Brousseau, focuses on data-sharing intermediaries, data spaces, and the commodification of data, with broader interests in personal data regulation, political economy and local government, and emergency and disaster management."
+    - "Methodologically, I combine fieldwork and quantitative methods, including interviews, case studies, econometrics, and computational text analysis."
+
+profile:
+  title: "Research profile"
+  items:
+    - label: "Fields"
+      text: "Management and information systems; institutional economics; digital regulation."
+    - label: "Methods"
+      text: "Interviews, case studies, econometrics, and text analysis."
+    - label: "Empirical settings"
+      text: "Data spaces, public-sector data infrastructures, tourism, and disaster management."
 
 research:
   title: "Data sharing, governance, and regulation"

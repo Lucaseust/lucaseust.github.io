@@ -17,6 +17,18 @@ redirect_from:
     {% endfor %}
   </section>
 
+  <section class="academic-profile" aria-label="{{ home.profile.title }}">
+    <h2>{{ home.profile.title }}</h2>
+    <dl>
+      {% for item in home.profile.items %}
+        <div>
+          <dt>{{ item.label }}</dt>
+          <dd>{{ item.text }}</dd>
+        </div>
+      {% endfor %}
+    </dl>
+  </section>
+
   <section id="research" class="section-block">
     <h2>{{ home.research.title }}</h2>
     <p>{{ home.research.text }}</p>
