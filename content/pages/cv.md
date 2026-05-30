@@ -11,7 +11,7 @@ redirect_from:
 
 ## Profile
 
-Lucas Eustache is a PhD student in Management and Information Systems at University Paris-Dauphine - PSL, within Dauphine Recherches en Management and the Governance & Regulation Chair. His dissertation, supervised by Eric Brousseau, studies business models of data-sharing intermediaries and the economics of data-sharing ecosystems.
+I am a PhD student in Management and Information Systems at University Paris-Dauphine - PSL, within Dauphine Recherches en Management and the Governance & Regulation Chair. My dissertation, supervised by Eric Brousseau, studies business models of data-sharing intermediaries and the economics of data-sharing ecosystems.
 
 ## Research Focus
 

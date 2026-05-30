@@ -4,16 +4,6 @@ bio:
     - "My dissertation, supervised by Eric Brousseau, focuses on data-sharing intermediaries, data spaces, and the commodification of data, with broader interests in personal data regulation, political economy and local government, and emergency and disaster management."
     - "Methodologically, I combine fieldwork and quantitative methods, including interviews, case studies, econometrics, and computational text analysis."
 
-profile:
-  title: "Research profile"
-  items:
-    - label: "Fields"
-      text: "Management and information systems; institutional economics; digital regulation."
-    - label: "Methods"
-      text: "Interviews, case studies, econometrics, and text analysis."
-    - label: "Empirical settings"
-      text: "Data spaces, public-sector data infrastructures, tourism, and disaster management."
-
 research:
   title: "Data sharing, governance, and regulation"
   text: "My dissertation examines the business models of data-sharing intermediaries and the economics of data-sharing ecosystems. I also work on data governance, digital regulation, and the institutional arrangements that shape exchanges of data between organizations."
