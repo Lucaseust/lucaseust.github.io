@@ -257,12 +257,36 @@ h6,
 .presentation-list {
   display: grid;
   gap: 0;
-  margin: 1rem 0 1.8rem;
+  margin: 0.75rem 0 2rem;
 }
 
 .presentation-item {
-  padding: 0.85rem 0 1rem;
+  display: grid;
+  grid-template-columns: 4.25rem 1fr;
+  gap: 1rem;
+  padding: 0.9rem 0 0.95rem;
   border-top: 1px solid var(--line);
+}
+
+.presentation-date {
+  color: var(--muted);
+  font-size: 0.9em;
+  line-height: 1.2;
+}
+
+.presentation-date__year {
+  display: block;
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.presentation-date__month {
+  display: block;
+  margin-top: 0.1rem;
+}
+
+.presentation-content {
+  min-width: 0;
 }
 
 .presentation-title {
@@ -272,28 +296,19 @@ h6,
 }
 
 .presentation-paper {
-  margin: 0.15rem 0 0.45rem;
+  margin: 0.1rem 0 0.35rem;
   color: var(--ink);
   font-size: 0.98em;
   line-height: 1.45;
 }
 
 .presentation-meta {
-  margin: 0 0 0.35rem;
-  color: var(--muted);
-  font-size: 0.92em;
-}
-
-.presentation-description,
-.presentation-description p {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.7rem;
   margin: 0;
   color: var(--muted);
-  font-size: 0.96em;
-  line-height: 1.55;
-}
-
-.presentation-description p + p {
-  margin-top: 0.35rem;
+  font-size: 0.92em;
 }
 
 @media (max-width: 900px) {
@@ -320,4 +335,8 @@ h6,
     margin-top: 0;
   }
 
+  .presentation-item {
+    grid-template-columns: 3.35rem 1fr;
+    gap: 0.75rem;
+  }
 }
