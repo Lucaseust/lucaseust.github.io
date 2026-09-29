@@ -32,7 +32,7 @@ redirect_from:
   {% for paper in home.working_papers.items %}
     <article class="entry">
       <h3>{{ paper.title }}</h3>
-      <p class="entry-meta">{{ paper.byline }}</p>
+      {% if paper.byline %}<p class="entry-meta">{{ paper.byline }}</p>{% endif %}
       <p>{{ paper.text }}</p>
       {% if paper.link %}<p><a href="{{ paper.link | relative_url }}">Read paper</a></p>{% endif %}
     </article>

@@ -44,7 +44,7 @@ I am a PhD student in Management and Information Systems at University Paris-Dau
 
 <ul>
 {% for paper in site.data.home.working_papers.items %}
-  <li>{{ paper.title }}. {{ paper.byline }}.</li>
+  <li>{{ paper.title }}.{% if paper.byline %} {{ paper.byline }}.{% endif %}</li>
 {% endfor %}
 </ul>
 

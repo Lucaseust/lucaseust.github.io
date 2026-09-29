@@ -26,3 +26,6 @@ package-lock.json
 /photo.png
 /cv.pdf
 /CV/
+
+# Private manuscript PDFs (also excluded from the Jekyll build)
+/Papiers/
