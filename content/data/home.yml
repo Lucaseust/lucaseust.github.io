@@ -8,6 +8,7 @@ working_papers:
   title: "Working papers"
   items:
     - title: "Built but Not Used: A Problematizing Review of Why Public Data Sharing Expands Availability without Sustained Use"
+      byline: "Single-authored"
       text: "Reviews 74 studies of open government data, business-to-government data sharing, and European data spaces. Identifies a cultivation gap: public stewards expand data supply, but no actor has both the incentive and mandate to develop users, transfer capabilities, and sustain reuse."
     - title: "Channel Composition: A Measurement Theory for Digital Trace Data"
       byline: "with Paul Favier"
