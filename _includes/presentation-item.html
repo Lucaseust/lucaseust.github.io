@@ -15,7 +15,7 @@
       {% if item.link %}
         <a href="{{ item.link }}">{{ title }}</a>
       {% elsif item.url %}
-        <a href="{{ base_path }}{{ item.url }}">{{ title }}</a>
+        <a href="{{ item.url | relative_url }}">{{ title }}</a>
       {% else %}
         {{ title }}
       {% endif %}

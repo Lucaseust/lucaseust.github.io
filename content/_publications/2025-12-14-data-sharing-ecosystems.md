@@ -2,6 +2,8 @@
 title: "The Economics of Data-Sharing: An Empirical Investigation of Data Sharing Ecosystems"
 collection: publications
 category: conferences
+featured: true
+authors: "Lucas Eustache, Eric Brousseau, and Joelle Toledano"
 permalink: /publications/data-sharing-ecosystems/
 excerpt: "A qualitative study of European data-sharing ecosystems that identifies economic and governance conditions supporting long-term viability."
 date: 2025-12-14

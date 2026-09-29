@@ -2,7 +2,6 @@
 layout: archive
 title: "Presentations"
 permalink: /talks/
-author_profile: true
 ---
 
 {% assign presentations = site.data.presentations %}
@@ -16,7 +15,8 @@ author_profile: true
 <h2>Academic Presentations</h2>
 
 <div class="presentation-list">
-{% for post in site.talks reversed %}
+{% assign talks = site.talks | sort: 'date' | reverse %}
+{% for post in talks %}
   {% include presentation-item.html item=post %}
 {% endfor %}
 </div>

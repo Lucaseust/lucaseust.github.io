@@ -4,32 +4,15 @@ bio:
     - "My dissertation, supervised by Eric Brousseau, focuses on data-sharing intermediaries and the commodification of data. I also have research interests in personal data regulation, political economy and local government, and emergency and disaster management."
     - "I combine fieldwork and quantitative methods, including interviews, case studies, econometrics, and text analysis."
 
-research:
-  title: "Data sharing, governance, and regulation"
-  text: "My dissertation examines the business models of data-sharing intermediaries and the economics of data-sharing ecosystems. I also work on data governance, digital regulation, and the institutional arrangements that shape exchanges of data between organizations."
-  focus:
-    - title: "Data Governance and Intermediation"
-      text: "Data-sharing intermediaries, data spaces, governance design, and value creation."
-    - title: "Digital Regulation"
-      text: "Personal data regulation, institutional design, and comparative regulatory models."
-    - title: "Platforms and Digital Economy"
-      text: "Markets for data, digital platforms, and sectoral data infrastructures."
-
-selected_publication:
-  title: "The Economics of Data-Sharing"
-  text: "**The Economics of Data-Sharing: An Empirical Investigation of Data Sharing Ecosystems**, with Eric Brousseau and Joelle Toledano, appears in the *ICIS 2025 Proceedings*. The paper studies economic and governance conditions associated with the development of data-sharing ecosystems."
-  link_label: "View the ICIS record"
-  link_url: "https://aisel.aisnet.org/icis2025/sharing_econ/sharing_econ/6"
-
 working_papers:
   title: "Working papers"
   items:
-    - title: "Interpretable Digital Traces: Mobile Wikipedia Usage and City-Level Tourism"
+    - title: "Channel Composition: A Measurement Theory for Digital Trace Data"
       byline: "with Paul Favier"
-      text: "Links daily hotel room-nights to mobile and desktop Wikipedia pageviews for 704 French communes from 2018 to 2025 to build interpretable, high-frequency indicators of local tourism activity."
-    - title: "Intrinsic Data Liquidity and the Emergence of Market Governance for Data Sharing"
+      text: "Develops a measurement theory explaining how the mix of channels used to produce digital traces reveals latent behavioral context beyond aggregate activity. Validates the framework using Wikipedia pageviews, hotel demand across 704 French destinations, and attendance at six cultural attractions."
+    - title: "Making Data Exchangeable: Product Construction and the Redistribution of Coordination"
       byline: "Single-authored"
-      text: "Introduces intrinsic data liquidity to explain why some data products can be exchanged through scalable markets while others require bespoke governance."
+      text: "Explains how data product construction embeds recurring coordination in reusable artifacts, while residual work remains with organizational relationships and institutions. Combines documentary cases with an analysis of 4,525 marketplace listings from 407 providers; observed associations concern disclosed exchange support, not completed transactions."
     - title: "Models of Personal Data Regulation"
       byline: "with Rami Benabdelkrim and Surjasama Lahiri"
       text: "Studies how countries converge toward European, Chinese, or American models of personal data regulation using a comparative dataset of legal provisions across jurisdictions."

@@ -1,58 +1,59 @@
-# Lucas Eustache Academic Website
+# Lucas Eustache — academic website
 
-This repository powers https://lucaseust.github.io. It is a Jekyll website, so editable Markdown/YAML files are turned into the final static website whenever Jekyll builds.
+A minimal Jekyll website for https://lucaseust.github.io: one reading column, plain links, system fonts, and no client-side JavaScript required.
 
-## Edit Content
+## Update the website
 
-Most day-to-day edits live in `content/`:
+1. Find the right content file in the table below.
+2. Edit the text, or copy an existing entry to add a publication, talk, or course.
+3. Preview locally and check the affected page.
+4. Build, review the changes, then commit and push to publish.
 
-- `content/pages/about.md`: homepage content and layout.
-- `content/pages/cv.md`: web CV page.
-- `content/pages/publications.html`: publications listing page.
-- `content/pages/talks.html`: presentations listing page.
-- `content/pages/teaching.html`: teaching listing page.
-- `content/data/home.yml`: homepage biography, research text, selected publication, and working papers.
-- `content/data/navigation.yml`: top navigation.
-- `content/data/presentations.yml`: policy and industry presentation entries.
-- `content/_publications/`: one Markdown file per publication or media item.
-- `content/_talks/`: one Markdown file per academic presentation.
-- `content/_teaching/`: one Markdown file per teaching entry.
+**Start with [the editing guide](content/README.md)** for complete examples, publishing instructions, and how to undo an update.
 
-See `content/README.md` for field templates and examples.
+| What to change | File |
+| --- | --- |
+| Biography and working papers | `content/data/home.yml` |
+| Publications, including homepage selections | `content/_publications/*.md` |
+| Academic presentations | `content/_talks/*.md` |
+| Policy and industry engagements | `content/data/presentations.yml` |
+| Courses | `content/_teaching/*.md` |
+| CV appointments, education, skills, and service | `content/pages/cv.md` |
+| Downloadable CV | `files/cv.pdf` |
+| Email and profile links | `_config.yml` → `author` |
+| Navigation | `content/data/navigation.yml` |
 
-## Preview Changes
+Publication, working-paper, and teaching lists in the web CV update automatically. The PDF is maintained separately.
 
-Install Ruby dependencies once:
+## Preview and check (Windows PowerShell)
+
+With Ruby and Bundler installed, run once:
 
 ```powershell
 bundle install
 ```
 
-Run the local website with live reload:
+Then run from this folder:
 
 ```powershell
 .\scripts\dev.ps1
 ```
 
-Then open `http://127.0.0.1:4000`. When you edit a Markdown or YAML file in `content/`, Jekyll rebuilds and the browser refreshes.
+Open http://127.0.0.1:4000. Save content files to refresh the preview. Stop with Ctrl+C. Restart after changing `_config.yml`.
 
-If you also have Node/npm installed, `npm run dev` runs the same preview script.
-
-## Build
-
-Generate the static website:
+Check the production build:
 
 ```powershell
 .\scripts\build.ps1
 ```
 
-GitHub Pages also rebuilds the public website after the changes are pushed.
+Local tooling in `local/` and generated output are ignored by Git.
 
-## Other Useful Files
+## Design files
 
-- `_config.yml`: site title, sidebar profile, email, GitHub, LinkedIn, SEO metadata, and Jekyll settings.
-- `files/cv.pdf`: downloadable CV.
-- `assets/css/site.css`: visual customizations.
-- `scripts/dev.ps1`: local preview with live reload.
-- `scripts/build.ps1`: static site build.
-- `scripts/update_cv_json.ps1`: optional helper for regenerating `content/data/cv.json` from the Markdown CV.
+- `assets/css/site.css`: all styles used by the current site.
+- `_layouts/`: shared page structures.
+- `_includes/`: navigation, resource links, and list entries.
+- `content/pages/`: page templates; routine list updates belong in the data and collection files instead.
+
+The older theme assets remain available in the repository, but the current layout does not load its CSS, icon fonts, or JavaScript bundle. No npm build is needed for content or style edits.

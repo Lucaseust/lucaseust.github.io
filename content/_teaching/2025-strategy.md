@@ -8,5 +8,5 @@ date: 2025-01-01
 location: "Paris, France"
 ---
 
-Bachelor-level strategy course.
+Previously taught Bachelor L3 strategy course.
 

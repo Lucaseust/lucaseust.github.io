@@ -2,11 +2,7 @@
 layout: archive
 title: "Teaching"
 permalink: /teaching/
-author_profile: true
 ---
-
-{% include base_path %}
-
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+<h2 class="visually-hidden">Courses</h2>
+{% assign courses = site.teaching | sort: 'date' | reverse %}
+{% for post in courses %}{% include archive-single.html %}{% endfor %}

@@ -1,24 +1,22 @@
----
-layout: compress
----
-
-{% include base_path %}
-
 <!doctype html>
-<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
+<html lang="{{ site.locale | default: 'en' | slice: 0, 2 }}">
   <head>
-    {% include head.html %}
-    {% include head/custom.html %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include seo.html %}
+    <link rel="icon" href="{{ '/images/favicon.svg' | relative_url }}" type="image/svg+xml">
+    <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
   </head>
-
   <body>
-
-    {% include browser-upgrade.html %}
+    <a class="skip-link" href="#main">Skip to content</a>
     {% include masthead.html %}
-
     {{ content }}
-
-    {% include scripts.html %}
-
+    <footer class="site-footer">
+      <span>{{ site.name }}</span>
+      {% if site.author.email %}<a href="mailto:{{ site.author.email }}">Email</a>{% endif %}
+      {% if site.author.uri %}<a href="{{ site.author.uri }}">University profile</a>{% endif %}
+      {% if site.author.github %}<a href="https://github.com/{{ site.author.github }}">GitHub</a>{% endif %}
+      {% if site.author.linkedin %}<a href="https://www.linkedin.com/in/{{ site.author.linkedin }}">LinkedIn</a>{% endif %}
+    </footer>
   </body>
 </html>

@@ -185,6 +185,10 @@ exclude:
   - CHANGELOG
   - Capfile
   - CONTRIBUTING.md
+  - CV
+  - Papiers
+  - cv.pdf
+  - photo.png
   - config
   - docker-compose.yaml
   - Dockerfile

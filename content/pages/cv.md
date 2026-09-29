@@ -2,12 +2,11 @@
 layout: archive
 title: "CV"
 permalink: /cv/
-author_profile: true
 redirect_from:
   - /resume
 ---
 
-<p><a class="btn btn--primary" href="/files/cv.pdf">Download PDF CV</a></p>
+<p><a href="{{ '/files/cv.pdf' | relative_url }}">Download CV (PDF)</a></p>
 
 ## Profile
 
@@ -32,20 +31,22 @@ I am a PhD student in Management and Information Systems at University Paris-Dau
 - 2017 - 2020: Bachelor in Economics, University of Lorraine.
 - 2017 - 2020: Bachelor in Public Law, University of Lorraine.
 
-## Publications
+## Publications and Media
 
-- Lucas Eustache, Eric Brousseau, and Joelle Toledano. "The Economics of Data-Sharing: An Empirical Investigation of Data Sharing Ecosystems." <em>ICIS 2025 Proceedings</em>, 2025. [AIS Electronic Library](https://aisel.aisnet.org/icis2025/sharing_econ/sharing_econ/6).
-
-## Media
-
-- Lucas Eustache. "Partage des donnees agricoles : du tracteur au serveur, comprendre l'experience d'Agdatahub." <em>The Conversation</em>, 2025.
+<ul>
+{% assign publications = site.publications | sort: 'date' | reverse %}
+{% for publication in publications %}
+  <li>{% if publication.citation %}{{ publication.citation }}{% else %}{{ publication.title }}. <em>{{ publication.venue }}</em>, {{ publication.date | date: '%Y' }}.{% endif %} <a href="{{ publication.url | relative_url }}">Details</a></li>
+{% endfor %}
+</ul>
 
 ## Working Papers
 
-- "Interpretable Digital Traces: Mobile Wikipedia Usage and City-Level Tourism," with Paul Favier.
-- "Intrinsic Data Liquidity and the Emergence of Market Governance for Data Sharing," solo.
-- "Models of Personal Data Regulation," with Rami Benabdelkrim and Surjasama Lahiri.
-- "Emergence of Data Sharing Ecosystems in Disaster Management," with Anouk Adrot and Salome Ritouret.
+<ul>
+{% for paper in site.data.home.working_papers.items %}
+  <li>{{ paper.title }}. {{ paper.byline }}.</li>
+{% endfor %}
+</ul>
 
 ## Methods and Skills
 
@@ -56,12 +57,12 @@ I am a PhD student in Management and Information Systems at University Paris-Dau
 
 ## Teaching
 
-- Digital Strategy, Master 1, University Paris-Dauphine - PSL, 2022 - Present.
-- Strategy, Bachelor L3, University Paris-Dauphine - PSL, 2025.
-- Knowledge Management, Master 1, University Paris-Dauphine - PSL, Tunis campus, 2026.
-- Economics and Game Theory, Master 1, PSL University, 2025 - Present.
-- Organisation Theory, Master 1, Ecole Polytechnique, 2024.
-- Economics, Bachelor 1, PSL University, 2025 - Present.
+<ul>
+{% assign courses = site.teaching | sort: 'date' | reverse %}
+{% for course in courses %}
+  <li><a href="{{ course.url | relative_url }}">{{ course.title }}</a>, {{ course.type }}, {{ course.venue }}, {% if course.period %}{{ course.period }}{% else %}{{ course.date | date: '%Y' }}{% endif %}.</li>
+{% endfor %}
+</ul>
 
 ## Academic Service
 

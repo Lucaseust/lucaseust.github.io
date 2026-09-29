@@ -5,8 +5,9 @@ type: "Bachelor 1 course"
 permalink: /teaching/economics/
 venue: "PSL University"
 date: 2025-01-01
+period: "2025 - 2026"
 location: "Paris, France"
 ---
 
-English-language Bachelor 1 economics course taught from 2025 to the present.
+Previously taught Bachelor 1 economics in English (2025 - 2026).
 
