@@ -18,6 +18,15 @@ redirect_from:
   </p>
 </div>
 
+<section id="dissertation">
+  <h2>{{ home.dissertation.title }}</h2>
+  <article class="entry">
+    <h3>{{ home.dissertation.item_title }}</h3>
+    <p class="entry-meta">{{ home.dissertation.byline }}</p>
+    <p>{{ home.dissertation.text }}</p>
+  </article>
+</section>
+
 <section id="research">
   <h2>Selected research</h2>
   {% assign selected = site.publications | where: 'featured', true | sort: 'date' | reverse %}

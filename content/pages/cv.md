@@ -10,7 +10,7 @@ redirect_from:
 
 ## Profile
 
-I hold a PhD in Management and Information Systems from University Paris-Dauphine - PSL, completed within Dauphine Recherches en Management and the Governance & Regulation Chair. My dissertation, supervised by Eric Brousseau, studies business models of data-sharing intermediaries and the economics of data-sharing ecosystems.
+I hold a PhD in Management and Information Systems from University Paris-Dauphine - PSL, completed within Dauphine Recherches en Management and the Governance & Regulation Chair. My dissertation, *Governing Data Sharing*, supervised by Eric Brousseau, examined how data markets, data-sharing ecosystems, and public data infrastructures enable sustainable data sharing.
 
 ## Research Focus
 

@@ -1,8 +1,14 @@
 bio:
   paragraphs:
     - "I hold a PhD in management and information systems from University Paris-Dauphine - PSL. I study the economics and governance models of interorganisational data sharing."
-    - "My dissertation, supervised by Eric Brousseau, focuses on data-sharing intermediaries and the commodification of data. I also have research interests in personal data regulation, political economy and local government, and emergency and disaster management."
+    - "My dissertation, supervised by Eric Brousseau, examined how data markets, data-sharing ecosystems, and public data infrastructures enable sustainable data sharing. I also have research interests in personal data regulation, digital trace data, and emergency and disaster management."
     - "I combine fieldwork and quantitative methods, including interviews, case studies, econometrics, and text analysis."
+
+dissertation:
+  title: "Doctoral dissertation"
+  item_title: "Governing Data Sharing"
+  byline: "Supervisor: Eric Brousseau, Paris Dauphine - PSL, 2026"
+  text: "Examines how governance arrangements enable sustainable inter-organizational data sharing across data markets, data-sharing ecosystems, and public data infrastructures. The multi-method study combines documentary analysis, 4,525 data marketplace listings, 24 interviews with 20 stakeholders, and a theory-building review of 85 sources. It identifies three mechanisms: constructing data liquidity, orchestrating collective investments and incentives, and cultivating user capabilities and demand."
 
 working_papers:
   title: "Working papers"
