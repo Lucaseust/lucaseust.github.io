@@ -1,7 +1,7 @@
 bio:
   paragraphs:
     - "I hold a PhD in management and information systems from University Paris-Dauphine - PSL. I study the economics and governance models of interorganisational data sharing."
-    - "My dissertation, supervised by Eric Brousseau, examined how data markets, data-sharing ecosystems, and public data infrastructures enable sustainable data sharing. I also have research interests in personal data regulation, digital trace data, and emergency and disaster management."
+    - "My dissertation, supervised by Eric Brousseau, examined how data markets, data-sharing ecosystems, and public data infrastructures enable sustainable data sharing. I also have research interests in digital trace data and emergency and disaster management."
     - "I combine fieldwork and quantitative methods, including interviews, case studies, econometrics, and text analysis."
 
 dissertation:
@@ -22,9 +22,6 @@ working_papers:
     - title: "Making Data Exchangeable: Product Construction and the Redistribution of Coordination"
       byline: "Single-authored"
       text: "Explains how data product construction embeds recurring coordination in reusable artifacts, while residual work remains with organizational relationships and institutions. Combines documentary cases with an analysis of 4,525 marketplace listings from 407 providers; observed associations concern disclosed exchange support, not completed transactions."
-    - title: "Models of Personal Data Regulation"
-      byline: "with Rami Benabdelkrim and Surjasama Lahiri"
-      text: "Studies how countries converge toward European, Chinese, or American models of personal data regulation using a comparative dataset of legal provisions across jurisdictions."
     - title: "Local Adaptation and Data Interoperability in Disaster Response"
       byline: "with Anouck Adrot and Salome Ritouret"
       text: "Studies how local adaptations to shared digital forms affect interoperability in disaster response. An Italy-France case based on 37 interviews, a 2024 simulation, and project documents distinguishes structural changes to forms from semantic changes in how fields are interpreted, explaining how the latter can remain hidden and why shared revision needs time and clear ownership."
