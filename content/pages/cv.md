@@ -10,7 +10,7 @@ redirect_from:
 
 ## Profile
 
-I am a PhD student in Management and Information Systems at University Paris-Dauphine - PSL, within Dauphine Recherches en Management and the Governance & Regulation Chair. My dissertation, supervised by Eric Brousseau, studies business models of data-sharing intermediaries and the economics of data-sharing ecosystems.
+I hold a PhD in Management and Information Systems from University Paris-Dauphine - PSL, completed within Dauphine Recherches en Management and the Governance & Regulation Chair. My dissertation, supervised by Eric Brousseau, studies business models of data-sharing intermediaries and the economics of data-sharing ecosystems.
 
 ## Research Focus
 
@@ -21,15 +21,21 @@ I am a PhD student in Management and Information Systems at University Paris-Dau
 ## Academic Appointments
 
 - 2025 - Present: ATER, Temporary Teaching and Research Associate, University Paris-Dauphine - PSL.
-- 2022 - Present: PhD Student in Management, Governance & Regulation Chair, University Paris-Dauphine - PSL.
+- 2022 - 2026: Doctoral Researcher, Governance & Regulation Chair, University Paris-Dauphine - PSL.
 
 ## Education
 
-- 2022 - Present: PhD in Management, University Paris-Dauphine - PSL.
+- 2022 - 2026: PhD in Management, University Paris-Dauphine - PSL.
 - 2021 - 2022: Master 2 in Public Policy, Paris 1 Pantheon-Sorbonne.
 - 2020 - 2021: Master 1 in Economics, Toulouse School of Economics.
 - 2017 - 2020: Bachelor in Economics, University of Lorraine.
 - 2017 - 2020: Bachelor in Public Law, University of Lorraine.
+
+## PhD Dissertation
+
+**Governing Data Sharing**, supervised by Eric Brousseau.
+
+This dissertation investigates how governance arrangements enable sustainable inter-organizational data sharing across data markets, data-sharing ecosystems, and public data infrastructures. It combines documentary analysis, an analysis of 4,525 data marketplace listings, 24 interviews with 20 stakeholders, and a theory-building literature review of 85 sources. It identifies distinct mechanisms for enabling market exchange, sustaining ecosystems, and supporting public data reuse.
 
 ## Publications and Media
 
@@ -44,16 +50,15 @@ I am a PhD student in Management and Information Systems at University Paris-Dau
 
 <ul>
 {% for paper in site.data.home.working_papers.items %}
-  <li>{{ paper.title }}.{% if paper.byline %} {{ paper.byline }}.{% endif %}</li>
+  <li><strong>{{ paper.title }}</strong>.{% if paper.byline %} {{ paper.byline }}.{% endif %} {{ paper.text }}</li>
 {% endfor %}
 </ul>
 
-## Methods and Skills
+## Methods
 
 - Qualitative: semi-structured interviews, case studies, field observations.
 - Quantitative: panel data models, OLS, logit/probit, causal inference.
 - Computational: NLP, topic modeling, BERTopic, zero-shot classification, web scraping.
-- Programming: Python, R, LaTeX.
 
 ## Teaching
 
