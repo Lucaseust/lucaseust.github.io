@@ -49,9 +49,9 @@ main { min-height: 45vh; }
 main:focus { outline: none; }
 section { scroll-margin-top: 1.5rem; }
 .bio { margin-bottom: 2.75rem; display: flex; flex-direction: row-reverse; align-items: flex-start; gap: 1.75rem; }
-.bio-photo { width: 190px; height: 238px; border-radius: 6px; object-fit: cover; flex: none; }
+.bio-photo { width: 180px; height: 270px; border-radius: 6px; object-fit: cover; flex: none; }
 .bio-text { min-width: 0; }
-@media (max-width: 600px) { .bio { flex-direction: column; align-items: flex-start; } .bio-photo { width: 150px; height: 188px; } }
+@media (max-width: 600px) { .bio { flex-direction: column; align-items: flex-start; } .bio-photo { width: 140px; height: 210px; } }
 .entry { margin: 0 0 1.7rem; }
 .entry h3 a { color: var(--ink); text-decoration: none; }
 .entry h3 a:hover { text-decoration: underline; }
