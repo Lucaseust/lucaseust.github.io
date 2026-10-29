@@ -9,7 +9,7 @@ redirect_from:
 {% assign home = site.data.home %}
 
 <div class="bio">
-  <img class="bio-photo" src="{{ '/images/lucas-eustache-avatar-v6.jpg' | relative_url }}" alt="Portrait of Lucas Eustache" width="180" height="180">
+  <img class="bio-photo" src="{{ '/images/lucas-eustache-avatar-v7.jpg' | relative_url }}" alt="Portrait of Lucas Eustache" width="180" height="180">
   <div class="bio-text">
   {% for paragraph in home.bio.paragraphs %}
     <p>{{ paragraph }}</p>
