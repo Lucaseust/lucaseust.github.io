@@ -9,6 +9,8 @@ redirect_from:
 {% assign home = site.data.home %}
 
 <div class="bio">
+  <img class="bio-photo" src="{{ '/images/lucas-eustache-avatar.jpg' | relative_url }}" alt="Portrait of Lucas Eustache" width="170" height="170">
+  <div class="bio-text">
   {% for paragraph in home.bio.paragraphs %}
     <p>{{ paragraph }}</p>
   {% endfor %}
@@ -18,6 +20,7 @@ redirect_from:
     <a href="{{ site.author.googlescholar }}" rel="me">Google Scholar</a>
     <a href="{{ site.author.orcid }}" rel="me">ORCID</a>
   </p>
+  </div>
 </div>
 
 <section id="dissertation">
