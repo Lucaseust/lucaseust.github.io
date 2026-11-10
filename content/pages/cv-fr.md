@@ -8,7 +8,7 @@ permalink: /cv-fr/
 
 ## Profil
 
-Je suis docteur en sciences de gestion, spécialité systèmes d'information, de l'Université Paris Dauphine - PSL. Ma thèse, réalisée au sein de Dauphine Recherches en Management et de la Chaire Gouvernance et Régulation sous la direction d'Éric Brousseau, étudie les conditions dans lesquelles les marchés de données, les écosystèmes de partage de données et les infrastructures publiques de données permettent un partage durable des données.
+Je suis docteur en sciences de gestion (systèmes d’information), de l'Université Paris Dauphine - PSL. Ma thèse, réalisée au sein de Dauphine Recherches en Management et de la Chaire Gouvernance et Régulation sous la direction d'Éric Brousseau, étudie les conditions dans lesquelles les marchés de données, les écosystèmes de partage de données et les infrastructures publiques de données permettent un partage durable des données.
 
 ## Axes de recherche
 
