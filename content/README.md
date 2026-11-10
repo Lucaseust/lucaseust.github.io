@@ -22,8 +22,8 @@ Paths below are relative to the repository root.
 | Academic talk | A file in `content/_talks/` | Presentations and detail page |
 | Policy or industry event | `content/data/presentations.yml` → `engagements` | Presentations |
 | Course | A file in `content/_teaching/` | Teaching, detail page, web CV |
-| Profile, appointments, education, skills, service | `content/pages/cv.md` | Web CV |
-| Downloadable CV | Replace `files/cv.pdf` | Every CV download link |
+| Profile, appointments, education, skills, service | `content/pages/cv.md` and `content/pages/cv-fr.md` | English and French web CVs |
+| Downloadable CV | Replace `files/cv.pdf` | English CV download links |
 | Contact and social profiles | `_config.yml` → `author` | Homepage contact and footer |
 | Navigation | `content/data/navigation.yml` | Every page |
 
@@ -135,7 +135,7 @@ A short description of the course.
 
 ## Update the CV
 
-- Edit appointments, education, profile, skills, and service in `content/pages/cv.md`.
+- Edit appointments, education, profile, skills, and service in `content/pages/cv.md` and `content/pages/cv-fr.md`.
 - Publications, working papers, and courses come from their original content files; leave the Liquid template blocks intact.
 - Export your document as a PDF and replace **`files/cv.pdf`**. A file named `cv.pdf` at the repository root is an ignored source copy and does not update the download.
 - Check both `/cv/` and `/files/cv.pdf` in preview.

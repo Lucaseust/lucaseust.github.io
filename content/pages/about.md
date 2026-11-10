@@ -17,6 +17,7 @@ redirect_from:
   <p class="resource-links">
     <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
     <a href="{{ '/files/cv.pdf' | relative_url }}">CV (PDF)</a>
+    <a href="{{ '/cv-fr/' | relative_url }}">CV en français</a>
     <a href="{{ site.author.googlescholar }}" rel="me">Google Scholar</a>
     <a href="{{ site.author.orcid }}" rel="me">ORCID</a>
   </p>
@@ -30,6 +31,15 @@ redirect_from:
     <p class="entry-meta">{{ home.dissertation.byline }}</p>
     <p>{{ home.dissertation.text }}</p>
   </article>
+</section>
+
+<section id="research-focus">
+  <h2>Research focus</h2>
+  <ul>
+    <li>Information systems and data governance: inter-organizational data sharing, data spaces, ecosystem governance, and value creation.</li>
+    <li>Digital innovation and platform organizing: data intermediaries, data products, platform governance, and sectoral or sovereign data infrastructures.</li>
+    <li>Digital regulation and public infrastructures: institutional design, public data reuse, and the governance of digital technologies.</li>
+  </ul>
 </section>
 
 <section id="research">

@@ -6,7 +6,7 @@ redirect_from:
   - /resume
 ---
 
-<p><a href="{{ '/files/cv.pdf' | relative_url }}">Download CV (PDF)</a></p>
+<p><a href="{{ '/files/cv.pdf' | relative_url }}">Download CV (PDF)</a> · <a href="{{ '/cv-fr/' | relative_url }}">Version française</a></p>
 
 ## Profile
 
@@ -14,9 +14,9 @@ I hold a PhD in Management and Information Systems from University Paris-Dauphin
 
 ## Research Focus
 
-- Data governance and intermediation: data-sharing intermediaries, data spaces, ecosystem governance, and value creation.
-- Digital regulation: personal data regulation, institutional design, and comparative regulatory models.
-- Platform and digital economy: markets for data, digital platforms, and sectoral or sovereign data infrastructures.
+- Information systems and data governance: inter-organizational data sharing, data spaces, ecosystem governance, and value creation.
+- Digital innovation and platform organizing: data intermediaries, data products, platform governance, and sectoral or sovereign data infrastructures.
+- Digital regulation and public infrastructures: institutional design, public data reuse, and the governance of digital technologies.
 
 ## Academic Appointments
 
