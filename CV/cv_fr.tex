@@ -1,0 +1,475 @@
+\documentclass[11pt,a4paper]{article}
+
+% =========================
+% Packages & layout
+% =========================
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+
+\usepackage[a4paper,margin=1.9cm]{geometry}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fontawesome5}
+\usepackage{ragged2e}
+\usepackage{needspace}
+
+% =========================
+% Colors & hyperlinks
+% =========================
+\definecolor{muted}{HTML}{666666}
+\definecolor{accent}{HTML}{29485A}
+\definecolor{rulecolor}{HTML}{C8D1D6}
+\definecolor{linkcolor}{HTML}{000000}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=linkcolor,
+  urlcolor=linkcolor,
+  citecolor=linkcolor
+}
+
+% =========================
+% Typography & spacing
+% =========================
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.2em}
+
+\titleformat{\section}
+  {\large\bfseries\color{accent}}
+  {}{0pt}{}
+  [\vspace{-0.35em}{\color{rulecolor}\rule{\textwidth}{0.35pt}}]
+\titlespacing*{\section}{0pt}{0.95em}{0.4em}
+
+\let\cvoldsection\section
+\renewcommand{\section}[1]{\Needspace{5\baselineskip}\cvoldsection{#1}}
+
+\setlist[itemize]{leftmargin=*, itemsep=0.2em, topsep=0.1em, parsep=0em, partopsep=0em}
+\setlist[enumerate]{leftmargin=*, itemsep=0.2em, topsep=0.1em, parsep=0em, partopsep=0em}
+
+% =========================
+% CV helpers
+% =========================
+\newcommand{\cvline}[1]{\noindent #1\par}
+
+\newcommand{\cvcontactsep}{\hspace{0.55em}{\color{rulecolor}\textbar}\hspace{0.55em}}
+\newcommand{\cvlinkicon}[1]{\href{#1}{\textcolor{accent}{\scriptsize\textsc{lien}}}}
+
+% Two-column entry: left content + right-aligned dates
+\newcommand{\cventry}[4]{%
+  \noindent\begin{tabularx}{\textwidth}{@{}X r@{}}%
+    \textbf{#1} & \textit{#4} \\
+    \textcolor{muted}{#2%
+      \if\relax\detokenize{#3}\relax
+      \else\ \textbullet\ #3
+      \fi} & \\
+  \end{tabularx}\vspace{-0.15em}%
+}
+
+% Publication block
+\newcommand{\cvpub}[4]{%
+  \noindent\begin{tabularx}{\textwidth}{@{}X r@{}}%
+    \textbf{#1} & #4 \\
+    \textcolor{muted}{#2} & \\
+    \textit{#3} & \\
+  \end{tabularx}\vspace{0.2em}%
+}
+
+% Talk / presentation line: left title + right date/location
+\newcommand{\cvtalk}[3]{%
+  \noindent\textbf{#1} \textit{#2}\hfill \textit{#3}\par
+}
+
+% Compact event line for policy and industry engagement
+\newcommand{\cvevent}[3]{%
+  \cvtalk{#1}{}{#3 \hspace{0.3em} #2}%
+}
+
+% Compact itemize for sub-bullets under entries
+\newenvironment{cvitems}{%
+  \vspace{-0.1em}\begin{itemize}
+}{%
+  \end{itemize}\vspace{-0.2em}
+}
+
+\newcommand{\cvpapersep}{\vspace{0.45em}}
+
+% Full-width, unstructured abstract under each paper
+\newcommand{\cvabstract}[1]{%
+  \vspace{0.25em}%
+  \noindent{\footnotesize\scshape\textcolor{muted}{Résumé}}\par
+  \vspace{0.1em}{\fontsize{9.6pt}{12.2pt}\selectfont\color{muted}\justifying\noindent #1\par}%
+  \vspace{0.75em}%
+}
+
+% Compact subsection label for Research Focus blocks
+\newcommand{\cvsubsection}[1]{\textbf{#1}\vspace{-0.35em}}
+
+% =========================
+% Document
+% =========================
+\begin{document}
+\pagestyle{plain}
+
+% =========================
+% Header
+% =========================
+\begin{center}
+  {\fontsize{27}{31}\selectfont\bfseries\color{accent}Lucas Eustache}\\[0.15em]
+  {\normalsize\color{muted}Docteur en Management et Systèmes d'Information}\\[0.1em]
+  {\small Paris Dauphine -- PSL \textbullet\ DRM \textbullet\ Chaire Gouvernance \& Régulation}\\[0.35em]
+  {\footnotesize
+    Paris, France
+    \cvcontactsep
+    \href{mailto:lucas.eustache@dauphine.eu}{lucas.eustache@dauphine.eu}
+    \cvcontactsep
+    \href{https://lucaseust.github.io}{Site web}
+    \cvcontactsep
+    \href{https://github.com/Lucaseust}{GitHub}
+    \cvcontactsep
+    \href{https://scholar.google.com/citations?hl=fr&user=dGImyt0AAAAJ}{Google Scholar}
+    \cvcontactsep
+    \href{https://www.linkedin.com/in/lucas-eustache-611a9a223}{LinkedIn}
+  }
+\end{center}
+
+
+% =========================
+% Axes de Recherche
+% =========================
+\section{Axes de Recherche}
+\cvsubsection{Systèmes d'information et gouvernance des données}
+\begin{itemize}
+  \item Partage de données inter-organisationnel, espaces et écosystèmes de données, gouvernance et création de valeur
+\end{itemize}
+
+\cvsubsection{Innovation numérique et organisation des plateformes}
+\begin{itemize}
+  \item Intermédiaires de données et produits de données, gouvernance des plateformes, IA verticale et infrastructures de données sectorielles/souveraines
+\end{itemize}
+
+\cvsubsection{Régulation numérique et infrastructures publiques}
+\begin{itemize}
+  \item Design institutionnel, réutilisation des données publiques et gouvernance des technologies numériques
+\end{itemize}
+
+% =========================
+% Positions Académiques
+% =========================
+\section{Positions Académiques}
+\cventry
+  {ATER (Attaché Temporaire d'Enseignement et de Recherche)}
+  {Université PSL}
+  {Paris, France}
+  {2025 -- Présent}
+
+
+% =========================
+% Formation
+% =========================
+\section{Formation}
+\cventry
+  {Doctorat en Management}
+  {Université Paris Dauphine -- PSL}
+  {Paris, France}
+  {2026}
+
+\cventry
+  {Master 2 en Politiques Publiques}
+  {Université Paris 1 Panthéon-Sorbonne}
+  {Paris, France}
+  {2022}
+
+\cventry
+  {Master 1 en Économie}
+  {Toulouse School of Economics}
+  {Toulouse, France}
+  {2021}
+
+\cventry
+  {Licence en Économie}
+  {Université de Lorraine}
+  {Nancy, France}
+  {2020}
+
+\cventry
+  {Licence en Droit Public}
+  {Université de Lorraine}
+  {Nancy, France}
+  {2020}
+
+
+% =========================
+% Thèse Doctorale
+% =========================
+
+\section{Thèse Doctorale}
+\cvpub
+  {Gouverner le Partage de Données}
+  {Directeur : Eric Brousseau}
+  {Université Paris Dauphine -- PSL}
+  {2026}
+\cvabstract{Cette thèse examine comment différents arrangements de gouvernance permettent un partage de données inter-organisationnel durable. S'appuyant sur la recherche en systèmes d'information et la théorie des organisations, elle développe un cadre examinant trois structures de gouvernance : les marchés de données, les écosystèmes de partage de données et les infrastructures de données publiques. Utilisant un design multi-méthodes, la thèse combine une analyse documentaire comparative, une analyse quantitative de 4 525 listings de marchés de données, 24 entretiens avec 20 parties prenantes dans des initiatives européennes de partage de données, et une revue de littérature constructrice de théorie portant sur 85 sources. Les résultats identifient trois mécanismes : construire la liquidité des données pour faciliter l'échange de marché, orchestrer les investissements et incitations collectives pour soutenir les écosystèmes, et cultiver les capacités et la demande des utilisateurs pour soutenir la réutilisation de données publiques. La thèse contribue à la théorie de la gouvernance des données en montrant comment le partage durable dépend de l'alignement des mécanismes de coordination avec les propriétés des données, leurs usages prévus et les dépendances inter-organisationnelles.}
+
+% =========================
+% Publications
+% =========================
+
+\section{Publications}
+\cvpub
+  {The Economics of Data-Sharing: An Empirical Investigation of Data Sharing Ecosystems}
+  {avec Eric Brousseau \& Joëlle Toledano}
+  {Actes de l'ICIS 2025 (2025)}
+  {\cvlinkicon{https://aisel.aisnet.org/icis2025/sharing_econ/sharing_econ/6/}}
+\cvabstract{Cet article examine quelles conditions économiques et de gouvernance rendent les écosystèmes de partage de données durables au-delà des projets pilotes et des subventions publiques. Basé sur une étude qualitative de 24 entretiens avec 20 orchestrateurs, participants et experts dans les secteurs européens, complétée par des ateliers avec des praticiens et des retours de conférences, il identifie six conditions : investissement initial et récurrent, innovation basée sur les cas d'usage, complexité d'intégration, risque de sécurité, risque concurrentiel et alignement des incitations. La contribution est de recadrer les écosystèmes de partage de données comme des écosystèmes génératifs et orientés par les cas d'usage plutôt que comme des marchés de données, et de montrer comment l'orchestration stratégique et technique doit s'adapter aux phases d'émergence, diffusion et diversification.}
+
+% =========================
+% Médias
+% =========================
+\section{Médias}
+\cvpub
+  {Partage des données agricoles : du tracteur au serveur, comprendre l'expérience d'Agdatahub}
+  {Lucas Eustache}
+  {The Conversation (2025)}
+  {\cvlinkicon{https://theconversation.com/partage-des-donnees-agricoles-du-tracteur-au-serveur-comprendre-lexperience-dagdatahub-256597}}
+
+% =========================
+% Articles de Travail et Projets
+% =========================
+\section{Articles de Travail}
+\cventry
+  {Cultiver l'Usage Durable dans les Infrastructures de Données Publiques}
+  {Auteur unique}
+  {}
+  {}
+\cvabstract{Cet article examine comment les infrastructures de données publiques peuvent soutenir une réutilisation durable lorsque les besoins des utilisateurs nécessitent la coopération d'une autre organisation. Une revue constructrice de théorie portant sur 85 sources et 187 passages codés identifie quatre activités : aider les utilisateurs à identifier les applications, développer leurs compétences, négocier la coopération et suivre les demandes de changement jusqu'à la mise en œuvre. Il identifie un écart de culture lorsqu'aucun acteur ne dispose à la fois de la responsabilité et des ressources pour poursuivre les changements nécessaires aux données ou aux conditions d'accès. L'article prolonge la théorie de la culture en connectant le soutien utilisateur à l'autorité sur les données et les conditions d'accès.}
+
+\Needspace{14\baselineskip}
+\cventry
+  {Channel Composition: A Measurement Theory for Digital Trace Data}
+  {avec Paul Favier}
+  {}
+  {}
+\cvabstract{Cet article développe une théorie de la mesure expliquant comment la composition du canal de production révèle le contexte comportemental latent au-delà du volume agrégé des données de traçage numérique. Les différences dans les affordances et frictions des canaux trient les acteurs sur les appareils, modes d'accès et modalités d'interaction. Le cadre spécifie les canaux admissibles, les conditions d'alignement de signal-volume et de référent, et une approche valider-puis-déployer. Une démonstration empirique lie les pages vues de Wikipedia à la demande hôtelière pour 704 destinations françaises de 2018 à 2025, avec réplication par rapport aux comptages aux portes de six attractions culturelles à Orléans. La composition du canal identifie l'activité des visiteurs située au-delà des pages vues agrégées selon les conditions limites énoncées, ce qui fait progresser les traces numériques en tant qu'instruments de mesure théoriquement fondés.}
+
+\Needspace{14\baselineskip}
+\cventry
+  {Rendre les Données Échangeables : Construction de Produits et Redistribution de la Coordination}
+  {Auteur unique}
+  {}
+  {}
+\cvabstract{Cet article explique comment la construction de produits de données redistribue la coordination entre les artefacts, les relations organisationnelles et les institutions. Le renouvellement temporel, la transparence représentationnelle et la composabilité intègrent le travail récurrent dans les produits réutilisables, tandis que les contraintes d'observation, les droits et les coûts de construction laissent la coordination résiduelle ailleurs. Les cas documentaires élaborent le mécanisme et ses limites. Une analyse de 4 525 listings de marché de 407 fournisseurs trouve des associations entre les profils de produits divulgués et le soutien aux échanges divulgué, concentré dans le soutien à la livraison après ajustement. Les résultats des composants sont inégaux : les divulgations de fréquence de mise à jour restent associées, la composabilité devient insignifiante après ajustement, et les scores d'indépendance des méthodes sont nuls. Les listings ne mesurent pas la coordination ni les transactions terminées. La standardisation redistribue la coordination plutôt que de l'éliminer.}
+  
+\cventry
+  {Adaptation Locale et Interopérabilité des Données dans la Réponse aux Catastrophes}
+  {avec Anouck Adrot \& Salomé Ritouret}
+  {}
+  {}
+\cvabstract{Cette étude examine comment les adaptations locales aux formulaires numériques partagés affectent l'interopérabilité dans la réponse aux catastrophes. Une étude de cas intégrée d'un programme de réduction des risques de catastrophes Italie-France s'appuie sur 37 entretiens, une simulation en 2024 et des documents de projet. Elle distingue les adaptations structurelles, qui modifient les catégories ou les formulaires, des adaptations sémantiques, qui modifient la façon dont les champs existants sont interprétés. Les changements structurels peuvent laisser des traces pour inspection, tandis que les changements sémantiques peuvent rester cachés derrière des étiquettes inchangées. L'article explique cette opacité représentationnelle et montre pourquoi la révision partagée nécessite des occasions de discussion, une responsabilité claire et du temps.}
+
+% =========================
+% Méthodes
+% =========================
+\section{Méthodes}
+\begin{itemize}
+  \item \textbf{Qualitatives} : entretiens semi-directifs, études de cas, observations de terrain
+  \item \textbf{Quantitatives} : modèles de données de panel, MCO, logit/probit, inférence causale
+  \item \textbf{Informatiques} : TAL, modélisation de sujets, web scraping (Python/R)
+\end{itemize}
+
+
+% =========================
+% Présentations aux Conférences
+% =========================
+\section{Présentations aux Conférences}
+\cvtalk
+  {AIM -- Association Information et Management}
+  {}
+  {Mai 2026 \hspace{0.3em} Neuchâtel, Suisse}
+\cvtalk
+  {ARCEP -- Séminaire Académique Interne}
+  {}
+  {Fév 2026 \hspace{0.3em} Paris, France}
+\cvtalk
+  {ICIS (International Conference on Information Systems)}
+  {}
+  {Déc 2025 \hspace{0.3em} Nashville, USA}
+
+\cvtalk
+  {KU Leuven -- CiTiP Research Seminar}
+  {}
+  {Nov 2025 \hspace{0.3em} Leuven, Belgique}
+
+\cvtalk
+  {AFREN (Association Française d'Économie du Numérique)}
+  {}
+  {Juil 2025 \hspace{0.3em} Paris, France}
+
+\cvtalk
+  {EGOS (European Group for Organizational Studies)}
+  {}
+  {Juil 2025 \hspace{0.3em} Athènes, Grèce}
+
+\cvtalk
+  {IOEA 22ème Session}
+  {}
+  {Mai 2025 \hspace{0.3em} Cargèse, France}
+
+\cvtalk
+  {CCP - 3e Atelier Britannique sur l'Économie Numérique}
+  {}
+  {Nov 2024 \hspace{0.3em} Londres, UK}
+
+\cvtalk
+  {Séminaire LINC (CNIL)}
+  {}
+  {Juin 2024 \hspace{0.3em} Paris, France}
+
+\cvtalk
+  {IOEA 21ème Session}
+  {}
+  {Mai 2024 \hspace{0.3em} Cargèse, France}
+
+\cvtalk
+  {IOEA 20ème Session}
+  {}
+  {Mai 2023 \hspace{0.3em} Cargèse, France}
+
+% =========================
+% Engagement Politique et Industrie
+% =========================
+\section{Engagement Politique et Industrie}
+\cvevent
+  {\href{https://gaia-x.eu/event/gaia-x-summit-2025/}{Sommet Gaia-X}}
+  {Porto, Portugal}
+  {Nov 2025}
+\cvevent
+  {\href{https://www.fondation-dauphine.fr/agenda/2025/08/sustainable-development-data-sharing-ecosystems-challenges-and-turning-points}{Écosystèmes de Partage de Données : Défis et Points de Basculement}}
+  {Paris, France}
+  {Sep 2025}
+\cvevent
+  {\href{https://gaia-x.eu/event/gaia-x-hub-france-plenary-session-7/}{Séance Plénière du Hub Gaia-X France}}
+  {Paris, France}
+  {Mar 2025}
+\cvevent
+  {\href{https://gaia-x.eu/event/gaia-x-summit-2024-empowering-global-data-spaces-shaping-tomorrows-cloud-infrastructure/}{Assemblée Générale / Sommet Gaia-X}}
+  {Helsinki, Finlande}
+  {Nov 2024}
+\cvevent
+  {\href{https://chairgovreg.fondation-dauphine.fr/en/events/1727}{Conférence sur la Mise en Œuvre de la Loi sur la Gouvernance des Données (DGA)}}
+  {Paris, France}
+  {Sep 2024}
+\cvevent
+  {\href{https://dssc.eu/space/Events/blog/820183042/Gaia-X\%2BSummit\%2B2024\%2BEmpowering\%2BGlobal\%2BData\%2BSpaces\%2BShaping\%2BTomorrow\%2Bs\%2BCloud\%2BInfrastructure}{Symposium DSSC sur les Espaces de Données}}
+  {Darmstadt, Allemagne}
+  {Mar 2024}
+\cvevent
+  {\href{https://chairgovreg.fondation-dauphine.fr/fr/ressources/1603/replay-data-sharing-europe-dga-and-da-legal-consensus-achievement-implementation}{Partage de Données en Europe : DGA et DA}}
+  {Paris, France}
+  {Sep 2023}
+
+% =========================
+% Enseignement
+% =========================
+\Needspace{24\baselineskip}
+\section{Enseignement}
+\cventry
+  {Management des Systèmes d'Information (Master 2 IASO, EN)}
+  {Université Paris-Dauphine -- PSL}
+  {}
+  {2026 -- Présent}
+
+\cventry
+  {Stratégie Numérique (Master 1)}
+  {Université Paris-Dauphine -- PSL}
+  {Coordinateur du cours en 2026}
+  {2022 -- Présent}
+
+\cventry
+  {Stratégie (Licence L3)}
+  {Université Paris-Dauphine -- PSL}
+  {}
+  {2025}
+
+\cventry
+  {Management de la Connaissance (Master 1)}
+  {Université Paris-Dauphine -- PSL, Campus de Tunis}
+  {}
+  {2026}
+
+\cventry
+  {Économie et Théorie des Jeux (Master 1 révision, EN)}
+  {Université PSL}
+  {}
+  {2025 -- Présent}
+
+\cventry
+  {Théorie de l'Organisation (Master 1)}
+  {École Polytechnique}
+  {}
+  {2024}
+
+\cventry
+  {Économie (Licence 1, EN)}
+  {Université PSL}
+  {}
+  {2025 -- 2026}
+
+% =========================
+% Service Académique
+% =========================
+\section{Service Académique}
+\cventry
+  {Co-convener, Groupe de Travail ``\href{https://acss-dig.psl.eu/fr/seminaires/digital-regulation}{Activités Numériques}''}
+  {Chaire Gouvernance \& Régulation (avec Damien Mayaux)}
+  {}
+  {}
+\begin{cvitems}
+  \item Série de séminaires de recherche en cours (environ deux séminaires par mois) sur la régulation numérique, la gouvernance et les politiques publiques liées aux plateformes
+\end{cvitems}
+
+\cventry
+  {Organisateur de Conférences, Événements sur le Partage de Données et la Régulation Numérique}
+  {Chaire Gouvernance \& Régulation, Université Paris-Dauphine -- PSL}
+  {Paris, France}
+  {2023 -- 2025}
+\begin{cvitems}
+  \item Organisé \href{https://chairgovreg.fondation-dauphine.fr/fr/ressources/1603/replay-data-sharing-europe-dga-and-da-legal-consensus-achievement-implementation}{Partage de Données en Europe : DGA et DA} (Sep 2023), \href{https://chairgovreg.fondation-dauphine.fr/en/events/1727}{Conférence sur la Mise en Œuvre de la Loi sur la Gouvernance des Données (DGA)} (Sep 2024), et \href{https://www.fondation-dauphine.fr/agenda/2025/08/sustainable-development-data-sharing-ecosystems-challenges-and-turning-points}{Écosystèmes de Partage de Données : Défis et Points de Basculement} (Sep 2025)
+\end{cvitems}
+
+\cventry
+  {Représentant PhD Élu, Conseil DRM}
+  {Dauphine Recherches en Management (DRM)}
+  {Université Paris-Dauphine -- PSL}
+  {2023 -- Présent}
+
+\cventry
+  {Coordinateur de Stage de Recherche, M1 IASO (IA et Société)}
+  {Université Paris-Dauphine -- PSL}
+  {}
+  {2026 -- Présent}
+\begin{cvitems}
+  \item Supervision d'un stagiaire en Master 1 IASO sur un projet d'automatisation de la catégorisation des textes réglementaires de protection des données personnelles
+\end{cvitems}
+
+% =========================
+% Service et Bénévolat
+% =========================
+\Needspace{9\baselineskip}
+\section{Service et Bénévolat}
+\cventry
+  {Directeur Local Adjoint en Charge de l'Urgence}
+  {Croix-Rouge Française}
+  {France}
+  {2023 -- Présent}
+\begin{cvitems}
+  \item Coordination des équipes d'intervention d'urgence en situations de crise
+  \item Logistique, allocation des ressources et planification opérationnelle
+\end{cvitems}
+
+\end{document}
