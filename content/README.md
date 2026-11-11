@@ -138,6 +138,7 @@ A short description of the course.
 - Edit appointments, education, profile, skills, and service in `content/pages/cv.md` and `content/pages/cv-fr.md`.
 - Publications and courses come from their original content files; leave the Liquid template blocks intact. Working papers on the French CV are maintained in `content/pages/cv-fr.md`.
 - Export each CV as a PDF and replace **`files/cv.pdf`** and **`files/cv-fr.pdf`**. A file named `cv.pdf` at the repository root is an ignored source copy and does not update the download.
+- Change the `v` parameter in the French CV download link in `content/pages/cv-fr.md` whenever you replace its PDF, so browsers fetch the new version.
 - Check `/cv/`, `/cv-fr/`, `/files/cv.pdf`, and `/files/cv-fr.pdf` in preview.
 - The legacy CV-to-JSON helper is not part of this workflow.
 

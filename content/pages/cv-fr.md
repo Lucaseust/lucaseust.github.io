@@ -4,7 +4,7 @@ title: "CV"
 permalink: /cv-fr/
 ---
 
-<p><a href="{{ '/files/cv-fr.pdf' | relative_url }}">Télécharger le CV (PDF)</a> · <a href="{{ '/cv/' | relative_url }}">English version</a></p>
+<p><a href="{{ '/files/cv-fr.pdf' | relative_url }}?v=20261111">Télécharger le CV (PDF)</a> · <a href="{{ '/cv/' | relative_url }}">English version</a></p>
 
 ## Profil
 
