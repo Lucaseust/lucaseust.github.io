@@ -4,7 +4,7 @@ title: "CV"
 permalink: /cv-fr/
 ---
 
-<p><a href="{{ '/cv/' | relative_url }}">English version</a></p>
+<p><a href="{{ '/files/cv-fr.pdf' | relative_url }}">Télécharger le CV (PDF)</a> · <a href="{{ '/cv/' | relative_url }}">English version</a></p>
 
 ## Profil
 
@@ -13,7 +13,7 @@ Je suis docteur en sciences de gestion (systèmes d’information), de l'Univers
 ## Axes de recherche
 
 - Systèmes d'information et gouvernance des données : partage interorganisationnel des données, espaces de données, gouvernance des écosystèmes et création de valeur.
-- Innovation numérique et organisation des plateformes : intermédiaires de données, produits de données, gouvernance des plateformes et infrastructures sectorielles ou souveraines.
+- Innovation numérique et organisation des plateformes : intermédiaires de données, produits de données, gouvernance des plateformes, IA verticale et infrastructures sectorielles ou souveraines.
 - Régulation numérique et infrastructures publiques : conception institutionnelle, réutilisation des données publiques et gouvernance des technologies numériques.
 
 ## Expérience académique
@@ -75,4 +75,4 @@ Cette thèse analyse les dispositifs de gouvernance permettant un partage durabl
 
 ## Engagement et bénévolat
 
-- Depuis 2023 : responsable local des opérations d'urgence et secouriste, Croix-Rouge française.
+- Depuis 2023 : directeur local adjoint en charge de l'urgence, Croix-Rouge française.

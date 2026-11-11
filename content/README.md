@@ -23,7 +23,7 @@ Paths below are relative to the repository root.
 | Policy or industry event | `content/data/presentations.yml` → `engagements` | Presentations |
 | Course | A file in `content/_teaching/` | Teaching, detail page, web CV |
 | Profile, appointments, education, skills, service | `content/pages/cv.md` and `content/pages/cv-fr.md` | English and French web CVs |
-| Downloadable CV | Replace `files/cv.pdf` | English CV download links |
+| Downloadable CVs | Replace `files/cv.pdf` and `files/cv-fr.pdf` | English and French CV download links |
 | Contact and social profiles | `_config.yml` → `author` | Homepage contact and footer |
 | Navigation | `content/data/navigation.yml` | Every page |
 
@@ -136,9 +136,9 @@ A short description of the course.
 ## Update the CV
 
 - Edit appointments, education, profile, skills, and service in `content/pages/cv.md` and `content/pages/cv-fr.md`.
-- Publications, working papers, and courses come from their original content files; leave the Liquid template blocks intact.
-- Export your document as a PDF and replace **`files/cv.pdf`**. A file named `cv.pdf` at the repository root is an ignored source copy and does not update the download.
-- Check both `/cv/` and `/files/cv.pdf` in preview.
+- Publications and courses come from their original content files; leave the Liquid template blocks intact. Working papers on the French CV are maintained in `content/pages/cv-fr.md`.
+- Export each CV as a PDF and replace **`files/cv.pdf`** and **`files/cv-fr.pdf`**. A file named `cv.pdf` at the repository root is an ignored source copy and does not update the download.
+- Check `/cv/`, `/cv-fr/`, `/files/cv.pdf`, and `/files/cv-fr.pdf` in preview.
 - The legacy CV-to-JSON helper is not part of this workflow.
 
 ## YAML and Markdown basics
@@ -180,6 +180,6 @@ Commit to the publishing branch, then check the Pages deployment and public page
 
 - **Preview fails:** read the file and line in the terminal error. Check quotes, indentation, and dates first.
 - **Edits do not appear:** confirm that you edited a source file, refresh the browser, and restart preview if configuration changed.
-- **PDF looks old:** check that you replaced `files/cv.pdf`, then refresh the PDF tab.
+- **PDF looks old:** check that you replaced the appropriate PDF in `files/`, then refresh the PDF tab.
 - **Public site stays old:** inspect the Pages deployment and confirm you pushed to the configured publishing branch.
 - **Undo a published commit:** find its identifier with `git log --oneline -5`, run `git revert COMMIT_ID`, then `git push origin master`. Revert creates a new undo commit without rewriting history.

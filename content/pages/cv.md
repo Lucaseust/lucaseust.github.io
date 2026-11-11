@@ -15,7 +15,7 @@ I hold a PhD in Management and Information Systems from University Paris-Dauphin
 ## Research Focus
 
 - Information systems and data governance: inter-organizational data sharing, data spaces, ecosystem governance, and value creation.
-- Digital innovation and platform organizing: data intermediaries, data products, platform governance, and sectoral or sovereign data infrastructures.
+- Digital innovation and platform organizing: data intermediaries, data products, platform governance, vertical AI, and sectoral or sovereign data infrastructures.
 - Digital regulation and public infrastructures: institutional design, public data reuse, and the governance of digital technologies.
 
 ## Academic Appointments
@@ -78,4 +78,4 @@ This dissertation investigates how governance arrangements enable sustainable in
 
 ## Service and Volunteering
 
-- 2023 - Present: Local Emergency Manager and First Aider, French Red Cross.
+- 2023 - Present: Deputy Local Director in charge of emergency response, French Red Cross.

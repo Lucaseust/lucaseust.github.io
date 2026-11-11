@@ -18,12 +18,12 @@ A minimal Jekyll website for https://lucaseust.github.io: one reading column, pl
 | Academic presentations | `content/_talks/*.md` |
 | Policy and industry engagements | `content/data/presentations.yml` |
 | Courses | `content/_teaching/*.md` |
-| CV appointments, education, skills, and service | `content/pages/cv.md` |
-| Downloadable CV | `files/cv.pdf` |
+| CV appointments, education, skills, and service | `content/pages/cv.md` and `content/pages/cv-fr.md` |
+| Downloadable CVs | `files/cv.pdf` and `files/cv-fr.pdf` |
 | Email and profile links | `_config.yml` → `author` |
 | Navigation | `content/data/navigation.yml` |
 
-Publication, working-paper, and teaching lists in the web CV update automatically. The PDF is maintained separately.
+Publication and teaching lists update automatically in both web CVs; working papers update automatically in the English CV and are maintained separately in the French CV. The PDFs are maintained separately.
 
 ## Preview and check (Windows PowerShell)
 
