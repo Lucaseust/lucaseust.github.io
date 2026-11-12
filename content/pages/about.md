@@ -16,7 +16,7 @@ redirect_from:
   {% endfor %}
   <p class="resource-links">
     <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
-    <a href="{{ '/files/cv.pdf' | relative_url }}">CV (PDF)</a>
+    <a href="{{ '/files/cv-fr.pdf' | relative_url }}?v=20261112-16">CV (PDF)</a>
     <a href="{{ '/cv-fr/' | relative_url }}">CV en français</a>
     <a href="{{ site.author.googlescholar }}" rel="me">Google Scholar</a>
     <a href="{{ site.author.orcid }}" rel="me">ORCID</a>

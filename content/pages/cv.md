@@ -6,7 +6,7 @@ redirect_from:
   - /resume
 ---
 
-<p><a href="{{ '/files/cv.pdf' | relative_url }}">Download CV (PDF)</a> · <a href="{{ '/cv-fr/' | relative_url }}">Version française</a></p>
+<p><a href="{{ '/files/cv.pdf' | relative_url }}?v=20261112-16">Download CV (PDF)</a> · <a href="{{ '/cv-fr/' | relative_url }}">Version française</a></p>
 
 ## Profile
 
