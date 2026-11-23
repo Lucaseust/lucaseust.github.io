@@ -30,6 +30,7 @@ engagements:
     description: "Conference co-organized with the Gaia-X Institute on the economic and governance conditions for sustainable data-sharing ecosystems."
 
   - title: "Participatory Policy Lab on Data Intermediation Services"
+    anchor: "atelier-intermediation-donnees"
     date: 2025-06-11
     type: "Workshop participation"
     venue: "DG CNECT & JRC · JRC Policy Lab"

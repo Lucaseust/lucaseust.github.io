@@ -7,7 +7,7 @@
 {% assign presentation_heading = 'h3' %}
 {% if page.cv or include.subsection %}{% assign presentation_heading = 'h4' %}{% endif %}
 
-<article class="presentation-item" itemscope itemtype="http://schema.org/Event">
+<article class="presentation-item"{% if item.anchor %} id="{{ item.anchor | escape }}"{% endif %} itemscope itemtype="http://schema.org/Event">
   {% if item.date %}
     <time class="presentation-date" datetime="{{ item.date | date_to_xmlschema }}">
       <span class="presentation-date__year">{{ item.date | date: "%Y" }}</span>

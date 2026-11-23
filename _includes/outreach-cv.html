@@ -1,6 +1,15 @@
 <h3>{% if include.lang == 'fr' %}Conférences professionnelles{% else %}Professional conferences{% endif %}</h3>
 {% assign engagements = site.data.presentations.engagements | sort: 'date' | reverse %}
-{% for item in engagements %}{% include presentation-item.html item=item lang=include.lang subsection=true %}{% endfor %}
+{% for item in engagements %}
+  {% unless item.type == 'Workshop participation' %}
+    {% include presentation-item.html item=item lang=include.lang subsection=true %}
+  {% endunless %}
+{% endfor %}
+{% assign professional_workshops = engagements | where: 'type', 'Workshop participation' %}
+{% if professional_workshops.size > 0 %}
+  <h3>{% if include.lang == 'fr' %}Ateliers professionnels{% else %}Professional workshops{% endif %}</h3>
+  {% for item in professional_workshops %}{% include presentation-item.html item=item lang=include.lang subsection=true %}{% endfor %}
+{% endif %}
 <h3>{% if include.lang == 'fr' %}Médias{% else %}Media{% endif %}</h3>
 {% assign media = site.publications | where: 'category', 'media' | sort: 'date' | reverse %}
 {% for item in media %}
