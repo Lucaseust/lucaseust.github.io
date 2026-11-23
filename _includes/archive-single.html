@@ -3,7 +3,7 @@
 {% assign entry_heading = include.heading | default: 'h3' %}
 {% if entry_lang == 'en' %}{% assign entry_url = entry_url | prepend: '/en' %}{% endif %}
 <article class="entry">
-  <{{ entry_heading }}><a href="{{ entry_url | relative_url }}">{% include localized-title.html item=post lang=entry_lang %}</a></{{ entry_heading }}>
+  <{{ entry_heading }}>{% include resource-title.html item=post lang=entry_lang url=entry_url %}</{{ entry_heading }}>
   <p class="entry-meta">{% if post.authors %}{% if entry_lang == 'fr' %}{{ post.authors | replace: ', and ', ' et ' }}{% else %}{{ post.authors }}{% endif %} · {% endif %}{% if post.type %}{% if entry_lang == 'fr' %}{{ site.data.translations[post.type] | default: post.type }}{% else %}{{ post.type }}{% endif %} · {% endif %}{% if post.venue %}{% if entry_lang == 'fr' %}{{ site.data.translations[post.venue] | default: post.venue }}{% else %}{{ post.venue }}{% endif %} · {% endif %}{% if post.period %}{{ post.period }}{% elsif post.date %}{{ post.date | date: '%Y' }}{% endif %}</p>
   {% if include.show_abstract %}{% include research-abstract.html item=post lang=entry_lang %}{% endif %}
   {% include resource-links.html item=post %}

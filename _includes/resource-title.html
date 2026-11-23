@@ -1,0 +1,14 @@
+{%- assign title_item = include.item -%}
+{%- assign title_url = include.url -%}
+{%- assign source_label = title_item.link_label | default: nil -%}
+{%- if include.lang == 'fr' -%}
+  {%- assign source_label = title_item.link_label_fr | default: nil -%}
+{%- endif -%}
+{%- if title_item.link and source_label == nil -%}
+  {%- assign title_url = title_item.link -%}
+{%- endif -%}
+{%- if title_url -%}
+  <a href="{{ title_url | relative_url | escape }}">{% include localized-title.html item=title_item lang=include.lang %}</a>
+{%- else -%}
+  {%- include localized-title.html item=title_item lang=include.lang -%}
+{%- endif -%}

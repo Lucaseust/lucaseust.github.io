@@ -8,7 +8,7 @@ layout: default
 {% endif %}
 <main id="main" tabindex="-1">
   <article>
-    <h1>{% include localized-title.html item=detail lang=detail_lang %}</h1>
+    <h1>{% include resource-title.html item=detail lang=detail_lang %}</h1>
     {% if detail.collection %}
       {% include record-detail.html item=detail lang=detail_lang body=content %}
     {% endif %}

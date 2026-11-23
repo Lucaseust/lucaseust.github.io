@@ -1,7 +1,6 @@
 {% include base_path %}
 {% assign item = include.item %}
 {% assign item_lang = include.lang | default: page.lang | default: site.locale | slice: 0, 2 %}
-{% capture presentation_title %}{% include localized-title.html item=item lang=item_lang %}{% endcapture %}
 {% assign presentation_url = item.url %}
 {% if presentation_url and item_lang == 'en' %}{% assign presentation_url = presentation_url | prepend: '/en' %}{% endif %}
 {% assign presentation_heading = 'h3' %}
@@ -17,13 +16,7 @@
 
   <div class="presentation-content">
     <{{ presentation_heading }} class="presentation-title" itemprop="name">
-      {% if presentation_url %}
-        <a href="{{ presentation_url | relative_url }}">{{ presentation_title }}</a>
-      {% elsif item.link %}
-        <a href="{{ item.link }}">{{ presentation_title }}</a>
-      {% else %}
-        {{ presentation_title }}
-      {% endif %}
+      {% include resource-title.html item=item lang=item_lang url=presentation_url %}
     </{{ presentation_heading }}>
 
     {% if item.presentation_title %}
@@ -37,6 +30,6 @@
       {% if item.location %}<span>{% if item_lang == 'fr' %}{{ site.data.translations[item.location] | default: item.location }}{% else %}{{ item.location }}{% endif %}</span>{% endif %}
     </p>
     {% if item.status %}<p class="entry-meta">{% if item_lang == 'fr' %}{{ item.status_fr | default: item.status }}{% else %}{{ item.status }}{% endif %}</p>{% endif %}
-    {% if presentation_url %}{% include resource-links.html item=item %}{% endif %}
+    {% include resource-links.html item=item %}
   </div>
 </article>
