@@ -26,8 +26,8 @@ Paths below are relative to the repository root.
 | Information | Edit | Appears on |
 | --- | --- | --- |
 | Biography | `content/data/home.yml` → `bio.paragraphs` | Homepage |
-| Working papers | `content/data/home.yml` → `working_papers.items` | Homepage and web CV |
-| Publication or media article | A file in `content/_publications/` | Publications, detail page, web CV; homepage when featured |
+| Working papers | `content/data/home.yml` → `working_papers.items` | Research, homepage and web CV |
+| Publication or media article | A file in `content/_publications/` | Research and publication detail pages, with media listed under Presentations and in the web CV |
 | Academic talk | A file in `content/_talks/` | Presentations and detail page |
 | Policy or industry event | `content/data/presentations.yml` → `engagements` | Presentations |
 | Course | A file in `content/_teaching/` | Teaching, detail page, web CV |
@@ -51,9 +51,11 @@ To add a working paper, copy an item under `working_papers.items`:
       link: "https://example.com/paper"
 ```
 
-The `link` is optional; omit it when no public version is available. List order controls display order. Keep descriptions to one or two sentences.
+Use `abstract_en` and `abstract_fr` for the Research page. Set `in_submission: true` for a paper with a confirmed submission in progress. Omit the link when no public version exists. List order controls display order. Keep revision information in `note` and `note_fr`. Add published research to the publications collection.
 
 ## Add a publication or media article
+
+For published research, add `abstract_en` and `abstract_fr` to the publication record. Research shows the abstract, authors, and publication links.
 
 Copy an existing file in `content/_publications/` to a new filename, such as `2026-10-15-short-title.md`. Replace its fields and body:
 

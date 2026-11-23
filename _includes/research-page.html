@@ -1,0 +1,9 @@
+<section class="research-list" aria-labelledby="research-publications">
+  <h2 id="research-publications">Publications</h2>
+  {% include research-publications.html show_abstract=true %}
+</section>
+
+<section class="research-list" aria-labelledby="research-working-papers">
+  <h2 id="research-working-papers">{% if page.lang == 'fr' %}Travaux en cours{% else %}Work in progress{% endif %}</h2>
+  {% include working-papers-cv.html lang=page.lang show_heading=false show_abstract=true %}
+</section>

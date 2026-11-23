@@ -69,6 +69,9 @@ Je suis docteur en sciences de gestion (systèmes d’information), de l'Univers
 
 {% include working-papers-cv.html lang="fr" %}
 
+<h3>Publications</h3>
+{% include research-publications.html heading="h4" %}
+
 {% include research-cv.html lang="fr" %}
 
 {% include research-supervision.html lang="fr" %}

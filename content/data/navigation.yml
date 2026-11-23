@@ -1,7 +1,9 @@
 # The name links to the homepage. These are the remaining navigation links.
 main:
-  - title: "Publications"
-    url: /publications/
+  - title: "Recherche"
+    title_en: "Research"
+    url: /research/
+    collection: publications
   - title: "Présentations"
     title_en: "Presentations"
     url: /talks/

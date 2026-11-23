@@ -18,7 +18,7 @@
 {% for collection_name in sitemap_collections %}
   {% assign collection_url = collection_name | prepend: '/' | append: '/' %}
   {% assign collection_link = site.data.navigation.main | where: 'url', collection_url | first %}
-  <h2>{% if page.lang == 'fr' %}{{ collection_link.title }}{% else %}{{ collection_link.title_en | default: collection_link.title }}{% endif %}</h2>
+  <h2>{% if collection_name == 'publications' %}Publications{% elsif page.lang == 'fr' %}{{ collection_link.title }}{% else %}{{ collection_link.title_en | default: collection_link.title }}{% endif %}</h2>
   <ul>
     {% assign collection_items = site[collection_name] | sort: 'date' | reverse %}
     {% for item in collection_items %}

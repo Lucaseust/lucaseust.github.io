@@ -72,6 +72,9 @@ I hold a PhD in Management and Information Systems from University Paris-Dauphin
 
 {% include working-papers-cv.html lang="en" %}
 
+<h3>Publications</h3>
+{% include research-publications.html heading="h4" %}
+
 {% include research-cv.html lang="en" %}
 
 {% include research-supervision.html lang="en" %}

@@ -1,12 +1,17 @@
 {% assign french = false %}
 {% if include.lang == 'fr' %}{% assign french = true %}{% endif %}
-{% if include.show_heading != false %}<h3>{% if french %}Travaux en cours{% else %}Working papers{% endif %}</h3>{% endif %}
+{% assign working_paper_heading = 'h3' %}
+{% if include.show_heading != false %}
+  <h3>{% if french %}Travaux en cours{% else %}Working papers{% endif %}</h3>
+  {% assign working_paper_heading = 'h4' %}
+{% endif %}
 {% for paper in site.data.home.working_papers.items %}
   <article class="working-paper">
-    <h4>{% include localized-title.html item=paper lang=include.lang %}</h4>
+    <{{ working_paper_heading }}>{% include localized-title.html item=paper lang=include.lang %}</{{ working_paper_heading }}>
     {% if paper.byline %}<p class="entry-meta">{% if french %}{{ paper.byline | replace: 'with ', 'avec ' | replace: 'Single-authored', 'Auteur unique' | replace: ' and ', ' et ' }}{% else %}{{ paper.byline }}{% endif %}</p>{% endif %}
     {% if paper.note %}<p class="entry-meta paper-note">{% if french %}{{ paper.note_fr }}{% else %}{{ paper.note }}{% endif %}</p>{% endif %}
-    {% if paper.status %}<p class="entry-meta paper-status">{% if french %}{{ paper.status_fr }}{% else %}{{ paper.status }}{% endif %}</p>{% endif %}
+    {% if paper.in_submission %}<p class="entry-meta paper-status">{% if french %}Soumission en cours{% else %}Submission in progress{% endif %}</p>{% endif %}
+    {% if include.show_abstract %}{% include research-abstract.html item=paper lang=include.lang %}{% endif %}
     {% if paper.link %}<p class="resource-links"><a href="{{ paper.link }}">{% if paper.link_label %}{% if french %}{{ paper.link_label_fr }}{% else %}{{ paper.link_label }}{% endif %}{% elsif french %}Version antérieure (arXiv){% else %}Earlier version (arXiv){% endif %}</a></p>{% endif %}
   </article>
 {% endfor %}

@@ -9,7 +9,7 @@
         {% assign nav_url = link.url_en | default: nav_url %}
         {% assign nav_title = link.title_en | default: nav_title %}
       {% endif %}
-      <a href="{{ nav_url | relative_url }}"{% if page.url == nav_url %} aria-current="page"{% elsif page.url contains nav_url %} aria-current="location"{% endif %}>{{ nav_title }}</a>
+      <a href="{{ nav_url | relative_url }}"{% if page.url == nav_url %} aria-current="page"{% elsif page.url contains nav_url or link.collection and link.collection == document_record.collection and document_record.category != 'media' %} aria-current="location"{% endif %}>{{ nav_title }}</a>
     {% endfor %}
   </nav>
   <nav class="site-languages" aria-label="{% if document_lang == 'fr' %}Langue{% else %}Language{% endif %}">

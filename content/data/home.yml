@@ -22,29 +22,143 @@ working_papers:
   - title: Cultivating Sustained Use in Public Data Infrastructures
     title_fr: Cultiver l’usage durable dans les infrastructures de données publiques
     byline: Single-authored
+    abstract_en: >-
+      Public data infrastructures are technical and organizational arrangements that support data sharing and reuse
+      across organizations under public stewardship. Access alone, however, does not ensure that users can apply data
+      to their ongoing tasks. This paper examines how these infrastructures support users when meeting their needs
+      requires cooperation from another organization. A theory-building review of 85 sources and 187 coded passages
+      identifies four activities: helping users identify applications, building their skills, negotiating cooperation,
+      and following requests for changes through to implementation. A cultivation gap arises when no one has both the
+      responsibility and resources to pursue a necessary change to data or access, either through their own authority
+      or through the organization controlling it. Two propositions distinguish changes controlled by one provider from
+      changes requiring agreement across providers. The paper extends cultivation theory by connecting support for
+      users to authority over data and access conditions.
+    abstract_fr: >-
+      Les infrastructures publiques de données sont des dispositifs techniques et organisationnels qui permettent le
+      partage et la réutilisation de données entre organisations sous responsabilité publique. L’accès seul ne suffit
+      pas à garantir que les utilisateurs puissent exploiter les données dans leurs activités courantes. Cet article
+      étudie l’accompagnement offert lorsque leurs besoins exigent la coopération d’une autre organisation. Une revue
+      de littérature à visée théorique portant sur 85 sources et 187 passages codés fait ressortir quatre activités :
+      aider les utilisateurs à repérer des applications, développer leurs compétences, négocier la coopération et
+      suivre les demandes de modification jusqu’à leur mise en œuvre. Un déficit d’accompagnement apparaît lorsque
+      aucun acteur ne dispose à la fois de la responsabilité et des ressources nécessaires pour obtenir une
+      modification des données ou des conditions d’accès, par sa propre autorité ou auprès de l’organisation qui les
+      contrôle. Deux propositions distinguent les modifications relevant d’un seul fournisseur de celles qui
+      nécessitent un accord entre fournisseurs. L’article prolonge la théorie de la cultivation en reliant
+      l’accompagnement des utilisateurs à l’autorité sur les données et les conditions d’accès.
   - title: 'Channel Composition: A Measurement Theory for Digital Trace Data'
     byline: with Paul Favier
     link: https://arxiv.org/abs/2606.29991
-    status: 'Submission in progress to Journal of Information Technology (JIT) — FNEGE 2025: 1; AJG 2024: 4'
-    status_fr: 'En cours de soumission au Journal of Information Technology (JIT) — FNEGE 2025 : 1 ; AJG 2024 : 4'
+    in_submission: true
     title_fr: 'Composition des canaux : une théorie de la mesure des traces numériques'
     note: 'Revised version of “Behind the Content: Wikipedia Mobile Views and Tourism Activity”, presented at AIM 2026.'
     note_fr: 'Version remaniée de « Au-delà du contenu : consultations mobiles de Wikipédia et activité touristique », présentée à AIM 2026.'
     link_label: Earlier version (arXiv)
     link_label_fr: Version antérieure (arXiv)
+    abstract_en: >-
+      The behavioral meaning of digital traces is often underdetermined because the same observable act can arise from
+      multiple latent situations. Existing approaches typically validate trace levels against external outcomes but
+      provide little guidance on how traces themselves might reveal the context in which they were produced. We
+      develop a measurement theory that addresses this problem by introducing channel composition as a trace-based
+      measurement instrument. We argue that digital traces are generated through production channels, such as devices,
+      access modes, and interaction modalities, that differ in their affordances and frictions. When latent behavioral
+      contexts systematically sort actors across these channels, the composition of channels within a trace provides
+      information about the underlying context beyond aggregate trace volume. We specify the theoretical mechanism
+      linking channel sorting to measurement, defines admissibility criteria for production channels, identifies
+      boundary conditions governing validity, and proposes a validate-then-deploy logic for using channel composition
+      as a recurring measurement instrument. We demonstrate the framework using Wikipedia pageviews to measure tourism
+      activity, a demanding setting in which aggregate trace levels are already established as forecasting
+      instruments. Across a national panel of French destinations and an attraction-level replication against direct
+      gate counts, channel composition consistently identifies situated visitor activity beyond aggregate pageviews
+      and behaves as predicted under the proposed boundary conditions. By showing how information embedded in the
+      production structure of digital traces can recover latent behavioral context, we advance digital trace research
+      from using traces as predictive proxies toward treating them as theoretically grounded measurement instruments.
+    abstract_fr: >-
+      La signification comportementale des traces numériques est souvent indéterminée, car un même acte observable
+      peut correspondre à plusieurs situations latentes. Les approches existantes valident généralement le niveau des
+      traces par rapport à des résultats externes et expliquent peu comment les traces elles-mêmes peuvent renseigner
+      sur leur contexte de production. Nous proposons une théorie de la mesure qui utilise la composition des canaux
+      comme instrument. Les traces numériques sont produites par des canaux tels que les appareils, les modes d’accès
+      et les modalités d’interaction, qui diffèrent par les possibilités et les contraintes qu’ils présentent. Lorsque
+      les contextes comportementaux latents orientent systématiquement les acteurs vers certains canaux, la
+      répartition des traces entre ces canaux apporte une information que leur volume total ne contient pas. Nous
+      précisons le mécanisme théorique, les critères d’admissibilité des canaux et les conditions de validité de la
+      mesure. Nous proposons de valider cette mesure avant de l’utiliser de façon récurrente. Nous illustrons la
+      démarche à partir des consultations de Wikipédia pour mesurer l’activité touristique, un domaine où le volume
+      total des traces sert déjà à la prévision. Dans un panel national de destinations françaises et dans une
+      réplication à l’échelle de sites culturels à partir des entrées comptabilisées, la composition des canaux rend
+      compte de l’activité des visiteurs sur place au-delà du nombre total de consultations et se comporte
+      conformément aux conditions de validité proposées. L’étude montre comment la structure de production des traces
+      peut révéler un contexte comportemental latent et fonder leur utilisation comme instruments de mesure.
   - title: 'Data liquidity and data market organization'
     byline: Single-authored
     title_fr: 'Liquidité des données et organisation des marchés de données'
-    status: 'Submission in progress to Information Systems Frontiers — FNEGE 2025: 2; AJG 2024: 3'
-    status_fr: 'En cours de soumission à Information Systems Frontiers — FNEGE 2025 : 2 ; AJG 2024 : 3'
+    in_submission: true
+    abstract_en: >-
+      Data marketplaces facilitate interorganizational exchange, but discovery and pricing alone do not ensure that an
+      offering is suitable for a buyer. This study examines how the characteristics of data products relate to the
+      arrangements used to exchange them. It conceptualizes data liquidity as the capacity to evaluate, transfer, and
+      integrate products across organizations with limited additional coordination. Transparency supports inspection,
+      renewal makes current information available, and joinability provides connections to other data. A purposive
+      comparison of 40 documentary records covers illicit credential catalogs alongside geospatial and financial-data
+      settings. It is complemented by an analysis of 4,525 listings from 407 providers on Datarade. After adjustment
+      for provider, productization, and use case, advertised sample offers are associated with 19.5 percentage points
+      more pricing-field disclosure. The corresponding positive differences are 11.5 points for numeric-price
+      disclosure and 9.1 points for application programming interface (API) delivery disclosure. Declared update
+      schedules are more consistently associated with API delivery, whereas joinability estimates vary across measures
+      and controls. These findings describe associations in listing disclosures, not causal effects, verified access,
+      or completed transactions. The study offers a product-level account of market organization, showing how
+      liquidity dimensions address distinct coordination problems while rights and governance remain necessary.
+    abstract_fr: >-
+      Les places de marché de données facilitent les échanges entre organisations. Toutefois, la découverte d’une
+      offre et l’affichage d’un prix ne garantissent pas qu’elle réponde aux besoins d’un acheteur. Cette étude
+      examine le lien entre les caractéristiques des produits de données et les modalités de leur échange. Elle
+      définit la liquidité des données comme la capacité d’évaluer, de transférer et d’intégrer des produits entre
+      organisations avec peu de coordination supplémentaire. La transparence facilite l’examen du produit, le
+      renouvellement permet de disposer d’informations à jour et la capacité de jointure permet de les relier à
+      d’autres données. Une comparaison ciblée de 40 documents couvre des catalogues d’identifiants illicites et des
+      contextes liés aux données géospatiales et financières. Elle est complétée par l’analyse de 4 525 offres de 407
+      fournisseurs sur Datarade. Après prise en compte du fournisseur, de la mise en forme du produit et du cas
+      d’usage, les offres qui annoncent un échantillon présentent une fréquence d’affichage d’un champ de prix
+      supérieure de 19,5 points de pourcentage. Les écarts correspondants sont de 11,5 points pour l’affichage d’un
+      prix chiffré et de 9,1 points pour la mention d’une livraison par interface de programmation (API). Les
+      fréquences de mise à jour déclarées sont plus régulièrement associées à la livraison par API, tandis que les
+      estimations relatives à la capacité de jointure varient selon les mesures et les contrôles. Ces résultats
+      portent sur des associations entre informations déclarées dans les offres. Ils ne permettent pas d’établir des
+      effets causaux, un accès effectif ou des transactions conclues. L’étude explique, à l’échelle des produits,
+      comment ces dimensions de la liquidité répondent à des problèmes distincts de coordination, tout en laissant aux
+      droits et à la gouvernance un rôle nécessaire.
   - title: Local Adaptation and Data Interoperability in Disaster Response
     byline: with Anouck Adrot and Salomé Ritouret
     title_fr: Adaptation locale et interopérabilité des données dans la réponse aux catastrophes
-  - title: 'The Economics of Data-Sharing: An Empirical Investigation of Data Sharing Ecosystems'
-    title_fr: 'L’économie du partage de données : une étude empirique des écosystèmes de partage de données'
-    byline: with Eric Brousseau and Joëlle Toledano
-    status: Published in the ICIS 2025 Proceedings.
-    status_fr: Article publié dans les actes d’ICIS 2025.
-    link: https://aisel.aisnet.org/icis2025/sharing_econ/sharing_econ/6/
-    link_label: Paper (AIS eLibrary)
-    link_label_fr: Article (AIS eLibrary)
+    abstract_en: >-
+      Shared digital forms support disaster coordination, yet common labels can conceal differences in what teams
+      record. This study examines how local adaptations become visible to collaborators and what supports collective
+      attention or constrains shared revision across organisations. An embedded qualitative case study of an
+      Italy–France disaster-risk-reduction programme draws on 37 interview transcripts, an account of a 2024
+      simulation and project documents. The analysis distinguishes structural adaptations, which alter categories or
+      forms, from semantic adaptations, which change how existing fields are interpreted or populated. Structural
+      changes offer potential traces for inspection, while semantic changes can leave local meanings hidden behind
+      unchanged labels. We conceptualise this difficulty as representational opacity. The findings link visibility to
+      the traces available in shared representations and opportunities for practitioners to explain and discuss their
+      choices. Joint recognition of a problem could nevertheless coexist with interrupted revision. The study
+      contributes to interoperability research by explaining how interpretive differences can remain difficult to
+      detect within shared representations. It suggests preserving operational definitions alongside data and
+      assigning responsibility and time for shared revisions.
+    abstract_fr: >-
+      Les formulaires numériques partagés facilitent la coordination en cas de catastrophe, mais des libellés communs
+      peuvent masquer des différences dans les informations saisies par les équipes. Cette étude examine comment les
+      adaptations locales deviennent visibles pour les collaborateurs, ce qui favorise leur prise en compte collective
+      et ce qui limite la révision conjointe entre organisations. Une étude de cas qualitative d’un programme
+      franco-italien de réduction des risques de catastrophe s’appuie sur 37 transcriptions d’entretiens, un compte
+      rendu d’une simulation de 2024 et des documents du projet. L’analyse distingue les adaptations structurelles,
+      qui modifient les catégories ou les formulaires, des adaptations sémantiques, qui changent la manière
+      d’interpréter ou de renseigner les champs existants. Les changements structurels peuvent laisser des traces
+      observables, tandis que les adaptations sémantiques peuvent dissimuler des significations locales derrière des
+      libellés inchangés. Nous appelons cette difficulté l’opacité représentationnelle. Les résultats relient la
+      visibilité des adaptations aux traces présentes dans les représentations partagées et aux occasions qu’ont les
+      praticiens d’expliquer et de discuter leurs choix. La reconnaissance collective d’un problème peut toutefois
+      coexister avec l’interruption de la révision. L’étude explique ainsi pourquoi les différences d’interprétation
+      restent parfois difficiles à détecter dans des représentations partagées. Elle suggère de conserver les
+      définitions opérationnelles avec les données et d’attribuer du temps et des responsabilités à leur révision
+      collective.

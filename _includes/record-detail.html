@@ -39,7 +39,9 @@
 {% if detail_item.presentation_title %}<p>{% if detail_french %}{{ site.data.translations[detail_item.presentation_title] | default: detail_item.presentation_title }}{% else %}{{ detail_item.presentation_title }}{% endif %}</p>{% endif %}
 {% if detail_item.authors %}<p class="entry-meta">{% if detail_french %}{{ detail_item.authors | replace: ', and ', ' et ' }}{% else %}{{ detail_item.authors }}{% endif %}</p>{% endif %}
 {% if detail_item.status %}<p class="entry-meta">{% if detail_french %}{{ detail_item.status_fr | default: detail_item.status }}{% else %}{{ detail_item.status }}{% endif %}</p>{% endif %}
-{% if detail_french and detail_item.description_fr %}
+{% if detail_item.abstract_en or detail_item.abstract_fr %}
+  {% include research-abstract.html item=detail_item lang=include.lang %}
+{% elsif detail_french and detail_item.description_fr %}
   {{ detail_item.description_fr | markdownify }}
 {% elsif include.lang == 'en' and detail_item.description_en %}
   {{ detail_item.description_en | markdownify }}

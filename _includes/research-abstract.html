@@ -1,0 +1,5 @@
+{% assign abstract = include.item.abstract_en %}
+{% if include.lang == 'fr' %}{% assign abstract = include.item.abstract_fr %}{% endif %}
+{% if abstract %}
+  <p class="research-abstract"><strong>{% if include.lang == 'fr' %}Résumé{% else %}Abstract{% endif %}</strong> {{ abstract }}</p>
+{% endif %}

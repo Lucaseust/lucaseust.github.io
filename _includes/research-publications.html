@@ -1,0 +1,6 @@
+{% assign published_research = site.publications | sort: 'date' | reverse %}
+{% for post in published_research %}
+  {% unless post.category == 'media' %}
+    {% include archive-single.html heading=include.heading show_abstract=include.show_abstract %}
+  {% endunless %}
+{% endfor %}
