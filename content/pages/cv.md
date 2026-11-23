@@ -1,0 +1,81 @@
+---
+layout: archive
+title: "CV"
+permalink: /cv/
+redirect_from:
+  - /resume
+---
+
+<p><a href="{{ '/files/cv.pdf' | relative_url }}?v=20261112-17">Download CV (PDF)</a> · <a href="{{ '/cv-fr/' | relative_url }}">Version française</a></p>
+
+## Profile
+
+I hold a PhD in Management and Information Systems from University Paris-Dauphine - PSL, completed within Dauphine Recherches en Management and the Governance & Regulation Chair. My dissertation, *Governing Data Sharing*, supervised by Eric Brousseau, examined how data markets, data-sharing ecosystems, and public data infrastructures enable sustainable data sharing.
+
+## Research Focus
+
+- Information systems and data governance: inter-organizational data sharing, data spaces, ecosystem governance, and value creation.
+- Digital innovation and platform organizing: data intermediaries, data products, platform governance, vertical AI, and sectoral or sovereign data infrastructures.
+- Digital regulation and public infrastructures: institutional design, public data reuse, and the governance of digital technologies.
+
+## Academic Appointments
+
+- 2025 - Present: ATER, Temporary Teaching and Research Associate, University Paris-Dauphine - PSL.
+- 2022 - 2026: Doctoral Researcher, Governance & Regulation Chair, University Paris-Dauphine - PSL.
+
+## Education
+
+- 2022 - 2026: PhD in Management, University Paris-Dauphine - PSL.
+- 2021 - 2022: Master 2 in Public Policy, Paris 1 Pantheon-Sorbonne.
+- 2020 - 2021: Master 1 in Economics, Toulouse School of Economics.
+- 2017 - 2020: Bachelor in Economics, University of Lorraine.
+- 2017 - 2020: Bachelor in Public Law, University of Lorraine.
+
+## PhD Dissertation
+
+**Governing Data Sharing**, supervised by Eric Brousseau.
+
+This dissertation investigates how governance arrangements enable sustainable inter-organizational data sharing across data markets, data-sharing ecosystems, and public data infrastructures. It combines documentary analysis, an analysis of 4,525 data marketplace listings, 24 interviews with 20 stakeholders, and a theory-building literature review of 85 sources. It identifies distinct mechanisms for enabling market exchange, sustaining ecosystems, and supporting public data reuse.
+
+## Publications and Media
+
+<ul>
+{% assign publications = site.publications | sort: 'date' | reverse %}
+{% for publication in publications %}
+  <li>{% if publication.citation %}{{ publication.citation }}{% else %}{{ publication.title }}. <em>{{ publication.venue }}</em>, {{ publication.date | date: '%Y' }}.{% endif %} <a href="{{ publication.url | relative_url }}">Details</a></li>
+{% endfor %}
+</ul>
+
+## Working Papers
+
+<ul>
+{% for paper in site.data.home.working_papers.items %}
+  <li><strong>{{ paper.title }}</strong>.{% if paper.byline %} {{ paper.byline }}.{% endif %} {{ paper.text }}</li>
+{% endfor %}
+</ul>
+
+## Methods
+
+- Qualitative: semi-structured interviews, case studies, field observations.
+- Quantitative: panel data models, OLS, logit/probit, causal inference.
+- Computational: NLP, topic modeling, BERTopic, zero-shot classification, web scraping.
+
+## Teaching
+
+<ul>
+{% assign courses = site.teaching | sort: 'date' | reverse %}
+{% for course in courses %}
+  <li><a href="{{ course.url | relative_url }}">{{ course.title }}</a>, {{ course.type }}, {{ course.venue }}, {% if course.period %}{{ course.period }}{% else %}{{ course.date | date: '%Y' }}{% endif %}.</li>
+{% endfor %}
+</ul>
+
+## Academic Service
+
+- Co-convenor, Working Group "Digital Activities", Governance & Regulation Chair.
+- Conference organizer for data-sharing and digital regulation events, Governance & Regulation Chair, 2023 - 2025.
+- Elected PhD Representative, DRM Council, 2023 - Present.
+- Research Internship Coordinator, M1 IASO, University Paris-Dauphine - PSL, 2026 - Present.
+
+## Service and Volunteering
+
+- 2023 - Present: Deputy Local Director in charge of emergency response, French Red Cross.

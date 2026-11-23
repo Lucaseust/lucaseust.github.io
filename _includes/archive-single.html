@@ -1,0 +1,6 @@
+<article class="entry">
+  <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+  <p class="entry-meta">{% if post.authors %}{{ post.authors }} · {% endif %}{% if post.type %}{{ post.type }} · {% endif %}{% if post.venue %}{{ post.venue }} · {% endif %}{% if post.period %}{{ post.period }}{% elsif post.date %}{{ post.date | date: '%Y' }}{% endif %}</p>
+  {% if post.excerpt %}<div class="entry-description">{{ post.excerpt | markdownify }}</div>{% endif %}
+  {% include resource-links.html item=post %}
+</article>

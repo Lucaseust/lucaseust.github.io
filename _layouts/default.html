@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="{{ site.locale | default: 'en' | slice: 0, 2 }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include seo.html %}
+    <link rel="icon" href="{{ '/images/favicon.svg' | relative_url }}" type="image/svg+xml">
+    <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    {% include masthead.html %}
+    {{ content }}
+    <footer class="site-footer">
+      <span>{{ site.name }}</span>
+      {% if site.author.email %}<a href="mailto:{{ site.author.email }}">Email</a>{% endif %}
+      {% if site.author.uri %}<a href="{{ site.author.uri }}">University profile</a>{% endif %}
+      {% if site.author.googlescholar %}<a href="{{ site.author.googlescholar }}" rel="me">Google Scholar</a>{% endif %}
+      {% if site.author.orcid %}<a href="{{ site.author.orcid }}" rel="me">ORCID</a>{% endif %}
+      {% if site.author.github %}<a href="https://github.com/{{ site.author.github }}">GitHub</a>{% endif %}
+      {% if site.author.linkedin %}<a href="https://www.linkedin.com/in/{{ site.author.linkedin }}">LinkedIn</a>{% endif %}
+    </footer>
+  </body>
+</html>

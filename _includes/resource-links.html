@@ -1,0 +1,9 @@
+{% assign resource = include.item %}
+{% if resource.link or resource.paperurl or resource.slidesurl or resource.bibtexurl %}
+<p class="resource-links">
+  {% if resource.link %}<a href="{{ resource.link | relative_url }}">{{ resource.link_label | default: 'View source' }}</a>{% endif %}
+  {% if resource.paperurl %}<a href="{{ resource.paperurl | relative_url }}">{{ resource.paperurl_label | default: 'Read paper' }}</a>{% endif %}
+  {% if resource.slidesurl %}<a href="{{ resource.slidesurl | relative_url }}">Slides</a>{% endif %}
+  {% if resource.bibtexurl %}<a href="{{ resource.bibtexurl | relative_url }}">BibTeX</a>{% endif %}
+</p>
+{% endif %}

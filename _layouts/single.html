@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<main id="main" tabindex="-1">
+  <article>
+    <h1>{{ page.title }}</h1>
+    {% if page.collection %}
+      <p class="entry-meta">{% if page.type %}{{ page.type }} · {% endif %}{% if page.venue %}{{ page.venue }} · {% endif %}{% if page.period %}{{ page.period }}{% elsif page.collection == 'teaching' %}{{ page.date | date: '%Y' }}{% else %}{{ page.date | date: '%B %Y' }}{% endif %}{% if page.location %} · {{ page.location }}{% endif %}</p>
+    {% endif %}
+    {% if page.presentation_title %}<p>{{ page.presentation_title }}</p>{% endif %}
+    {{ content }}
+    {% if page.citation %}<p class="entry-meta">{{ page.citation }}</p>{% endif %}
+    {% include resource-links.html item=page %}
+  </article>
+</main>

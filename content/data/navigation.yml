@@ -1,0 +1,10 @@
+# The name links to the homepage. These are the remaining navigation links.
+main:
+  - title: "Publications"
+    url: /publications/
+  - title: "Presentations"
+    url: /talks/
+  - title: "Teaching"
+    url: /teaching/
+  - title: "CV"
+    url: /cv/

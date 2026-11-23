@@ -1,0 +1,41 @@
+{% include base_path %}
+{% assign item = include.item %}
+{% assign title = item.title %}
+{% assign item_lang = include.lang | default: page.lang | default: site.locale | slice: 0, 2 %}
+{% if item_lang == 'fr' %}{% assign title = site.data.translations[item.title] | default: item.title %}{% endif %}
+{% assign presentation_heading = 'h3' %}
+{% if page.permalink == '/cv/' or page.permalink == '/cv-fr/' %}{% assign presentation_heading = 'h4' %}{% endif %}
+
+<article class="presentation-item" itemscope itemtype="http://schema.org/Event">
+  {% if item.date %}
+    <time class="presentation-date" datetime="{{ item.date | date_to_xmlschema }}">
+      <span class="presentation-date__year">{{ item.date | date: "%Y" }}</span>
+      <span class="presentation-date__month">{{ item.date | date: "%m" }}</span>
+    </time>
+  {% endif %}
+
+  <div class="presentation-content">
+    <{{ presentation_heading }} class="presentation-title" itemprop="name">
+      {% if item.link %}
+        <a href="{{ item.link }}">{{ title }}</a>
+      {% elsif item.url %}
+        <a href="{{ item.url | relative_url }}">{{ title }}</a>
+      {% else %}
+        {{ title }}
+      {% endif %}
+    </{{ presentation_heading }}>
+
+    {% if item.presentation_title %}
+      <p class="presentation-paper">{% if item_lang == 'fr' %}{{ site.data.translations[item.presentation_title] | default: item.presentation_title }}{% else %}{{ item.presentation_title }}{% endif %}</p>
+    {% endif %}
+    {% if item.authors %}<p class="entry-meta">{{ item.authors }}</p>{% endif %}
+
+    <p class="presentation-meta">
+      {% if item.type %}<span>{% if item_lang == 'fr' %}{{ site.data.translations[item.type] | default: item.type }}{% else %}{{ item.type }}{% endif %}</span>{% endif %}
+      {% if item.venue %}<span>{% if item_lang == 'fr' %}{{ site.data.translations[item.venue] | default: item.venue }}{% else %}{{ item.venue }}{% endif %}</span>{% endif %}
+      {% if item.location %}<span>{% if item_lang == 'fr' %}{{ site.data.translations[item.location] | default: item.location }}{% else %}{{ item.location }}{% endif %}</span>{% endif %}
+    </p>
+    {% if item.status %}<p class="entry-meta">{% if item_lang == 'fr' %}{{ item.status_fr | default: item.status }}{% else %}{{ item.status }}{% endif %}</p>{% endif %}
+    {% if item.paperurl %}<p class="resource-links"><a href="{{ item.paperurl }}">{% if item_lang == 'fr' %}{% if item.paperurl contains 'arxiv.org' %}Prépublication (arXiv){% else %}Lire l’article{% endif %}{% elsif item.paperurl_label %}{{ item.paperurl_label }}{% else %}Read paper{% endif %}</a></p>{% endif %}
+  </div>
+</article>

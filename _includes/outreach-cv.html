@@ -1,0 +1,11 @@
+<h3>{% if include.lang == 'fr' %}Conférences professionnelles{% else %}Professional conferences{% endif %}</h3>
+{% assign engagements = site.data.presentations.engagements | sort: 'date' | reverse %}
+{% for item in engagements %}{% include presentation-item.html item=item lang=include.lang %}{% endfor %}
+<h3>{% if include.lang == 'fr' %}Médias{% else %}Media{% endif %}</h3>
+{% assign media = site.publications | where: 'category', 'media' | sort: 'date' | reverse %}
+{% for item in media %}
+<article class="media-entry">
+  <h4><a href="{{ item.link }}">{{ item.title }}</a></h4>
+  <p class="entry-meta">{% if item.authors %}{{ item.authors }} · {% endif %}<em>{{ item.venue }}</em> · {{ item.date | date: '%Y' }}</p>
+</article>
+{% endfor %}

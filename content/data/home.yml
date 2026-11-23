@@ -1,0 +1,27 @@
+bio:
+  paragraphs:
+    - "I hold a PhD in management and information systems from University Paris-Dauphine - PSL. I study the organizational and institutional governance of inter-organizational data sharing."
+    - "My dissertation, supervised by Eric Brousseau, examined how data markets, data-sharing ecosystems, and public data infrastructures enable sustainable data sharing. I also have research interests in digital trace data and emergency and disaster management."
+    - "I combine fieldwork and quantitative methods, including interviews, case studies, econometrics, and text analysis."
+
+dissertation:
+  title: "Doctoral dissertation"
+  item_title: "Governing Data Sharing"
+  byline: "Supervisor: Eric Brousseau, Paris Dauphine - PSL, 2026"
+  text: "Examines how governance arrangements enable sustainable inter-organizational data sharing across data markets, data-sharing ecosystems, and public data infrastructures. The multi-method study combines documentary analysis, 4,525 data marketplace listings, 24 interviews with 20 stakeholders, and a theory-building review of 85 sources. It identifies three mechanisms: constructing data liquidity, orchestrating collective investments and incentives, and cultivating user capabilities and demand."
+
+working_papers:
+  title: "Working papers"
+  items:
+    - title: "Cultivating Sustained Use in Public Data Infrastructures"
+      byline: "Single-authored"
+      text: "Examines how public data infrastructures can support sustained reuse when users' needs require cooperation from another organization, using a theory-building review of 85 sources to identify four cultivation activities: helping users identify applications, building their skills, negotiating cooperation, and following requests for change. It shows how gaps in responsibility and resources can prevent necessary changes to data or access."
+    - title: "Channel Composition: A Measurement Theory for Digital Trace Data"
+      byline: "with Paul Favier"
+      text: "Develops a measurement theory explaining how the mix of channels used to produce digital traces reveals latent behavioral context beyond aggregate activity. Validates the framework using Wikipedia pageviews, hotel demand across 704 French destinations, and attendance at six cultural attractions."
+    - title: "Making Data Exchangeable: Product Construction and the Redistribution of Coordination"
+      byline: "Single-authored"
+      text: "Explains how data product construction embeds recurring coordination in reusable artifacts, while residual work remains with organizational relationships and institutions. Combines documentary cases with an analysis of 4,525 marketplace listings from 407 providers; observed associations concern disclosed exchange support, not completed transactions."
+    - title: "Local Adaptation and Data Interoperability in Disaster Response"
+      byline: "with Anouck Adrot and Salome Ritouret"
+      text: "Studies how local adaptations to shared digital forms affect interoperability in disaster response. An Italy-France case based on 37 interviews, a 2024 simulation, and project documents distinguishes structural changes to forms from semantic changes in how fields are interpreted, explaining how the latter can remain hidden and why shared revision needs time and clear ownership."
