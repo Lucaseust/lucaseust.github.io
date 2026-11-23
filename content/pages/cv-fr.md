@@ -1,10 +1,11 @@
 ---
 layout: archive
 title: "CV"
+lang: fr
 permalink: /cv-fr/
 ---
 
-<p><a href="{{ '/files/cv-fr.pdf' | relative_url }}?v=20261112-17">Télécharger le CV (PDF)</a> · <a href="{{ '/cv/' | relative_url }}">English version</a></p>
+<p><a href="{{ '/files/cv-fr.pdf' | relative_url }}?v=20261123-1">Télécharger le CV (PDF)</a> · <a href="{{ '/cv/' | relative_url }}">English version</a></p>
 
 ## Profil
 
@@ -57,14 +58,10 @@ Cette thèse analyse les dispositifs de gouvernance permettant un partage durabl
 - Quantitatives : modèles de données de panel, moindres carrés ordinaires, modèles logit/probit et inférence causale.
 - Computationnelles : traitement automatique du langage, modélisation thématique, BERTopic, classification zero-shot et collecte de données web.
 
-## Enseignement
-
-<ul>
-{% assign courses = site.teaching | sort: 'date' | reverse %}
-{% for course in courses %}
-  <li><a href="{{ course.url | relative_url }}">{{ course.title }}</a>, {{ course.type }}, {{ course.venue }}, {% if course.period %}{{ course.period }}{% else %}{{ course.date | date: '%Y' }}{% endif %}.</li>
-{% endfor %}
-</ul>
+<section class="cv-teaching" aria-labelledby="cv-teaching-title">
+<h2 id="cv-teaching-title">Enseignement</h2>
+{% include teaching-table.html lang="fr" %}
+</section>
 
 ## Responsabilités académiques
 

@@ -1,0 +1,91 @@
+[
+  {
+    "title": "Management des systèmes d'information",
+    "level": "Master 2",
+    "format": "CM",
+    "hours": 36,
+    "years": "2026",
+    "responsibility": "Création du cours",
+    "language": "Anglais",
+    "institution": "PSL (Paris School of AI)",
+    "url": "/teaching/management-information-systems/"
+  },
+  {
+    "title": "Ecosystème Data et IA",
+    "level": "Master 2",
+    "format": "CM",
+    "hours": 13.5,
+    "years": "2026",
+    "responsibility": "Création du cours et d'un jeu pédagogique",
+    "repository": "https://github.com/Lucaseust/ecosystem_game",
+    "language": "Français",
+    "institution": "Paris Dauphine PSL",
+    "url": "/teaching/data-ai-ecosystems/"
+  },
+  {
+    "title": "Knowledge Management",
+    "level": "Master 1",
+    "format": "CM",
+    "hours": 18,
+    "years": "2025",
+    "responsibility": "",
+    "language": "Français",
+    "institution": "Dauphine Tunis",
+    "url": "/teaching/knowledge-management/"
+  },
+  {
+    "title": "Stratégie à l'ère du numérique",
+    "level": "Master 1",
+    "format": "TD",
+    "hours": 27,
+    "years": "2023 - 2026",
+    "responsibility": "Coordination du TD",
+    "language": "Français",
+    "institution": "Paris Dauphine PSL",
+    "url": "/teaching/digital-strategy/"
+  },
+  {
+    "title": "Economie et théorie des jeux",
+    "level": "Master 1",
+    "format": "CM",
+    "hours": 18,
+    "years": "2025-2026",
+    "responsibility": "Création du cours",
+    "language": "Anglais",
+    "institution": "PSL (Paris School of AI)",
+    "url": "/teaching/economics-game-theory/"
+  },
+  {
+    "title": "Stratégie",
+    "level": "L3",
+    "format": "TD",
+    "hours": 18,
+    "years": "2025",
+    "responsibility": "",
+    "language": "Français",
+    "institution": "Paris Dauphine PSL",
+    "url": "/teaching/strategy/"
+  },
+  {
+    "title": "Théorie des organisations",
+    "level": "L3",
+    "format": "TD",
+    "hours": 18,
+    "years": "2024",
+    "responsibility": "",
+    "language": "Français",
+    "institution": "Ecole Polytechnique",
+    "url": "/teaching/organisation-theory/"
+  },
+  {
+    "title": "Economie",
+    "level": "L1",
+    "format": "CM",
+    "hours": 36,
+    "years": "2025-2026",
+    "responsibility": "",
+    "language": "Anglais",
+    "institution": "PSL (Paris School of AI)",
+    "url": "/teaching/economics/"
+  }
+]

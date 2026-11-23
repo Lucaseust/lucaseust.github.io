@@ -1,12 +1,13 @@
 ---
 layout: archive
 title: "CV"
+lang: en
 permalink: /cv/
 redirect_from:
   - /resume
 ---
 
-<p><a href="{{ '/files/cv.pdf' | relative_url }}?v=20261112-17">Download CV (PDF)</a> · <a href="{{ '/cv-fr/' | relative_url }}">Version française</a></p>
+<p><a href="{{ '/files/cv.pdf' | relative_url }}?v=20261123-1">Download CV (PDF)</a> · <a href="{{ '/cv-fr/' | relative_url }}">Version française</a></p>
 
 ## Profile
 
@@ -60,14 +61,10 @@ This dissertation investigates how governance arrangements enable sustainable in
 - Quantitative: panel data models, OLS, logit/probit, causal inference.
 - Computational: NLP, topic modeling, BERTopic, zero-shot classification, web scraping.
 
-## Teaching
-
-<ul>
-{% assign courses = site.teaching | sort: 'date' | reverse %}
-{% for course in courses %}
-  <li><a href="{{ course.url | relative_url }}">{{ course.title }}</a>, {{ course.type }}, {{ course.venue }}, {% if course.period %}{{ course.period }}{% else %}{{ course.date | date: '%Y' }}{% endif %}.</li>
-{% endfor %}
-</ul>
+<section class="cv-teaching" aria-labelledby="cv-teaching-title">
+<h2 id="cv-teaching-title">Teaching</h2>
+{% include teaching-table.html lang="en" %}
+</section>
 
 ## Academic Service
 
