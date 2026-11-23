@@ -7,7 +7,7 @@ cv: true
 alternate_url: /en/cv/
 ---
 
-<p><a href="{{ '/files/cv-fr.pdf' | relative_url }}?v=20261123-1">Télécharger le CV (PDF)</a></p>
+<p><a href="{{ '/files/cv-fr.pdf' | relative_url }}?v=20261123-2">Télécharger le CV (PDF)</a></p>
 
 ## Profil
 
