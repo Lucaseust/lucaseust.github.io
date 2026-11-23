@@ -1,11 +1,13 @@
 ---
 layout: archive
 title: "CV"
-lang: fr
 permalink: /cv-fr/
+lang: fr
+cv: true
+alternate_url: /en/cv/
 ---
 
-<p><a href="{{ '/files/cv-fr.pdf' | relative_url }}?v=20261123-1">Télécharger le CV (PDF)</a> · <a href="{{ '/cv/' | relative_url }}">English version</a></p>
+<p><a href="{{ '/files/cv-fr.pdf' | relative_url }}?v=20261123-1">Télécharger le CV (PDF)</a></p>
 
 ## Profil
 
@@ -13,63 +15,68 @@ Je suis docteur en sciences de gestion (systèmes d’information), de l'Univers
 
 ## Axes de recherche
 
-- Systèmes d'information et gouvernance des données : partage interorganisationnel des données, espaces de données, gouvernance des écosystèmes et création de valeur.
-- Innovation numérique et organisation des plateformes : intermédiaires de données, produits de données, gouvernance des plateformes, IA verticale et infrastructures sectorielles ou souveraines.
-- Régulation numérique et infrastructures publiques : conception institutionnelle, réutilisation des données publiques et gouvernance des technologies numériques.
+<ul class="cv-focus">
+  <li><strong>Systèmes d'information et gouvernance des données</strong><p>partage interorganisationnel des données, espaces de données, gouvernance des écosystèmes et création de valeur.</p></li>
+  <li><strong>Innovation numérique et organisation des plateformes</strong><p>intermédiaires de données, produits de données, gouvernance des plateformes, IA verticale et infrastructures sectorielles ou souveraines.</p></li>
+  <li><strong>Régulation numérique et infrastructures publiques</strong><p>conception institutionnelle, réutilisation des données publiques et gouvernance des technologies numériques.</p></li>
+</ul>
 
-## Expérience académique
+## Poste actuel
 
-- 2025 - aujourd'hui : Attaché temporaire d'enseignement et de recherche (ATER), Université Paris Dauphine - PSL.
-- 2022 - 2026 : Chercheur doctorant, Chaire Gouvernance et Régulation, Université Paris Dauphine - PSL.
+<article class="cv-entry">
+  <h3>Attaché temporaire d'enseignement et de recherche (ATER)</h3>
+  <p class="entry-meta">2025 - aujourd'hui · <em>Université Paris Dauphine - PSL</em></p>
+</article>
+## Poste précédent
+
+<article class="cv-entry">
+  <h3>Chercheur doctorant</h3>
+  <p class="entry-meta">2022 - 2026 · <em>Chaire Gouvernance et Régulation, Université Paris Dauphine - PSL</em></p>
+</article>
 
 ## Formation
 
-- 2022 - 2026 : Doctorat en sciences de gestion, Université Paris Dauphine - PSL.
-- 2021 - 2022 : Master 2 Politiques publiques, Université Paris 1 Panthéon-Sorbonne.
-- 2020 - 2021 : Master 1 en économie, Toulouse School of Economics.
-- 2017 - 2020 : Licence en économie, Université de Lorraine.
-- 2017 - 2020 : Licence en droit public, Université de Lorraine.
+<div class="dissertation-card">
+  <h3>Doctorat en sciences de gestion</h3>
+  <p><strong>Titre :</strong> <em>Gouverner le partage de données</em></p>
+  <p class="entry-meta">2026 · <em>Université Paris Dauphine – PSL</em><br><strong>Direction :</strong> Éric Brousseau<br><strong>Rapporteurs :</strong> Cécile Godé et Pierre-Jean Benghozi</p>
+  <p class="dissertation-date">Thèse soutenue le <time datetime="2026-10-09">9 octobre 2026</time></p>
+</div>
 
-## Thèse
-
-**Governing Data Sharing**, sous la direction d'Éric Brousseau.
-
-Cette thèse analyse les dispositifs de gouvernance permettant un partage durable des données entre organisations, à travers les marchés de données, les écosystèmes de partage et les infrastructures publiques de données. Elle combine une analyse documentaire comparative, l'analyse de 4 525 offres de places de marché de données, 24 entretiens avec 20 acteurs et une revue de littérature théorique portant sur 85 sources. Elle met en évidence trois mécanismes : la construction de la liquidité des données pour faciliter les échanges marchands, l'orchestration des investissements collectifs et des incitations pour pérenniser les écosystèmes, et le développement des capacités et de la demande des utilisateurs pour soutenir la réutilisation des données publiques.
-
-## Publications et médias
-
-<ul>
-{% assign publications = site.publications | sort: 'date' | reverse %}
-{% for publication in publications %}
-  <li>{% if publication.citation %}{{ publication.citation }}{% else %}{{ publication.title }}. <em>{{ publication.venue }}</em>, {{ publication.date | date: '%Y' }}.{% endif %} <a href="{{ publication.url | relative_url }}">Détails</a></li>
-{% endfor %}
-</ul>
-
-## Travaux en cours
-
-- **Cultivating Sustained Use in Public Data Infrastructures** : étude des activités nécessaires pour soutenir durablement la réutilisation des données publiques, notamment l'accompagnement des utilisateurs, la coordination et le suivi des évolutions demandées.
-- **Channel Composition: A Measurement Theory for Digital Trace Data** (avec Paul Favier) : élaboration d'un cadre théorique expliquant comment la composition des canaux de production des traces numériques révèle des contextes d'activité au-delà des volumes agrégés.
-- **Making Data Exchangeable: Product Construction and the Redistribution of Coordination** : analyse de la manière dont la construction de produits de données redistribue la coordination entre artefacts, relations organisationnelles et institutions.
-- **Local Adaptation and Data Interoperability in Disaster Response** (avec Anouck Adrot et Salomé Ritouret) : étude des effets des adaptations locales de formulaires numériques partagés sur l'interopérabilité en gestion de crise.
-
-## Méthodes
-
-- Qualitatives : entretiens semi-directifs, études de cas et observations de terrain.
-- Quantitatives : modèles de données de panel, moindres carrés ordinaires, modèles logit/probit et inférence causale.
-- Computationnelles : traitement automatique du langage, modélisation thématique, BERTopic, classification zero-shot et collecte de données web.
+<article class="cv-entry">
+  <h3>Master 2 Politiques publiques</h3>
+  <p class="entry-meta">2021 - 2022 · <em>Université Paris 1 Panthéon-Sorbonne</em></p>
+</article>
+<article class="cv-entry">
+  <h3>Master 1 en économie</h3>
+  <p class="entry-meta">2020 - 2021 · <em>Toulouse School of Economics</em></p>
+</article>
+<article class="cv-entry">
+  <h3>Licence en économie</h3>
+  <p class="entry-meta">2017 - 2020 · <em>Université de Lorraine</em></p>
+</article>
+<article class="cv-entry">
+  <h3>Licence en droit public</h3>
+  <p class="entry-meta">2017 - 2020 · <em>Université de Lorraine</em></p>
+</article>
 
 <section class="cv-teaching" aria-labelledby="cv-teaching-title">
 <h2 id="cv-teaching-title">Enseignement</h2>
 {% include teaching-table.html lang="fr" %}
 </section>
 
-## Responsabilités académiques
+## Recherche
 
-- Co-animation du groupe de travail « Activités numériques », Chaire Gouvernance et Régulation.
-- Organisation de conférences sur le partage des données et la régulation numérique, Chaire Gouvernance et Régulation, 2023 - 2025.
-- Représentant élu des doctorants au conseil de Dauphine Recherches en Management, 2023 - aujourd'hui.
-- Coordination des stages de recherche du M1 IASO (IA et société), Université Paris Dauphine - PSL, depuis 2026.
+{% include working-papers-cv.html lang="fr" %}
 
-## Engagement et bénévolat
+{% include research-cv.html lang="fr" %}
 
-- Depuis 2023 : directeur local adjoint en charge de l'urgence, Croix-Rouge française.
+{% include research-supervision.html lang="fr" %}
+
+## Dissémination scientifique
+
+{% include outreach-cv.html lang="fr" %}
+
+## Service académique
+
+{% include academic-service.html lang="fr" %}

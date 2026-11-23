@@ -4,29 +4,4 @@ lang: fr
 title: "Présentations"
 permalink: /talks/
 ---
-
-{% assign presentations = site.data.presentations %}
-
-{% if site.talkmap_link == true %}
-
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
-
-{% endif %}
-
-<h2>Conférences académiques</h2>
-
-<div class="presentation-list">
-{% assign talks = site.talks | where: 'category', 'conference' | sort: 'date' | reverse %}
-{% for post in talks %}
-  {% include presentation-item.html item=post %}
-{% endfor %}
-</div>
-
-<h2>Ateliers et séminaires</h2>
-<div class="presentation-list">
-{% assign workshops = site.talks | where: 'category', 'workshop' | sort: 'date' | reverse %}
-{% for item in workshops %}{% include presentation-item.html item=item %}{% endfor %}
-</div>
-
-<h2>Dissémination scientifique</h2>
-{% include outreach-cv.html lang="fr" %}
+{% include talks-page.html %}

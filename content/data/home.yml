@@ -1,27 +1,50 @@
 bio:
   paragraphs:
-    - "I hold a PhD in management and information systems from University Paris-Dauphine - PSL. I study the organizational and institutional governance of inter-organizational data sharing."
-    - "My dissertation, supervised by Eric Brousseau, examined how data markets, data-sharing ecosystems, and public data infrastructures enable sustainable data sharing. I also have research interests in digital trace data and emergency and disaster management."
-    - "I combine fieldwork and quantitative methods, including interviews, case studies, econometrics, and text analysis."
-
+  - Je suis docteur en sciences de gestion et systèmes d’information de l’Université Paris Dauphine – PSL. Mes recherches portent sur la gouvernance organisationnelle
+    et institutionnelle du partage de données entre organisations.
+  - Ma thèse, dirigée par Éric Brousseau, étudie comment les marchés de données, les écosystèmes de partage et les infrastructures publiques de données
+    permettent un partage durable. Je m’intéresse également aux traces numériques et à la gestion des urgences et des catastrophes.
+  - 'Je combine enquêtes de terrain et méthodes quantitatives : entretiens, études de cas, économétrie et analyse de textes.'
+  paragraphs_en:
+  - I hold a PhD in management and information systems from Paris Dauphine University – PSL. I study the organizational and institutional governance of data sharing between organizations.
+  - My dissertation, supervised by Éric Brousseau, examined how data markets, data-sharing ecosystems, and public data infrastructures enable sustainable data sharing. I also study digital trace data and emergency and disaster management.
+  - 'I combine fieldwork and quantitative methods: interviews, case studies, econometrics, and text analysis.'
 dissertation:
-  title: "Doctoral dissertation"
-  item_title: "Governing Data Sharing"
-  byline: "Supervisor: Eric Brousseau, Paris Dauphine - PSL, 2026"
-  text: "Examines how governance arrangements enable sustainable inter-organizational data sharing across data markets, data-sharing ecosystems, and public data infrastructures. The multi-method study combines documentary analysis, 4,525 data marketplace listings, 24 interviews with 20 stakeholders, and a theory-building review of 85 sources. It identifies three mechanisms: constructing data liquidity, orchestrating collective investments and incentives, and cultivating user capabilities and demand."
-
+  title: Thèse de doctorat
+  title_en: Doctoral dissertation
+  item_title: Gouverner le partage de données
+  item_title_en: Governing Data Sharing
+  byline: 'Université Paris Dauphine – PSL · Direction : Éric Brousseau'
+  byline_en: 'Paris Dauphine University – PSL · Supervisor: Éric Brousseau'
 working_papers:
-  title: "Working papers"
+  title: Travaux en cours
   items:
-    - title: "Cultivating Sustained Use in Public Data Infrastructures"
-      byline: "Single-authored"
-      text: "Examines how public data infrastructures can support sustained reuse when users' needs require cooperation from another organization, using a theory-building review of 85 sources to identify four cultivation activities: helping users identify applications, building their skills, negotiating cooperation, and following requests for change. It shows how gaps in responsibility and resources can prevent necessary changes to data or access."
-    - title: "Channel Composition: A Measurement Theory for Digital Trace Data"
-      byline: "with Paul Favier"
-      text: "Develops a measurement theory explaining how the mix of channels used to produce digital traces reveals latent behavioral context beyond aggregate activity. Validates the framework using Wikipedia pageviews, hotel demand across 704 French destinations, and attendance at six cultural attractions."
-    - title: "Making Data Exchangeable: Product Construction and the Redistribution of Coordination"
-      byline: "Single-authored"
-      text: "Explains how data product construction embeds recurring coordination in reusable artifacts, while residual work remains with organizational relationships and institutions. Combines documentary cases with an analysis of 4,525 marketplace listings from 407 providers; observed associations concern disclosed exchange support, not completed transactions."
-    - title: "Local Adaptation and Data Interoperability in Disaster Response"
-      byline: "with Anouck Adrot and Salome Ritouret"
-      text: "Studies how local adaptations to shared digital forms affect interoperability in disaster response. An Italy-France case based on 37 interviews, a 2024 simulation, and project documents distinguishes structural changes to forms from semantic changes in how fields are interpreted, explaining how the latter can remain hidden and why shared revision needs time and clear ownership."
+  - title: Cultivating Sustained Use in Public Data Infrastructures
+    title_fr: Cultiver l’usage durable dans les infrastructures de données publiques
+    byline: Single-authored
+  - title: 'Channel Composition: A Measurement Theory for Digital Trace Data'
+    byline: with Paul Favier
+    link: https://arxiv.org/abs/2606.29991
+    status: 'Submission in progress to Journal of Information Technology (JIT) — FNEGE 2025: 1; AJG 2024: 4'
+    status_fr: 'En cours de soumission au Journal of Information Technology (JIT) — FNEGE 2025 : 1 ; AJG 2024 : 4'
+    title_fr: 'Composition des canaux : une théorie de la mesure des traces numériques'
+    note: 'Revised version of “Behind the Content: Wikipedia Mobile Views and Tourism Activity”, presented at AIM 2026.'
+    note_fr: 'Version remaniée de « Au-delà du contenu : consultations mobiles de Wikipédia et activité touristique », présentée à AIM 2026.'
+    link_label: Earlier version (arXiv)
+    link_label_fr: Version antérieure (arXiv)
+  - title: 'Data liquidity and data market organization'
+    byline: Single-authored
+    title_fr: 'Liquidité des données et organisation des marchés de données'
+    status: 'Submission in progress to Information Systems Frontiers — FNEGE 2025: 2; AJG 2024: 3'
+    status_fr: 'En cours de soumission à Information Systems Frontiers — FNEGE 2025 : 2 ; AJG 2024 : 3'
+  - title: Local Adaptation and Data Interoperability in Disaster Response
+    byline: with Anouck Adrot and Salomé Ritouret
+    title_fr: Adaptation locale et interopérabilité des données dans la réponse aux catastrophes
+  - title: 'The Economics of Data-Sharing: An Empirical Investigation of Data Sharing Ecosystems'
+    title_fr: 'L’économie du partage de données : une étude empirique des écosystèmes de partage de données'
+    byline: with Eric Brousseau and Joëlle Toledano
+    status: Published in the ICIS 2025 Proceedings.
+    status_fr: Article publié dans les actes d’ICIS 2025.
+    link: https://aisel.aisnet.org/icis2025/sharing_econ/sharing_econ/6/
+    link_label: Paper (AIS eLibrary)
+    link_label_fr: Article (AIS eLibrary)

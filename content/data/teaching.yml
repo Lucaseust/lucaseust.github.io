@@ -8,7 +8,8 @@
     "responsibility": "Création du cours",
     "language": "Anglais",
     "institution": "PSL (Paris School of AI)",
-    "url": "/teaching/management-information-systems/"
+    "url": "/teaching/management-information-systems/",
+    "title_en": "Management Information Systems"
   },
   {
     "title": "Ecosystème Data et IA",
@@ -20,7 +21,8 @@
     "repository": "https://github.com/Lucaseust/ecosystem_game",
     "language": "Français",
     "institution": "Paris Dauphine PSL",
-    "url": "/teaching/data-ai-ecosystems/"
+    "url": "/teaching/data-ai-ecosystems/",
+    "title_en": "Data and AI Ecosystems"
   },
   {
     "title": "Knowledge Management",
@@ -31,7 +33,8 @@
     "responsibility": "",
     "language": "Français",
     "institution": "Dauphine Tunis",
-    "url": "/teaching/knowledge-management/"
+    "url": "/teaching/knowledge-management/",
+    "title_en": "Knowledge Management"
   },
   {
     "title": "Stratégie à l'ère du numérique",
@@ -42,7 +45,8 @@
     "responsibility": "Coordination du TD",
     "language": "Français",
     "institution": "Paris Dauphine PSL",
-    "url": "/teaching/digital-strategy/"
+    "url": "/teaching/digital-strategy/",
+    "title_en": "Strategy in the Digital Age"
   },
   {
     "title": "Economie et théorie des jeux",
@@ -53,7 +57,8 @@
     "responsibility": "Création du cours",
     "language": "Anglais",
     "institution": "PSL (Paris School of AI)",
-    "url": "/teaching/economics-game-theory/"
+    "url": "/teaching/economics-game-theory/",
+    "title_en": "Economics and Game Theory"
   },
   {
     "title": "Stratégie",
@@ -64,7 +69,8 @@
     "responsibility": "",
     "language": "Français",
     "institution": "Paris Dauphine PSL",
-    "url": "/teaching/strategy/"
+    "url": "/teaching/strategy/",
+    "title_en": "Strategy"
   },
   {
     "title": "Théorie des organisations",
@@ -75,7 +81,8 @@
     "responsibility": "",
     "language": "Français",
     "institution": "Ecole Polytechnique",
-    "url": "/teaching/organisation-theory/"
+    "url": "/teaching/organisation-theory/",
+    "title_en": "Organization Theory"
   },
   {
     "title": "Economie",
@@ -86,6 +93,7 @@
     "responsibility": "",
     "language": "Anglais",
     "institution": "PSL (Paris School of AI)",
-    "url": "/teaching/economics/"
+    "url": "/teaching/economics/",
+    "title_en": "Economics"
   }
 ]

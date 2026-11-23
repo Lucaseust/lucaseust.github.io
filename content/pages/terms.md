@@ -1,15 +1,16 @@
 ---
 permalink: /terms/
-title: "Terms and Privacy"
+title: "Mentions et confidentialité"
+lang: fr
 modified: 2026-05-02
 ---
 
-## Privacy
+## Confidentialité
 
-This website is a static GitHub Pages site. It does not run a newsletter, account system, comment system, or custom analytics.
+Ce site statique est hébergé par GitHub Pages. Il ne propose ni lettre d’information, ni compte utilisateur, ni commentaires, et n’utilise aucun outil d’analyse d’audience propre au site.
 
-GitHub may process standard server logs when serving the site. If you contact Lucas by email, your message and contact details are used only to reply to your request.
+GitHub peut traiter les journaux techniques générés lors de la consultation du site. Si vous contactez Lucas par courriel, votre message et vos coordonnées servent uniquement à vous répondre.
 
-## Content
+## Contenu
 
-Unless otherwise stated, research descriptions, CV information, and profile text are provided for academic and professional information.
+Sauf indication contraire, les descriptions des travaux de recherche, les informations du CV et le texte du profil sont fournis à titre d’information académique et professionnelle.

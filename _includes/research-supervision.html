@@ -1,0 +1,10 @@
+{% assign french = false %}
+{% if include.lang == 'fr' %}{% assign french = true %}{% endif %}
+<section class="research-supervision">
+  <h3>{% if french %}Encadrement de stage de recherche{% else %}Research internship supervision{% endif %}</h3>
+  <article class="cv-subentry">
+  <h4>{% if french %}M1 IASO / IA et société{% else %}AI and Society (IASO), master’s year 1{% endif %}</h4>
+  <p class="entry-meta"><strong>2026</strong> · <em>PSL Paris School of AI</em></p>
+  <p>{% if french %}Encadrement et coordination d’un stage consacré à l’automatisation de la catégorisation des textes réglementaires de protection des données personnelles.{% else %}Supervision and coordination of a research internship on automating the categorization of personal-data regulatory texts (IASO / AI and Society).{% endif %}</p>
+  </article>
+</section>

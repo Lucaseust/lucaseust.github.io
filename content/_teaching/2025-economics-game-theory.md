@@ -1,13 +1,15 @@
 ---
-title: "Economics and Game Theory"
-collection: teaching
-type: "Master 1 refresher course (English)"
-permalink: /teaching/economics-game-theory/
-venue: "PSL University"
-date: 2026-01-01
-period: "2025 - Present"
-location: "Paris, France"
+title: "Economie et théorie des jeux"
+collection: "teaching"
+type: "Master 1"
+permalink: "/teaching/economics-game-theory/"
+venue: "PSL (Paris School of AI)"
+date: "2026-01-01"
+period: "2025-2026"
 ---
 
-English-language Master 1 refresher course in economics and game theory, taught since 2025.
+**Format :** CM · **Volume annuel :** 18 heures équivalent TD.
 
+**Langue :** Anglais.
+
+**Responsabilité :** Création du cours.

@@ -7,12 +7,13 @@
 # server process.
 
 # Basic Site Settings
-locale                   : "en-US"
+locale                   : "fr-FR"
 site_theme               : "air" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
 title                    : "Lucas Eustache"
 title_separator          : "-"
 name                     : &name "Lucas Eustache"
 description              : &description "Lucas Eustache, PhD in management and information systems at Paris Dauphine - PSL. Research on data governance, data-sharing ecosystems, data spaces, and digital regulation."   # Update this with a general description of your site, this is the default if not overridden by a page
+description_fr           : "Lucas Eustache, docteur en sciences de gestion et systèmes d’information à Paris Dauphine – PSL. Recherches sur la gouvernance des données, les écosystèmes de partage, les espaces de données et la régulation numérique."
 url                      : https://lucaseust.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -85,13 +86,17 @@ author:
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
   books:
-    title: 'Books'
+    title: 'Ouvrages'
+    title_en: 'Books'
   manuscripts:
-    title: 'Journal Articles'    
+    title: 'Articles de revue'
+    title_en: 'Journal articles'
   conferences:
-    title: 'Conference Papers'
+    title: 'Articles de conférence'
+    title_en: 'Conference papers'
   media:
-    title: 'Media'
+    title: 'Médias'
+    title_en: 'Media'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
@@ -193,6 +198,12 @@ exclude:
   - Capfile
   - CONTRIBUTING.md
   - CV
+  - Cours.xlsx
+  - CV_Master.xlsx
+  - "~$CV_Master.xlsx"
+  - CV_MASTER.md
+  - AGENTS.md
+  - "~$Cours.xlsx"
   - Papiers
   - cv.pdf
   - photo.png

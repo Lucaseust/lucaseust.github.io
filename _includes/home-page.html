@@ -1,0 +1,65 @@
+{% assign home = site.data.home %}
+{% assign home_paragraphs = home.bio.paragraphs %}
+{% if page.lang == 'en' %}{% assign home_paragraphs = home.bio.paragraphs_en %}{% endif %}
+
+<div class="bio">
+  <img class="bio-photo" src="{{ '/images/lucas-eustache-avatar-v7.jpg' | relative_url }}" alt="{% if page.lang == 'fr' %}Portrait de Lucas Eustache{% else %}Portrait of Lucas Eustache{% endif %}" width="180" height="180">
+  <div class="bio-text">
+  {% for paragraph in home_paragraphs %}
+    <p>{{ paragraph }}</p>
+  {% endfor %}
+  <p class="resource-links">
+    <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+    {% if page.lang == 'fr' %}
+    <a href="{{ '/files/cv-fr.pdf' | relative_url }}?v=20261123-1">CV (PDF)</a>
+    <a href="{{ '/cv-fr/' | relative_url }}">CV en ligne</a>
+    {% else %}
+    <a href="{{ '/files/cv.pdf' | relative_url }}?v=20261123-1">CV (PDF)</a>
+    <a href="{{ '/en/cv/' | relative_url }}">Online CV</a>
+    {% endif %}
+    <a href="{{ site.author.googlescholar }}" rel="me">Google Scholar</a>
+    <a href="{{ site.author.orcid }}" rel="me">ORCID</a>
+  </p>
+  </div>
+</div>
+
+<section id="dissertation">
+  <h2>{% if page.lang == 'fr' %}{{ home.dissertation.title }}{% else %}{{ home.dissertation.title_en }}{% endif %}</h2>
+  <article class="entry dissertation-card">
+    <h3>{% if page.lang == 'fr' %}{{ home.dissertation.item_title }}{% else %}{{ home.dissertation.item_title_en }}{% endif %}</h3>
+    <p class="entry-meta">{% if page.lang == 'fr' %}{{ home.dissertation.byline }}{% else %}{{ home.dissertation.byline_en }}{% endif %}</p>
+    <p class="dissertation-date">{% if page.lang == 'fr' %}Thèse soutenue le <time datetime="2026-10-09">9 octobre 2026</time>{% else %}Defended on <time datetime="2026-10-09">9 October 2026</time>{% endif %}</p>
+  </article>
+</section>
+
+<section id="research-focus">
+  {% if page.lang == 'fr' %}
+  <h2>Axes de recherche</h2>
+  <ul>
+    <li>Systèmes d’information et gouvernance des données : partage interorganisationnel, espaces de données, gouvernance des écosystèmes et création de valeur.</li>
+    <li>Innovation numérique et organisation des plateformes : intermédiaires, produits de données, gouvernance des plateformes et infrastructures sectorielles ou souveraines.</li>
+    <li>Régulation numérique et infrastructures publiques : conception institutionnelle, réutilisation des données publiques et gouvernance des technologies numériques.</li>
+  </ul>
+  {% else %}
+  <h2>Research focus</h2>
+  <ul>
+    <li>Information systems and data governance: inter-organizational data sharing, data spaces, ecosystem governance, and value creation.</li>
+    <li>Digital innovation and platform organization: data intermediaries, data products, platform governance, and sectoral or sovereign infrastructures.</li>
+    <li>Digital regulation and public infrastructures: institutional design, public data reuse, and the governance of digital technologies.</li>
+  </ul>
+  {% endif %}
+</section>
+
+<section id="research">
+  <h2>{% if page.lang == 'fr' %}Sélection de travaux de recherche{% else %}Selected research{% endif %}</h2>
+  {% assign selected = site.publications | where: 'featured', true | sort: 'date' | reverse %}
+  {% for post in selected %}
+    {% include archive-single.html %}
+  {% endfor %}
+  <p>{% if page.lang == 'fr' %}<a href="{{ '/publications/' | relative_url }}">Toutes les publications</a>{% else %}<a href="{{ '/en/publications/' | relative_url }}">All publications</a>{% endif %}</p>
+</section>
+
+<section id="working-papers">
+  <h2>{% if page.lang == 'fr' %}{{ home.working_papers.title }}{% else %}Working papers{% endif %}</h2>
+  {% include working-papers-cv.html lang=page.lang show_heading=false %}
+</section>

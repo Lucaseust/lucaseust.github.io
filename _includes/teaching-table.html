@@ -1,13 +1,16 @@
 {% assign french = false %}
 {% if include.lang == 'fr' %}{% assign french = true %}{% endif %}
+{% assign course_labels = site.data.teaching_labels[include.lang] %}
+{% assign course_prefix = '' %}
+{% unless french %}{% assign course_prefix = '/en' %}{% endunless %}
 <div class="teaching-table-wrap" role="region" aria-label="{% if french %}Tableau des enseignements{% else %}Teaching table{% endif %}" tabindex="0">
   <table class="teaching-table">
-    <caption>{% if french %}Enseignements — volume annuel en heures équivalent TD{% else %}Courses — annual hours in tutorial equivalents (équivalent TD){% endif %}</caption>
+    <caption>{% if french %}Enseignements — volume annuel en heures équivalent TD{% else %}Courses — annual hours in tutorial equivalents{% endif %}</caption>
     <thead>
       <tr>
         <th scope="col">{% if french %}Intitulé{% else %}Course{% endif %}</th>
-        <th scope="col">CM / TD</th>
-        <th scope="col">{% if french %}Heures éq. TD / an{% else %}Hours eq. TD / year{% endif %}</th>
+        <th scope="col">Format</th>
+        <th scope="col">{% if french %}Heures éq. TD / an{% else %}Tutorial-equivalent hours / year{% endif %}</th>
         <th scope="col">{% if french %}Années{% else %}Years{% endif %}</th>
         <th scope="col">{% if french %}Responsabilité{% else %}Responsibility{% endif %}</th>
         <th scope="col">{% if french %}Langue{% else %}Language{% endif %}</th>
@@ -19,18 +22,18 @@
     {% assign level_courses = site.data.teaching | where: 'level', level %}
     {% if level_courses.size > 0 %}
     <tbody>
-      <tr class="teaching-level"><th scope="rowgroup" colspan="7">{% if level == 'L3' %}{% if french %}Licence 3{% else %}Bachelor, year 3{% endif %}{% elsif level == 'L1' %}{% if french %}Licence 1{% else %}Bachelor, year 1{% endif %}{% else %}{{ level }}{% endif %}</th></tr>
+      <tr class="teaching-level"><th scope="rowgroup" colspan="7">{{ course_labels.levels[level] | default: level }}</th></tr>
     {% for course in level_courses %}
       <tr class="course-row">
-        <th scope="row"><a href="{{ course.url | relative_url }}">{% if french %}{{ site.data.translations[course.title] | default: course.title }}{% else %}{{ course.title }}{% endif %}</a></th>
-        <td>{{ course.format }}</td>
+        <th scope="row"><a href="{{ course.url | prepend: course_prefix | relative_url }}">{% include localized-title.html item=course lang=include.lang %}</a></th>
+        <td>{% if french %}{{ course.format }}{% else %}{{ course_labels.formats[course.format] | default: course.format }}{% endif %}</td>
         <td class="hours">{% if french %}{{ course.hours | replace: '.', ',' }}{% else %}{{ course.hours }}{% endif %}</td>
         <td class="course-years">{{ course.years }}</td>
         <td class="course-responsibility">
-          {{ course.responsibility | default: '—' }}
+          {{ course_labels.responsibilities[course.responsibility] | default: course.responsibility | default: '—' }}
           {% if course.repository %}<br><a href="{{ course.repository | escape }}">{% if french %}Jeu sur GitHub{% else %}Game on GitHub{% endif %}</a>{% endif %}
         </td>
-        <td>{{ course.language }}</td>
+        <td>{{ course_labels.languages[course.language] | default: course.language }}</td>
         <td>{% if french %}{{ site.data.translations[course.institution] | default: course.institution }}{% else %}{{ course.institution }}{% endif %}</td>
       </tr>
     {% endfor %}
@@ -39,4 +42,4 @@
     {% endfor %}
   </table>
 </div>
-<p class="entry-meta">{% if french %}CM : cours magistral ; TD : travaux dirigés.{% else %}CM: lecture; TD: tutorial.{% endif %} <span class="table-scroll-hint">{% if french %}Faites défiler le tableau horizontalement pour consulter toutes les colonnes.{% else %}Scroll the table horizontally to see all columns.{% endif %}</span></p>
+<p class="entry-meta">{% if french %}CM : cours magistral. TD : travaux dirigés. {% endif %}<span class="table-scroll-hint">{% if french %}Faites défiler le tableau horizontalement pour consulter toutes les colonnes.{% else %}Scroll the table horizontally to see all columns.{% endif %}</span></p>

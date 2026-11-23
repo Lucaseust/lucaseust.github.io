@@ -1,9 +1,10 @@
 {% assign resource = include.item %}
+{% assign resource_lang = page.lang | default: site.locale | slice: 0, 2 %}
 {% if resource.link or resource.paperurl or resource.slidesurl or resource.bibtexurl %}
 <p class="resource-links">
-  {% if resource.link %}<a href="{{ resource.link | relative_url }}">{{ resource.link_label | default: 'View source' }}</a>{% endif %}
-  {% if resource.paperurl %}<a href="{{ resource.paperurl | relative_url }}">{{ resource.paperurl_label | default: 'Read paper' }}</a>{% endif %}
-  {% if resource.slidesurl %}<a href="{{ resource.slidesurl | relative_url }}">Slides</a>{% endif %}
+  {% if resource.link %}<a href="{{ resource.link | relative_url }}">{% if resource_lang == 'fr' %}{{ resource.link_label_fr | default: 'Consulter la source' }}{% else %}{{ resource.link_label | default: 'View source' }}{% endif %}</a>{% endif %}
+  {% if resource.paperurl %}<a href="{{ resource.paperurl | relative_url }}">{% if resource_lang == 'fr' %}{% if resource.paperurl contains 'arxiv.org' %}Prépublication (arXiv){% else %}{{ resource.paperurl_label_fr | default: 'Lire l’article' }}{% endif %}{% else %}{{ resource.paperurl_label | default: 'Read paper' }}{% endif %}</a>{% endif %}
+  {% if resource.slidesurl %}<a href="{{ resource.slidesurl | relative_url }}">{% if resource_lang == 'fr' %}Diapositives{% else %}Slides{% endif %}</a>{% endif %}
   {% if resource.bibtexurl %}<a href="{{ resource.bibtexurl | relative_url }}">BibTeX</a>{% endif %}
 </p>
 {% endif %}

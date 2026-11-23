@@ -1,0 +1,14 @@
+<h2>{% if page.lang == 'fr' %}Conférences académiques{% else %}Academic conferences{% endif %}</h2>
+<div class="presentation-list">
+  {% assign conferences = site.talks | where: 'category', 'conference' | sort: 'date' | reverse %}
+  {% for item in conferences %}{% include presentation-item.html item=item %}{% endfor %}
+</div>
+
+<h2>{% if page.lang == 'fr' %}Ateliers et séminaires{% else %}Workshops and seminars{% endif %}</h2>
+<div class="presentation-list">
+  {% assign workshops = site.talks | where: 'category', 'workshop' | sort: 'date' | reverse %}
+  {% for item in workshops %}{% include presentation-item.html item=item %}{% endfor %}
+</div>
+
+<h2>{% if page.lang == 'fr' %}Dissémination scientifique{% else %}Research outreach{% endif %}</h2>
+{% include outreach-cv.html lang=page.lang %}

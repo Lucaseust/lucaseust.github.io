@@ -1,0 +1,23 @@
+fr:
+  levels:
+    L1: Licence 1
+    L3: Licence 3
+  formats:
+    CM: Cours magistral
+    TD: Travaux dirigés
+en:
+  levels:
+    L1: Bachelor, year 1
+    L3: Bachelor, year 3
+    Master 1: Master’s, year 1
+    Master 2: Master’s, year 2
+  formats:
+    CM: Lecture
+    TD: Tutorial
+  languages:
+    Français: French
+    Anglais: English
+  responsibilities:
+    Création du cours: Course design
+    Création du cours et d'un jeu pédagogique: Design of the course and an educational game
+    Coordination du TD: Tutorial coordination

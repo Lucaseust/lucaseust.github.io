@@ -1,0 +1,48 @@
+{% assign detail_item = include.item %}
+{% assign detail_french = false %}
+{% if include.lang == 'fr' %}{% assign detail_french = true %}{% endif %}
+{% assign detail_type = detail_item.type %}
+{% assign detail_venue = detail_item.venue %}
+{% assign detail_location = detail_item.location %}
+{% assign detail_course = nil %}
+{% assign detail_period = detail_item.period %}
+{% if detail_french %}
+  {% assign detail_type = site.data.translations[detail_item.type] | default: detail_type %}
+  {% assign detail_venue = site.data.translations[detail_item.venue] | default: detail_venue %}
+  {% assign detail_location = site.data.translations[detail_item.location] | default: detail_location %}
+{% endif %}
+{% if detail_item.collection == 'teaching' %}
+  {% assign detail_course = site.data.teaching | where: 'url', detail_item.url | first %}
+  {% assign detail_labels = site.data.teaching_labels[include.lang] %}
+  {% assign detail_level = detail_course.level | default: detail_item.type %}
+  {% assign detail_type = detail_labels.levels[detail_level] | default: detail_level %}
+  {% assign detail_period = detail_course.years | default: detail_period %}
+{% endif %}
+<p class="entry-meta">{% if detail_type %}{{ detail_type }} · {% endif %}{% if detail_venue %}{{ detail_venue }} · {% endif %}{% if detail_period %}{{ detail_period }}{% elsif detail_item.collection == 'teaching' %}{{ detail_item.date | date: '%Y' }}{% else %}{{ detail_item.date | date: '%Y-%m' }}{% endif %}{% if detail_location %} · {{ detail_location }}{% endif %}</p>
+
+{% if detail_course %}
+  <p><strong>Format</strong> {{ detail_labels.formats[detail_course.format] | default: detail_course.format }}<br>
+  <strong>{% if detail_french %}Volume annuel{% else %}Annual teaching hours{% endif %}</strong>
+  {% if detail_french %}{{ detail_course.hours | replace: '.', ',' }} heures équivalent TD{% else %}{{ detail_course.hours }} tutorial-equivalent hours{% endif %}<br>
+  <strong>{% if detail_french %}Langue{% else %}Language{% endif %}</strong> {{ detail_labels.languages[detail_course.language] | default: detail_course.language }}</p>
+  {% if detail_course.responsibility != '' %}<p><strong>{% if detail_french %}Responsabilité{% else %}Responsibility{% endif %}</strong> {{ detail_labels.responsibilities[detail_course.responsibility] | default: detail_course.responsibility }}</p>{% endif %}
+  {% if detail_course.repository %}
+    <p class="resource-links">
+      <a href="{{ detail_course.repository }}">{% if detail_french %}Jeu ECOSYSTEM sur GitHub{% else %}ECOSYSTEM game on GitHub{% endif %}</a>
+      {% if detail_french %}<a href="{{ '/project/#ecosystem' | relative_url }}">Présentation du jeu</a>{% else %}<a href="{{ '/en/project/#ecosystem' | relative_url }}">Game overview</a>{% endif %}
+    </p>
+  {% endif %}
+{% elsif detail_item.collection == 'teaching' %}
+  {{ include.body }}
+{% endif %}
+
+{% if detail_item.presentation_title %}<p>{% if detail_french %}{{ site.data.translations[detail_item.presentation_title] | default: detail_item.presentation_title }}{% else %}{{ detail_item.presentation_title }}{% endif %}</p>{% endif %}
+{% if detail_item.authors %}<p class="entry-meta">{% if detail_french %}{{ detail_item.authors | replace: ', and ', ' et ' }}{% else %}{{ detail_item.authors }}{% endif %}</p>{% endif %}
+{% if detail_item.status %}<p class="entry-meta">{% if detail_french %}{{ detail_item.status_fr | default: detail_item.status }}{% else %}{{ detail_item.status }}{% endif %}</p>{% endif %}
+{% if detail_french and detail_item.description_fr %}
+  {{ detail_item.description_fr | markdownify }}
+{% elsif include.lang == 'en' and detail_item.description_en %}
+  {{ detail_item.description_en | markdownify }}
+{% endif %}
+{% if detail_item.citation %}<p class="entry-meta">{% if detail_french %}{{ detail_item.citation_fr | default: detail_item.citation }}{% else %}{{ detail_item.citation }}{% endif %}</p>{% endif %}
+{% include resource-links.html item=detail_item %}

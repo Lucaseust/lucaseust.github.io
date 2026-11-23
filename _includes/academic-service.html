@@ -1,0 +1,28 @@
+{% assign french = false %}
+{% if include.lang == 'fr' %}{% assign french = true %}{% endif %}
+<div class="academic-service">
+  <section class="service-group">
+    <h3>{% if french %}Animation scientifique{% else %}Research community activities{% endif %}</h3>
+    <article class="service-entry">
+      <h4>{% if french %}Co-animation du groupe de travail « Activités numériques »{% else %}Co-convenor, “Digital Activities” working group{% endif %}</h4>
+      <p class="entry-meta"><em>{% if french %}Chaire Gouvernance et Régulation{% else %}Governance &amp; Regulation Chair{% endif %}</em> · {% if french %}Avec Damien Mayaux{% else %}With Damien Mayaux{% endif %}</p>
+      <p>{% if french %}Environ deux séminaires par mois sur la régulation numérique, la gouvernance et les politiques publiques liées aux plateformes.{% else %}Approximately two research seminars per month on digital regulation, governance, and platform-related public policy.{% endif %} <a href="https://acss-dig.psl.eu/fr/seminaires/digital-regulation">{% if french %}Programme des séminaires{% else %}Seminar programme{% endif %}</a>.</p>
+    </article>
+    <article class="service-entry">
+      <h4>{% if french %}Organisation de conférences{% else %}Conference organization{% endif %}</h4>
+      <p class="entry-meta"><strong>2023–2025</strong> · <em>{% if french %}Chaire Gouvernance et Régulation · Université Paris Dauphine – PSL{% else %}Governance &amp; Regulation Chair · University Paris-Dauphine – PSL{% endif %}</em></p>
+      <ul>
+        <li><a href="https://chairgovreg.fondation-dauphine.fr/fr/ressources/1603/replay-data-sharing-europe-dga-and-da-legal-consensus-achievement-implementation">{% if french %}Le partage de données en Europe : DGA et DA{% else %}Data Sharing in Europe: DGA and DA{% endif %}</a> · 2023</li>
+        <li><a href="https://chairgovreg.fondation-dauphine.fr/en/publication/1809/synthesis-data-sharing-europe-implementation-challenge">{% if french %}Le partage de données en Europe : le défi de la mise en œuvre{% else %}Data-Sharing in Europe: The Implementation Challenge{% endif %}</a> · 2024</li>
+        <li><a href="https://www.fondation-dauphine.fr/agenda/2025/08/sustainable-development-data-sharing-ecosystems-challenges-and-turning-points">{% if french %}Développement durable des écosystèmes de partage de données : défis et tournants{% else %}Sustainable Development of Data-Sharing Ecosystems: Challenges and Turning Points{% endif %}</a> · 2025</li>
+      </ul>
+    </article>
+  </section>
+  <section class="service-group">
+    <h3>{% if french %}Représentation académique{% else %}Academic representation{% endif %}</h3>
+    <article class="service-entry">
+    <h4>{% if french %}Représentant élu des doctorants au conseil de DRM{% else %}Elected PhD representative on the DRM Council{% endif %}</h4>
+    <p class="entry-meta"><strong>{% if french %}Depuis 2023{% else %}2023–Present{% endif %}</strong> · <em>Dauphine Recherches en Management (DRM) · Université Paris Dauphine – PSL</em></p>
+    </article>
+  </section>
+</div>

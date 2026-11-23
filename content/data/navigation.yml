@@ -2,11 +2,15 @@
 main:
   - title: "Publications"
     url: /publications/
-  - title: "Presentations"
+  - title: "Présentations"
+    title_en: "Presentations"
     url: /talks/
-  - title: "Teaching"
+  - title: "Enseignement"
+    title_en: "Teaching"
     url: /teaching/
-  - title: "Projects"
+  - title: "Projets"
+    title_en: "Projects"
     url: /project/
   - title: "CV"
-    url: /cv/
+    url: /cv-fr/
+    url_en: /en/cv/

@@ -1,0 +1,20 @@
+<section aria-labelledby="ecosystem">
+  <h2 id="ecosystem">ECOSYSTEM</h2>
+  <p>{% if page.lang == 'fr' %}Dans ce jeu pédagogique conçu pour le cours Écosystèmes de données et d’intelligence artificielle, cinq entreprises négocient le lancement d’un service de navettes autonomes. Les équipes décident ensemble comment financer les investissements et partager les recettes, puis comparent leurs résultats lors du débriefing.{% else %}In this educational game for the Data and AI Ecosystems course, five companies negotiate to launch an autonomous shuttle service. Teams decide how to fund investments and share revenue, then compare their results in the debrief.{% endif %}</p>
+  <p class="entry-meta">{% if page.lang == 'fr' %}10 à 30 participants · Environ 60 minutes · Français ou anglais · Python 3.10 ou plus récent{% else %}10–30 participants · About 60 minutes · French or English · Python 3.10 or later{% endif %}</p>
+  <p class="resource-links">
+    <a href="{{ '/project/ecosystem.zip' | relative_url }}" download>{% if page.lang == 'fr' %}Télécharger le jeu (ZIP){% else %}Download the game (ZIP){% endif %}</a>
+    <a href="https://github.com/Lucaseust/ecosystem_game/blob/main/{% if page.lang == 'fr' %}README.fr.md#lancer-le-jeu{% else %}README.md#quick-start{% endif %}">{% if page.lang == 'fr' %}Instructions de lancement{% else %}Launch instructions{% endif %}</a>
+    <a href="https://github.com/Lucaseust/ecosystem_game">{% if page.lang == 'fr' %}Code source sur GitHub{% else %}Source code on GitHub{% endif %}</a>
+  </p>
+</section>
+
+<section aria-labelledby="wikicarte">
+  <h2 id="wikicarte">WikiCarte</h2>
+  <p>{% if page.lang == 'fr' %}Quelles communes les articles de Wikipédia citent-ils quand ils en décrivent une autre ? WikiCarte cartographie les mentions entre communes de France métropolitaine dans Wikipédia en français, avec des cartes thématiques pour l’histoire, le patrimoine, la géographie et l’administration.{% else %}Which municipalities does a French Wikipedia article mention when it describes another? WikiCarte maps mentions between municipalities in metropolitan France, with separate views for history, culture and heritage, geography, and politics and administration.{% endif %}</p>
+  <p class="resource-links">
+    <a href="https://github.com/Lucaseust/wikicarte/blob/main/report/citation_report.pdf" hreflang="en">{% if page.lang == 'fr' %}Consulter le rapport (PDF en anglais){% else %}Read the report (PDF){% endif %}</a>
+    <a href="https://github.com/Lucaseust/wikicarte">{% if page.lang == 'fr' %}Voir le projet sur GitHub{% else %}View the project on GitHub{% endif %}</a>
+  </p>
+  <p><a href="{{ '/project/wikicarte.jpg' | relative_url }}"><img src="{{ '/project/wikicarte.jpg' | relative_url }}" alt="{% if page.lang == 'fr' %}Carte des 17 groupes de communes qui se citent dans Wikipédia en français{% else %}Map of the 17 groups of municipalities that mention each other on French Wikipedia{% endif %}" width="2400" height="3000" loading="lazy" decoding="async"></a></p>
+</section>

@@ -1,0 +1,9 @@
+{% assign french = false %}
+{% if include.lang == 'fr' %}{% assign french = true %}{% endif %}
+<h3>{% if french %}Conférences académiques{% else %}Academic conferences{% endif %}</h3>
+{% assign conferences = site.talks | where: 'category', 'conference' | sort: 'date' | reverse %}
+{% for item in conferences %}{% include presentation-item.html item=item lang=include.lang %}{% endfor %}
+
+<h3>{% if french %}Ateliers et séminaires{% else %}Workshops and seminars{% endif %}</h3>
+{% assign workshops = site.talks | where: 'category', 'workshop' | sort: 'date' | reverse %}
+{% for item in workshops %}{% include presentation-item.html item=item lang=include.lang %}{% endfor %}

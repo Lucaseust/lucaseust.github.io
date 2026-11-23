@@ -1,0 +1,12 @@
+{% assign french = false %}
+{% if include.lang == 'fr' %}{% assign french = true %}{% endif %}
+{% if include.show_heading != false %}<h3>{% if french %}Travaux en cours{% else %}Working papers{% endif %}</h3>{% endif %}
+{% for paper in site.data.home.working_papers.items %}
+  <article class="working-paper">
+    <h4>{% include localized-title.html item=paper lang=include.lang %}</h4>
+    {% if paper.byline %}<p class="entry-meta">{% if french %}{{ paper.byline | replace: 'with ', 'avec ' | replace: 'Single-authored', 'Auteur unique' | replace: ' and ', ' et ' }}{% else %}{{ paper.byline }}{% endif %}</p>{% endif %}
+    {% if paper.note %}<p class="entry-meta paper-note">{% if french %}{{ paper.note_fr }}{% else %}{{ paper.note }}{% endif %}</p>{% endif %}
+    {% if paper.status %}<p class="entry-meta paper-status">{% if french %}{{ paper.status_fr }}{% else %}{{ paper.status }}{% endif %}</p>{% endif %}
+    {% if paper.link %}<p class="resource-links"><a href="{{ paper.link }}">{% if paper.link_label %}{% if french %}{{ paper.link_label_fr }}{% else %}{{ paper.link_label }}{% endif %}{% elsif french %}Version antérieure (arXiv){% else %}Earlier version (arXiv){% endif %}</a></p>{% endif %}
+  </article>
+{% endfor %}

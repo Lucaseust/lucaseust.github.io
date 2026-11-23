@@ -1,0 +1,10 @@
+{%- assign localized_item = include.item -%}
+{%- if localized_item.collection == 'teaching' -%}
+  {%- assign localized_course = site.data.teaching | where: 'url', localized_item.url | first -%}
+  {%- assign localized_item = localized_course | default: localized_item -%}
+{%- endif -%}
+{%- if include.lang == 'fr' -%}
+  {{- localized_item.title_fr | default: site.data.translations[localized_item.title] | default: localized_item.title -}}
+{%- else -%}
+  {{- localized_item.title_en | default: localized_item.title -}}
+{%- endif -%}

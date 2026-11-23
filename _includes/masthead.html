@@ -1,11 +1,19 @@
 <header class="site-header">
-  <a class="site-name" href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>{{ site.title }}</a>
-  <nav aria-label="Main navigation">
+  <a class="site-name" href="{{ document_home | relative_url }}"{% if page.url == document_home %} aria-current="page"{% endif %}>{{ site.title }}</a>
+  <nav aria-label="{% if document_lang == 'fr' %}Navigation principale{% else %}Main navigation{% endif %}">
     {% for link in site.data.navigation.main %}
-      {% assign active = false %}
-      {% if page.url == link.url %}{% assign active = true %}{% endif %}
-      {% if link.url != '/' and page.url contains link.url %}{% assign active = true %}{% endif %}
-      <a href="{{ link.url | relative_url }}"{% if active %} aria-current="page"{% endif %}>{{ link.title }}</a>
+      {% assign nav_url = link.url %}
+      {% assign nav_title = link.title %}
+      {% if document_lang == 'en' %}
+        {% assign nav_url = link.url | prepend: '/en' %}
+        {% assign nav_url = link.url_en | default: nav_url %}
+        {% assign nav_title = link.title_en | default: nav_title %}
+      {% endif %}
+      <a href="{{ nav_url | relative_url }}"{% if page.url == nav_url %} aria-current="page"{% elsif page.url contains nav_url %} aria-current="location"{% endif %}>{{ nav_title }}</a>
     {% endfor %}
+  </nav>
+  <nav class="site-languages" aria-label="{% if document_lang == 'fr' %}Langue{% else %}Language{% endif %}">
+    <a href="{{ document_fr_url | relative_url }}" lang="fr" hreflang="fr"{% if document_lang == 'fr' %} aria-current="page"{% endif %}>Français</a>
+    <a href="{{ document_en_url | relative_url }}" lang="en" hreflang="en"{% if document_lang == 'en' %} aria-current="page"{% endif %}>English</a>
   </nav>
 </header>

@@ -1,6 +1,8 @@
+{% assign entry_lang = page.lang | default: site.locale | slice: 0, 2 %}
+{% assign entry_url = post.url %}
+{% if entry_lang == 'en' %}{% assign entry_url = entry_url | prepend: '/en' %}{% endif %}
 <article class="entry">
-  <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-  <p class="entry-meta">{% if post.authors %}{{ post.authors }} · {% endif %}{% if post.type %}{{ post.type }} · {% endif %}{% if post.venue %}{{ post.venue }} · {% endif %}{% if post.period %}{{ post.period }}{% elsif post.date %}{{ post.date | date: '%Y' }}{% endif %}</p>
-  {% if post.excerpt %}<div class="entry-description">{{ post.excerpt | markdownify }}</div>{% endif %}
+  <h3><a href="{{ entry_url | relative_url }}">{% include localized-title.html item=post lang=entry_lang %}</a></h3>
+  <p class="entry-meta">{% if post.authors %}{{ post.authors }} · {% endif %}{% if post.type %}{% if entry_lang == 'fr' %}{{ site.data.translations[post.type] | default: post.type }}{% else %}{{ post.type }}{% endif %} · {% endif %}{% if post.venue %}{% if entry_lang == 'fr' %}{{ site.data.translations[post.venue] | default: post.venue }}{% else %}{{ post.venue }}{% endif %} · {% endif %}{% if post.period %}{{ post.period }}{% elsif post.date %}{{ post.date | date: '%Y' }}{% endif %}</p>
   {% include resource-links.html item=post %}
 </article>

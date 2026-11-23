@@ -1,15 +1,7 @@
 ---
 layout: archive
+lang: fr
 title: "Publications"
 permalink: /publications/
 ---
-{% assign publications = site.publications | sort: 'date' | reverse %}
-{% for category in site.publication_category %}
-  {% assign entries = publications | where: 'category', category[0] %}
-  {% if entries.size > 0 %}
-    <section>
-      <h2>{{ category[1].title }}</h2>
-      {% for post in entries %}{% include archive-single.html %}{% endfor %}
-    </section>
-  {% endif %}
-{% endfor %}
+{% include publications-page.html %}

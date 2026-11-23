@@ -10,6 +10,15 @@
 
 You do not need to edit HTML or CSS for normal content updates.
 
+## French and English pages
+
+French pages use the original URLs. Their English counterparts start with `/en/`. The French CV is at `/cv-fr/` and the English CV is at `/en/cv/`, with `/cv/` kept as a redirect. Check both languages after changing shared content.
+
+For a new course, publication, or talk, add its English counterpart under `content/pages/en/teaching/`, `content/pages/en/publications/`, or `content/pages/en/talks/`. Copy the front matter from a nearby counterpart, set `source_url` to the original permalink, and set `permalink` to that same path prefixed with `/en`. The counterpart reads from the original record. Use `title_fr` or `title_en` for a translated record title and `content/data/translations.yml` for shared presentation titles and labels. English course display titles use `title_en` in `content/data/teaching.yml`.
+
+Update both `bio.paragraphs` and `bio.paragraphs_en` in `content/data/home.yml` when editing the homepage biography. The projects page text for both languages is in `_includes/projects-page.html`.
+
+
 ## Where information lives
 
 Paths below are relative to the repository root.
@@ -96,7 +105,7 @@ link: "https://example.com/event"
 Optional description for the presentation's own page.
 ```
 
-The event link is optional. Without it, the listing links to the local detail page. Talks appear newest first. The date determines sorting; future dates are displayed too.
+The event link is optional. The listing links to the local detail page and includes a separate link to the event when available. Talks appear newest first. The date determines sorting; future dates are displayed too.
 
 ## Add a policy or industry engagement
 

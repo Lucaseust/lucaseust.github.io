@@ -1,20 +1,38 @@
 <!doctype html>
-<html lang="{{ page.lang | default: site.locale | default: 'en' | slice: 0, 2 }}">
+{% assign document_lang = page.lang | default: site.locale | slice: 0, 2 %}
+{% assign document_fr_url = page.url %}
+{% assign document_en_url = page.url | prepend: '/en' %}
+{% assign document_home = '/' %}
+{% assign document_record = page %}
+{% if document_lang == 'en' %}
+  {% assign document_fr_url = page.alternate_url | default: page.source_url %}
+  {% unless document_fr_url %}{% assign document_fr_url = page.url | remove_first: '/en' %}{% endunless %}
+  {% assign document_en_url = page.url %}
+  {% assign document_home = '/en/' %}
+{% elsif page.alternate_url %}
+  {% assign document_en_url = page.alternate_url %}
+{% endif %}
+{% if page.source_url %}
+  {% assign document_record = site[page.source_collection] | where: 'url', page.source_url | first %}
+{% endif %}
+<html lang="{{ document_lang }}">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% include seo.html %}
+    <link rel="alternate" hreflang="fr" href="{{ document_fr_url | absolute_url }}">
+    <link rel="alternate" hreflang="en" href="{{ document_en_url | absolute_url }}">
     <link rel="icon" href="{{ '/images/favicon.svg' | relative_url }}" type="image/svg+xml">
     <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}?v={{ site.time | date: '%s' }}">
   </head>
   <body>
-    <a class="skip-link" href="#main">Skip to content</a>
+    <a class="skip-link" href="#main">{% if document_lang == 'fr' %}Aller au contenu{% else %}Skip to content{% endif %}</a>
     {% include masthead.html %}
     {{ content }}
     <footer class="site-footer">
       <span>{{ site.name }}</span>
-      {% if site.author.email %}<a href="mailto:{{ site.author.email }}">Email</a>{% endif %}
-      {% if site.author.uri %}<a href="{{ site.author.uri }}">University profile</a>{% endif %}
+      {% if site.author.email %}<a href="mailto:{{ site.author.email }}">{% if document_lang == 'fr' %}Courriel{% else %}Email{% endif %}</a>{% endif %}
+      {% if site.author.uri %}<a href="{{ site.author.uri }}">{% if document_lang == 'fr' %}Profil universitaire{% else %}University profile{% endif %}</a>{% endif %}
       {% if site.author.googlescholar %}<a href="{{ site.author.googlescholar }}" rel="me">Google Scholar</a>{% endif %}
       {% if site.author.orcid %}<a href="{{ site.author.orcid }}" rel="me">ORCID</a>{% endif %}
       {% if site.author.github %}<a href="https://github.com/{{ site.author.github }}">GitHub</a>{% endif %}
