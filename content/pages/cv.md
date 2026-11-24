@@ -10,7 +10,7 @@ redirect_from:
   - /cv/
 ---
 
-<p><a href="{{ '/files/cv.pdf' | relative_url }}?v=20261124-2">Download CV (PDF)</a></p>
+<p><a href="{{ '/files/cv.pdf' | relative_url }}?v=20261124-3">Download CV (PDF)</a></p>
 
 ## Profile
 
