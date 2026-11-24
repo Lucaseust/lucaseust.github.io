@@ -6,6 +6,10 @@ fr:
     CM: Cours magistral
     TD: Travaux dirigés
 en:
+  institutions:
+    Paris Dauphine PSL: Paris Dauphine University – PSL
+    Dauphine Tunis: "Paris Dauphine University – PSL, Tunis campus"
+    Ecole Polytechnique: École Polytechnique
   levels:
     L1: Bachelor, year 1
     L3: Bachelor, year 3

@@ -21,6 +21,17 @@ engagements:
     link: "https://gaia-x.eu/summit-2025/"
     description: "Policy and industry engagement on the sustainability and scaling of data-sharing ecosystems."
 
+  - title: "French National Management Days 2025 (JNM)"
+    title_fr: "Journées nationales du management 2025 (JNM)"
+    anchor: "jnm-2025"
+    date: 2025-10-20
+    type: "Workshop participation"
+    presentation_title: "Are data ecosystems the future of data sharing?"
+    venue: "Microsoft France"
+    location: "Issy-les-Moulineaux, France"
+    link: "https://digipad.app/p/1136550/f7ad9c6a3886f"
+    description: "Speaker at the workshop on data ecosystems and the future of data sharing."
+
   - title: "Sustainable Development of Data-Sharing Ecosystems: Challenges and Turning Points"
     date: 2025-09-25
     location: "Paris, France"
