@@ -49,7 +49,8 @@ working_papers:
   - title: 'Channel Composition: A Measurement Theory for Digital Trace Data'
     byline: with Paul Favier
     link: https://arxiv.org/abs/2606.29991
-    in_submission: true
+    status: Submitted in 07/2026 to the Journal of Information Technology (JIT)
+    status_fr: Soumis en 07/2026 au Journal of Information Technology (JIT)
     title_fr: 'Composition des canaux : une théorie de la mesure des traces numériques'
     note: 'Revised version of “Behind the Content: Wikipedia Mobile Views and Tourism Activity”, presented at AIM 2026.'
     note_fr: 'Version remaniée de « Au-delà du contenu : consultations mobiles de Wikipédia et activité touristique », présentée à AIM 2026.'
@@ -93,7 +94,8 @@ working_papers:
   - title: 'Data liquidity and data market organization'
     byline: Single-authored
     title_fr: 'Liquidité des données et organisation des marchés de données'
-    in_submission: true
+    status: Submitted in 09/2026 to Information Systems Frontiers (ISF)
+    status_fr: Soumis en 09/2026 à Information Systems Frontiers (ISF)
     abstract_en: >-
       Data marketplaces facilitate interorganizational exchange, but discovery and pricing alone do not ensure that an
       offering is suitable for a buyer. This study examines how the characteristics of data products relate to the

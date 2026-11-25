@@ -3,6 +3,7 @@ title: 'The Economics of Data-Sharing: An Empirical Investigation of Data Sharin
 collection: publications
 category: conferences
 featured: true
+cv_working_paper: true
 authors: Lucas Eustache, Eric Brousseau, and Joëlle Toledano
 permalink: /publications/data-sharing-ecosystems/
 date: 2025-12-14

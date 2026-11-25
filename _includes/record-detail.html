@@ -25,6 +25,10 @@
   <p><strong>Format</strong> {{ detail_labels.formats[detail_course.format] | default: detail_course.format }}<br>
   <strong>{% if detail_french %}Volume annuel{% else %}Annual teaching hours{% endif %}</strong>
   {% if detail_french %}{{ detail_course.hours | replace: '.', ',' }} heures équivalent TD{% else %}{{ detail_course.hours }} tutorial-equivalent hours{% endif %}<br>
+  {% if detail_course.enrollment %}
+    <strong>{% if detail_french %}Effectif{% else %}Class size{% endif %}</strong>
+    {{ detail_course.enrollment }} {% if detail_french %}étudiants{% else %}students{% endif %}<br>
+  {% endif %}
   <strong>{% if detail_french %}Langue{% else %}Teaching language{% endif %}</strong> {{ detail_labels.languages[detail_course.language] | default: detail_course.language }}</p>
   {% if detail_course.responsibility != '' %}<p><strong>{% if detail_french %}Responsabilité{% else %}Responsibility{% endif %}</strong> {{ detail_labels.responsibilities[detail_course.responsibility] | default: detail_course.responsibility }}</p>{% endif %}
   {% if detail_course.repository %}

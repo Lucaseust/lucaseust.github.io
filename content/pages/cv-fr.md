@@ -7,7 +7,7 @@ cv: true
 alternate_url: /en/cv/
 ---
 
-<p><a href="{{ '/files/cv-fr.pdf' | relative_url }}?v=20261124-3">Télécharger le CV (PDF)</a></p>
+<p><a href="{{ '/files/cv-fr.pdf' | relative_url }}?v=20261125">Télécharger le CV (PDF)</a></p>
 
 ## Profil
 
@@ -68,9 +68,6 @@ Je suis docteur en sciences de gestion (systèmes d’information), de l'Univers
 ## Recherche
 
 {% include working-papers-cv.html lang="fr" %}
-
-<h3>Publications</h3>
-{% include research-publications.html heading="h4" %}
 
 {% include research-cv.html lang="fr" %}
 

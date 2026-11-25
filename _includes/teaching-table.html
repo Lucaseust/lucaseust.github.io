@@ -11,6 +11,7 @@
         <th scope="col">{% if french %}Intitulé{% else %}Course{% endif %}</th>
         <th scope="col">Format</th>
         <th scope="col">{% if french %}Heures éq. TD / an{% else %}Hours per year (tutorial equivalents){% endif %}</th>
+        <th scope="col" class="course-enrollment">{% if french %}Effectif{% else %}Students{% endif %}</th>
         <th scope="col">{% if french %}Années{% else %}Years{% endif %}</th>
         <th scope="col">{% if french %}Responsabilité{% else %}Responsibility{% endif %}</th>
         <th scope="col">{% if french %}Langue{% else %}Teaching language{% endif %}</th>
@@ -22,12 +23,13 @@
     {% assign level_courses = site.data.teaching | where: 'level', level %}
     {% if level_courses.size > 0 %}
     <tbody>
-      <tr class="teaching-level"><th scope="rowgroup" colspan="7">{{ course_labels.levels[level] | default: level }}</th></tr>
+      <tr class="teaching-level"><th scope="rowgroup" colspan="8">{{ course_labels.levels[level] | default: level }}</th></tr>
     {% for course in level_courses %}
       <tr class="course-row">
         <th scope="row"><a href="{{ course.url | prepend: course_prefix | relative_url }}">{% include localized-title.html item=course lang=include.lang %}</a></th>
         <td>{% if french %}{{ course.format }}{% else %}{{ course_labels.formats[course.format] | default: course.format }}{% endif %}</td>
         <td class="hours">{% if french %}{{ course.hours | replace: '.', ',' }}{% else %}{{ course.hours }}{% endif %}</td>
+        <td class="course-enrollment">{{ course.enrollment | default: '—' }}</td>
         <td class="course-years">{{ course.years }}</td>
         <td class="course-responsibility">
           {{ course_labels.responsibilities[course.responsibility] | default: course.responsibility | default: '—' }}

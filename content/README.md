@@ -51,7 +51,7 @@ To add a working paper, copy an item under `working_papers.items`:
       link: "https://example.com/paper"
 ```
 
-Use `abstract_en` and `abstract_fr` for the Research page. Set `in_submission: true` for a paper with a confirmed submission in progress. Omit the link when no public version exists. List order controls display order. Keep revision information in `note` and `note_fr`. Add published research to the publications collection.
+Use `abstract_en` and `abstract_fr` for the Research page. Record a confirmed submission with a dated label in `status` and `status_fr`. Omit the link when no public version exists. List order controls display order. Keep revision information in `note` and `note_fr`. Add published research to the publications collection. The ICIS 2025 proceedings record uses `cv_working_paper: true` to appear first under Working papers on the web CVs.
 
 ## Add a publication or media article
 
@@ -149,7 +149,7 @@ A short description of the course.
 - Edit appointments, education, profile, skills, and service in `content/pages/cv.md` and `content/pages/cv-fr.md`.
 - Publications and courses come from their original content files; leave the Liquid template blocks intact. Working papers on the French CV are maintained in `content/pages/cv-fr.md`.
 - Export each CV as a PDF and replace **`files/cv.pdf`** and **`files/cv-fr.pdf`**. A file named `cv.pdf` at the repository root is an ignored source copy and does not update the download.
-- Change the `v` parameter in the French CV download link in `content/pages/cv-fr.md` whenever you replace its PDF, so browsers fetch the new version.
+- Change the `v` parameter on the updated PDF links in `content/pages/cv-fr.md`, `content/pages/cv.md` and `_includes/home-page.html` so browsers fetch the new versions.
 - Check `/cv/`, `/cv-fr/`, `/files/cv.pdf`, and `/files/cv-fr.pdf` in preview.
 - The legacy CV-to-JSON helper is not part of this workflow.
 

@@ -99,6 +99,7 @@ th, td { padding: 0.5rem; border-bottom: 1px solid var(--line); text-align: left
 .teaching-table thead th:first-child { width: 25%; }
 .teaching-table thead th:last-child { width: 19%; }
 .teaching-table .hours { text-align: right; font-variant-numeric: tabular-nums; }
+.teaching-table .course-enrollment { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
 .teaching-table tbody tr { background: #fff; }
 .teaching-table thead th { font-size: 0.75rem; font-weight: 600; }
 .teaching-table .teaching-level th { font-size: 0.86rem; font-weight: 700; padding: 0.8rem 0.5rem 0.35rem; }

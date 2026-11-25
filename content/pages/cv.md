@@ -10,7 +10,7 @@ redirect_from:
   - /cv/
 ---
 
-<p><a href="{{ '/files/cv.pdf' | relative_url }}?v=20261124-3">Download CV (PDF)</a></p>
+<p><a href="{{ '/files/cv.pdf' | relative_url }}?v=20261125">Download CV (PDF)</a></p>
 
 ## Profile
 
@@ -71,9 +71,6 @@ I hold a PhD in Management and Information Systems from University Paris-Dauphin
 ## Research
 
 {% include working-papers-cv.html lang="en" %}
-
-<h3>Publications</h3>
-{% include research-publications.html heading="h4" %}
 
 {% include research-cv.html lang="en" %}
 
